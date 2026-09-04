@@ -1,0 +1,7 @@
+# Ignore all large files except pdf
+*.docx
+*.doc
+*.xlsx
+*.xls
+*.pptx
+*.ppt
