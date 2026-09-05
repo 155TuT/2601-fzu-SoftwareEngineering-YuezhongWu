@@ -22,7 +22,6 @@
   - 个人账号以及API在这里注册：[hugging face](https://huggingface.co/)
   - 模型地址：[XLabs-AI/flux-RealismLora](https://huggingface.co/XLabs-AI/flux-RealismLora)
   - 要求在调用模型的代码基础上结合前端接口，实现交互生成。
-
 - 请在作业中展示API调用成功的记录以及前端页面最终生成图像的截图，并说明提示词设计思路和修改过程。
 - 请配合代码、截图与文字记录API调用的操作步骤，最后总结API调用时的体验和心得。
 
@@ -31,7 +30,6 @@
 - 请在GitHub上完成个人主页建设，可从以下两种方案中任选其一：
   - 创建个人资料自述文件。新建一个名称与GitHub ID相同的仓库，在仓库根目录的README中撰写个人介绍，并将相关截图放入博客。参考[GitHub文档 - 管理个人资料自述文件](https://docs.github.com/zh/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme)
   - 借助GitHub Pages搭建个人主页，制作内容较为充实的展示页面。参考[【保姆级教程】手把手教你用github制作学术个人主页（学者必备）](https://blog.csdn.net/qd1813100174/article/details/128604858)、[GitHub Pages documentation](https://pages.github.com/)。
-
 - 个人主页需包含以下内容：
   - 介绍自己，例如兴趣爱好、想与他人分享的经历；可使用照片让页面更丰富。
   - 展示个人成果、技能及与专业相关的实践经历，并完成自我评估：已掌握哪些专业知识和能力、对哪些技术方向感兴趣、最希望学习哪些知识。
@@ -53,7 +51,6 @@
 - Markdown的学习资料，请点击如下参考资料：
   - [Markdown 教程 - Markdown 是什么？](https://markdown.com.cn/intro.html)
   - [菜鸟教程 - Markdown 教程](https://www.runoob.com/markdown/md-tutorial.html)。
-
 - 请在本次及之后的每次作业随笔的最前面加上以下内容：
 
 | 这个作业属于哪个课程 | <班级圈子的链接> |
@@ -75,13 +72,9 @@
 ## 注意事项
 
 - 助教不能注意到所有同学，越能让助教记住你的博客，越能获得更高的评价。
-
 - 完成账号注册并不意味着开通了博客，需要申请开通博客才算开通博客。
-
 - 申请开通博客后大约15分钟左右会通过审核。若没有通过请根据反馈重新申请，若多次申请依然无法通过，请联系博客园客服，并告知自己是福州大学软工课程学生，需要开通博客加入班级博客完成作业。
-
 - 发布博客后并不代表提交了作业，需要进入班级博客后点击进入作业界面并点击提交按钮，才能提交作业，若未提交作业，助教无法进行评分，所以务必提交作业。
-
 - **有问题请在群里直接问出，除非问题涉及隐私，不要私聊助教或老师。**
 
 希望这次作业能帮助你快速适应我们以博客园为主的实践体系，并初步体验到大模型在实际应用中的能力和潜力。

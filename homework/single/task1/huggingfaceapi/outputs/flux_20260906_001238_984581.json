@@ -1,0 +1,16 @@
+{
+  "status": "success",
+  "requested_at": "2026-09-06T00:12:38+08:00",
+  "model": "XLabs-AI/flux-RealismLora",
+  "provider": "fal-ai",
+  "prompt": "A realistic documentary photograph of a road inside a university campus after rain. One student wearing a white T-shirt and a black backpack rides a bicycle from left to right, seen from the side. The student and the entire bicycle are visible in the middle of the frame. Wet gray pavement fills the foreground, with a few shallow puddles. Behind the student, a lawn and leafy trees separate the road from a four-story classroom building. The building has pale beige walls, a flat roof, and evenly spaced rectangular windows. Soft overcast morning light, natural colors, eye-level view.",
+  "parameters": {
+    "width": 768,
+    "height": 1024,
+    "num_inference_steps": 28,
+    "guidance_scale": 3.5,
+    "seed": 12345
+  },
+  "elapsed_seconds": 12.69,
+  "output": "outputs\\flux_20260906_001238_984581.png"
+}

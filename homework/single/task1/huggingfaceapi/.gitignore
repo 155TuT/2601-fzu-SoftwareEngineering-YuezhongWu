@@ -1,0 +1,16 @@
+# Secrets: never commit the real Hugging Face token.
+.env
+
+# The virtual environment can always be rebuilt from requirements.txt.
+.venv/
+venv/
+
+# Keep Python bytecode caches locally, but do not commit them to Git.
+__pycache__/
+*.py[cod]
+
+# Local editor and operating-system files.
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,16 @@
+{
+  "status": "success",
+  "requested_at": "2026-09-06T00:04:00+08:00",
+  "model": "XLabs-AI/flux-RealismLora",
+  "provider": "fal-ai",
+  "prompt": "A realistic documentary photograph of a university campus in Fuzhou\nafter rain, a student riding a bicycle through the scene, wet pavement\nreflecting soft morning light, natural colors, authentic proportions,\neye-level composition, photographed with a 35mm lens.",
+  "parameters": {
+    "width": 768,
+    "height": 1024,
+    "num_inference_steps": 28,
+    "guidance_scale": 3.5,
+    "seed": 12345
+  },
+  "elapsed_seconds": 10.98,
+  "output": "outputs\\flux_20260906_000400_285784.png"
+}

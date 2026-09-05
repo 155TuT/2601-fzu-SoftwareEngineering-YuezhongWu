@@ -1,0 +1,16 @@
+{
+  "status": "success",
+  "requested_at": "2026-09-05T23:54:58+08:00",
+  "model": "XLabs-AI/flux-RealismLora",
+  "provider": "fal-ai",
+  "prompt": "请成一张类似你 iPhone 随手拍的照：没有明确主题、没有刻意构图，只是很普通、甚至有点失败的快照。照略带运动模糊，光线不均、轻微曝光过度，角度尴尬，构图混乱，整体呈现出一种“过于真实的随手一拍感\"，就像是从口袋里拿出手机不小心按到的自拍",
+  "parameters": {
+    "width": 768,
+    "height": 1024,
+    "num_inference_steps": 28,
+    "guidance_scale": 3.5,
+    "seed": 12345
+  },
+  "elapsed_seconds": 15.85,
+  "output": "outputs\\flux_20260905_235458_282453.png"
+}
