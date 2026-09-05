@@ -54,6 +54,7 @@ token type选的是大方向：只读/只写/细粒度（可custom），这里�
 
 毕竟是两年前的模型，我就先开始查询模型相关信息：
 
+> [!TIP]
 > 以下是 codex 的查询结果
 
 结论：**接口可以接收中文，但这个模型明显更擅长英文。作业最终生成建议使用英文提示词。**
@@ -160,6 +161,6 @@ A realistic documentary photograph of a road inside a university campus after ra
 
 对这种古早的扩散模型其实我也没抱太大期望，之前确实[阅读过相关论文](https://155tut.github.io/2025/12/04/learn-of-stylessp/)，这下总算体会到了
 
-居然是第二张更好看一点，或许应该尝试配平正向和负向引导词？不过 gpt-image 和 seedance 太好用了，生图的流程也是先翻译和泛化再丢到实际的生图模型中，可以看看我为西二在线纳新海拔[生成背景图](https://github.com/155TuT/svg-poster-maker/blob/main/west2online/bg/ai-hero-background-prompt.md)的prompt，这种调优或许工程上有一定意义，但是我个人使用实在不想多费心思了
+居然是第二张更好看一点，或许应该尝试配平正向和负向引导词？不过 gpt-image 和 seedance 太好用了，生图的流程也是先翻译和泛化再丢到实际的生图模型中，可以看看我为西二在线纳新海报[生成背景图](https://github.com/155TuT/svg-poster-maker/blob/main/west2online/bg/ai-hero-background-prompt.md)的prompt，这种调优或许工程上有一定意义，但是我个人使用实在不想多费心思了
 
 另外其实我 AI 生图看了很多了，或许对所谓“AI味”会更敏感和严苛一点，这个应该是个人波动，不纳入流程参考了
