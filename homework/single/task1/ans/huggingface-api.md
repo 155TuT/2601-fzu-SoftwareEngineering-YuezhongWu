@@ -155,12 +155,12 @@ A realistic documentary photograph of a road inside a university campus after ra
 
 ![6](assets/huggingface-api/6.png)
 
-在我体感上还不如上一张...算了就这样吧
+在我体感上还不如上一张，肢体动作太诡异了，估计是提示词过多牵扯出的内容漂移...算了就这样吧
 
 ## 体验与心得
 
 对这种古早的扩散模型其实我也没抱太大期望，之前确实[阅读过相关论文](https://155tut.github.io/2025/12/04/learn-of-stylessp/)，这下总算体会到了
 
-居然是第二张更好看一点，或许应该尝试配平正向和负向引导词？不过 gpt-image 和 seedance 太好用了，生图的流程也是先翻译和泛化再丢到实际的生图模型中，可以看看我为西二在线纳新海报[生成背景图](https://github.com/155TuT/svg-poster-maker/blob/main/west2online/bg/ai-hero-background-prompt.md)的prompt，这种调优或许工程上有一定意义，但是我个人使用实在不想多费心思了
+居然是第二张更好看一点，或许应该尝试配平正向和负向引导词？不过 gpt-image 和 seedance 太好用了，生图的流程也是先翻译和泛化再丢到实际的生图模型中，可以看看我为西二在线纳新海报[生成背景图](https://github.com/155TuT/svg-poster-maker/blob/main/west2online/bg/ai-hero-background-prompt.md)攥写的prompt。这种调优或许工程上有一定意义，但是我个人使用实在不想多费心思了。
 
 另外其实我 AI 生图看了很多了，或许对所谓“AI味”会更敏感和严苛一点，这个应该是个人波动，不纳入流程参考了
