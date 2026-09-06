@@ -2,24 +2,56 @@
 
 已按要求发表于[博客园](https://www.cnblogs.com/155TuT/p/22857676)
 
-## 当前技能树
+## 0x00 准备工作
+
+- github：账号为[155TuT](https://github.com/155TuT)，已完善头像、昵称和个人资料。
+- 博客园：账号为[少年漫症候群](https://home.cnblogs.com/u/155TuT)，已开通博客并设置了自己喜欢的样式，正在逐步完成自己的主题。
+- 已关注吴越钟老师、张明圣同学和王奇蕊同学，并加入 202601 福州大学软件工程班级博客。
+
+## 0x01 huggingface-API的调用
+
+已在github上写出[完整的过程](https://github.com/155TuT/2601-fzu-SoftwareEngineering-YuezhongWu/blob/main/homework/single/task1/ans/huggingface-api.md)并给出[最小调用实例](https://github.com/155TuT/2601-fzu-SoftwareEngineering-YuezhongWu/tree/main/homework/single/task1/huggingfaceapi)
+
+## 0x02 github个人主页搭建
+
+### github主页的readme部分
+
+![image](https://img2024.cnblogs.com/blog/3847441/202609/3847441-20260906003837178-1379014718.png)
+
+### github pages部署的个人博客部分
+
+![image](https://img2024.cnblogs.com/blog/3847441/202609/3847441-20260906004001531-680280142.png)
+
+使用了[hexo-theme-redefine](https://github.com/EvanNotFound/hexo-theme-redefine)，目前自开学以来写了八篇文章
+
+![image](https://img2024.cnblogs.com/blog/3847441/202609/3847441-20260906004055227-1870556147.png)
+
+### 一些想说的话
+
+其实主页pin出来的仓库本身就足够起到展示个人成果、技能及与专业相关的实践经历的作用了，不过我也确实有看到[认识的同学的主页](https://github.com/Seeridia)设计的很好，后续有时间应该会跟进的。至于对未来三年作出发展规划，我基本没看到有人会在github上写这个，我也不是太想写：未来的事情谁能掌控呢？
+
+不过我大概率是选择本科就业的，实在是不想再经历一次高考一样的考研折磨了。
+
+## 0x03 面向课程的自我介绍
+
+### 当前技能树
 
 - 前端
-  - html + css 和 svg 等 xml 可以做到读，写，review，熟练程度 8/10
-  - javascript，typescript都有使用，可以做到读，写，review，熟练程度 7/10
+  - html + css 和 svg 等 xml 可以做到读，写，review，熟练程度 9/10
+  - javascript，typescript都有使用，可以做到读，写，review，熟练程度 8/10
   - React，Vue 等框架仅能做到配合ai使用与修改，做不到独立写和review，熟练程度 5/10
   - Qt/PyQt 这种需要写 qss 的客户端前端熟练度更低，熟练程度 3/10
   - 从 25 年 3 月第一次接触[博客](https://github.com/155TuT/155TuT.github.io)系统，最开始使用 Jekyll，后在 5 月换到当前的 Hexo，目前正在找时间尝试写一套自己的主题并完成自部署
-  - 从 25 年 11 月开始断断续续的维护自己的 [FzuFoodMap](https://github.com/155TuT/FFM-FzuFoodMap)，采用 React+Vue+Vite 静态构建，一直是边学边写的状态，还有很多模块没有完成，正在龟速开发中
+  - 从 25 年 11 月开始断断续续的维护自己的[FzuFoodMap](https://github.com/155TuT/FFM-FzuFoodMap)，采用 React+Vue+Vite 静态构建，一直是边学边写的状态，还有很多模块没有完成，正在龟速开发中
 - 后端
   - 有跟朋友部署过我的世界 java 版服务器，java 熟练度 4/10
-  - 能配合 ai 完成 fuu 后端的[新增模块](https://github.com/west2-online/fzuhelper-server/commit/265b00311948f99a032981ff4e7483b84dd18678)，golang熟练度 6.5/10
+  - 能配合 ai 完成 fuu 后端的[新增模块](https://github.com/west2-online/fzuhelper-server/commit/265b00311948f99a032981ff4e7483b84dd18678)，golang熟练度 7.5/10
   - 从高中开始打信息学竞赛，一直有在学 C++，大一下配合deepseek-r1网页版写了[大作业](https://github.com/155TuT/2402-fzu-OOP-Lancer/tree/main/coursedesign/155TuT)，自学了cs106l，熟练程度 6.5/10
 - 设计
   - 平面设计方面，其实结合前端比较多，或许可以看看我的纯svg画的[西二在线纳新海报](https://github.com/155TuT/svg-poster-maker)，日常figma，penpot，ps等都有使用，~~有很多废稿就不展示了~~
-  - 目前担任西二在线设计组组长，正在从头重构设计方向的[考核路线](https://github.com/west2-online/learn-design)，计划在社团纳新开始前完成所有内容。`其实我这里设计的task1跟老师这边差不多，感兴趣的话或许可以看看当前我已设计完的考核路线`
+  - 目前担任西二在线设计组组长，正在从头重构设计方向的[考核路线](https://github.com/west2-online/learn-design)，计划在社团纳新开始前完成所有内容。~~其实我这里设计的task1跟老师这边差不多，感兴趣的话或许可以看看当前我已设计完的考核路线~~
 - 科研
-  - 其实已经不太做了，之前在大一的暑假有完整的学习过 cs231n，后续也尝试进入老师的实验室打杂，但是除了读了读论文，熟悉了一下工作，实际没学到什么，反而因为时间安排的原因只得退出
+  - 其实已经不太做了，之前在大一的暑假有完整的学习过 cs231n，后续也尝试进入老师的实验室打杂，做一些 CV 和 DiT 相关的工作，但是除了读论文、洗数据、熟悉真实工作，实际上没学到什么，反而因为时间安排的原因只得退出
   - 虽然后续不会太做科研，但是有机会还是会阅读前沿文章的，并且对于当前时代，就算不是ai理论的前沿，ai工程的前沿实际上也是很难而很有意义的方向了
   - 平日里 agent 使用经验还是很多的，在不同场景下都有尝试过，在我的考核路线中也有所体现。后续或许会抽空读 dsh，opencode 和 claudecode 等的源码，不过这就是后话了
 
@@ -27,15 +59,15 @@
 
 面向ai的态度则已经写在设计组考核方案中了，其实我认为考核的时候不应该禁止ai，而是推动ai的合理使用，虽然这对考核设计者的水平要求很高，但我觉得在这个ai蓬勃发展，gpt-6 astra已经达到agi前夜水平的当下，这些都是我们作为考核者应当克服的困难
 
-## 代码量
+### 代码量
 
-其实不知道怎么算代码量，烧的token的话大概80亿gpt，30亿deepseek这样，代码量真的没统计过，而且很多文本工作其实也不计入代码量
+其实不知道怎么算代码量，行数来计算代码量在我看来有点不切实际。烧的token的话大概80亿gpt，30亿deepseek这样，代码量真的没统计过，而且很多文本工作其实也不计入代码量
 
-## 本课程中最期待学习的知识
+### 本课程中最期待学习的知识
 
-我应该是暂时担任本组组长的，尤其设计组的考核路线中有产品经理这个方向，我想我也应当践行一下该如何管理整个项目。一直以来我都不太擅长跟人合作，基本是单打独斗，其实这是不好的，本次软工课程恰好给了我一次实践的机会吧。
+我应该是暂时担任本次软工小组的组长，尤其我这边还未完成的设计组考核路线中有产品经理这个方向，我想我也应当践行一下该如何管理整个项目。一直以来我都不太擅长跟人合作，基本是单打独斗，其实这是不好的，本次软工课程恰好给了我一次实践的机会吧。
 
-## 软件工程课程学习指南
+### 软件工程课程学习指南
 
 以下内容由 gpt-6 astra 生成
 
@@ -137,12 +169,12 @@ token 用量不能换算成代码量，也不能代替能力评价；代码量�
 
 参考资料与选读入口（上文课程内容已对照官方网站核实，实践安排为 AI 综合建议）：
 
-- 课程导读：[CS 自学指南 · MIT 6.031](https://csdiy.wiki/软件工程/6031/) 与 [CS 自学指南 · CMU 17-803](https://csdiy.wiki/软件工程/17803/)。
+- 课程导读：[CS 自学指南 · MIT 6.031](https://csdiy.wiki/软件工程/6031/)与[CS 自学指南 · CMU 17-803](https://csdiy.wiki/软件工程/17803/)。
 - 软件构建与选读顺序：[MIT 6.031 Spring 2022 课程主页](https://web.mit.edu/6.031/www/sp22/)。导读中的 Java 介绍与所选版本有差异，2022 年版本使用 TypeScript。
-- 规格与测试方法：[Specifications](https://web.mit.edu/6.031/www/sp22/classes/06-specifications/) 与 [Testing](https://web.mit.edu/6.031/www/sp22/classes/03-testing/)。
-- 访谈、实验设计与评估：[CMU 17-803 课程主页](https://bvasiles.github.io/empirical-methods/) 与 [Learning Goals](https://bvasiles.github.io/empirical-methods/learning-goals.html)。
+- 规格与测试方法：[Specifications](https://web.mit.edu/6.031/www/sp22/classes/06-specifications/)与[Testing](https://web.mit.edu/6.031/www/sp22/classes/03-testing/)。
+- 访谈、实验设计与评估：[CMU 17-803 课程主页](https://bvasiles.github.io/empirical-methods/)与[Learning Goals](https://bvasiles.github.io/empirical-methods/learning-goals.html)。
 
-## 对指南合理性与帮助的分析参考
+### 对指南合理性与帮助的分析参考
 
 这份指南把学习内容对应到可检查的项目成果：需求对应验收条件，设计对应接口约定，开发对应协作记录，质量对应测试，交付对应运行说明，这种安排比单纯罗列技术名词更容易落实。
 
@@ -150,7 +182,7 @@ token 用量不能换算成代码量，也不能代替能力评价；代码量�
 
 局限则是尚未掌握本课程完整教学大纲、团队选题和成员分工，每周时间安排也只是起点。CMU 课程的研究训练深度远超一般课程，因此只适宜选学基础方法，是否继续深入则应由项目问题和个人兴趣决定。可先明确验收条件、开展同伴审查、完成一次用户反馈与复盘，再逐步扩展。
 
-## 附加截图
+### 附加截图
 
 按照要求使用Markdown编写作业，并在博文中附加后台博文编辑页面的截图。
 
