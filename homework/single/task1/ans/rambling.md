@@ -16,15 +16,13 @@
 
 ### github主页的readme部分
 
-![image](https://img2024.cnblogs.com/blog/3847441/202609/3847441-20260906003837178-1379014718.png)
+[155TuT](https://github.com/155TuT/155TuT)
 
 ### github pages部署的个人博客部分
 
-![image](https://img2024.cnblogs.com/blog/3847441/202609/3847441-20260906004001531-680280142.png)
+[155tut.github.io](https://155tut.github.io/)
 
 使用了[hexo-theme-redefine](https://github.com/EvanNotFound/hexo-theme-redefine)，目前自开学以来写了八篇文章
-
-![image](https://img2024.cnblogs.com/blog/3847441/202609/3847441-20260906004055227-1870556147.png)
 
 ### 一些想说的话
 
