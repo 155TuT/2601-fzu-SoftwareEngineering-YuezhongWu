@@ -12,7 +12,6 @@
   root.classList.add('blog-custom-boot');
   const watched = new WeakSet();
   const systemTheme = matchMedia('(prefers-color-scheme: dark)');
-  const compactHeader = matchMedia('(max-width: 1099px)');
   const mobileHeader = matchMedia('(max-width: 767px)');
   // Each page starts with the browser preference; a click overrides this page only.
   let theme = 'auto';
@@ -55,11 +54,8 @@
     links?.remove();
     const stats = document.querySelector('.blogStats');
     const footer = document.querySelector('#footer');
-    if (stats && compactHeader.matches && footer && stats.parentElement !== footer) footer.prepend(stats);
-    if (stats && !compactHeader.matches && stats.parentElement !== nav) nav.append(stats);
+    if (stats && footer && stats.parentElement !== footer) footer.prepend(stats);
   }
-
-  compactHeader.addEventListener('change', mountHeader);
 
   function toolIcon(name) {
     const paths = {
@@ -193,7 +189,7 @@
         }
         query.value = 'blog:' + blog + ' ' + words;
       });
-      nav.insertBefore(form, nav.querySelector('.blogStats'));
+      nav.append(form);
       const mobileButton = document.createElement('button');
       mobileButton.id = 'blog-mobile-search';
       mobileButton.type = 'button';
@@ -320,7 +316,7 @@
       watched.add(sidebar);
       new MutationObserver(enhance).observe(sidebar, {childList: true, subtree: true, characterData: true});
     }
-    if (sidebar && document.querySelector('#navigator')) discovery.disconnect();
+    if (sidebar && document.querySelector('#navigator') && document.querySelector('#footer')) discovery.disconnect();
   }
 
   // Observe parsing in microtasks instead of waiting for all scripts/sidebars.

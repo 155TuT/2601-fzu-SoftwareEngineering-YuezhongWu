@@ -11,8 +11,7 @@
 │     ├─ #blog-header-left
 │     │  └─ #blogTitle      ← 移动原生标题与签名；#navList 已删除
 │     ├─ #blog-header-search ← 页首脚本独立创建的搜索表单
-│     ├─ #blog-mobile-search ← 手机圆形搜索按钮
-│     └─ .blogStats         ← 原生四项统计，合为一组
+│     └─ #blog-mobile-search ← 手机圆形搜索按钮
 ├─ #main
 │  ├─ #mainContent
 │  │  └─ .forFlow
@@ -23,6 +22,7 @@
 │        ├─ 公告与个人资料区域 → 本次生成个人卡片
 │        └─ #blog-sidecolumn → 分类、归档、阅读排行等
 └─ #footer
+   └─ .blogStats            ← 原生四项统计，所有尺寸都放在页脚
 ```
 
 这是布局示意，省略了一些包装节点。大小写有意义，`#sideBar` 不能写成 `#sidebar`。
@@ -34,9 +34,9 @@
 | 博客主体 | `#home` | 当前字体应用的根容器，不覆盖平台顶栏；与 `#main` 一起清除默认最小宽度 |
 | 标题与签名 | `#blogTitle`、`#Header1_HeaderTitle`、`#blogTitle h2` | 原生节点移入 `#blog-header-left`，内容仍由后台维护 |
 | 导航 | `#navigator`、`#navList` | outline 顶栏；原生 navList 在初始化时移除 |
-| 顶栏统计 | `.blogStats` | ≥1100px 在顶栏；≤1099px 原节点移入页脚 |
-| 主栏 | `#mainContent`、`#mainContent .forFlow` | 窄屏取消为侧栏预留的空间 |
-| 侧栏 | `#sideBar`、`#sideBarMain` | 767px 及以下整体隐藏，个人卡片跟随隐藏 |
+| 页面统计 | `.blogStats`、`#footer > .blogStats` | 所有尺寸下原节点都移入页脚，保留平台数字更新 |
+| 主栏 | `#mainContent`、`#mainContent .forFlow` | 桌面左预留 254px；窄屏取消为侧栏预留的空间 |
+| 侧栏 | `#sideBar`、`#sideBarMain` | ≥768px 内容宽 220px；767px 及以下整体隐藏，个人卡片跟随隐藏 |
 | 首页列表 | `.day`、`.dayTitle`、`.postTitle`、`.postCon`、`.c_b_p_desc`、`.postDesc` | 不把首页摘要当作文章正文添加 favicon |
 | 详情正文 | `#post_detail`、`#topics`、`.postBody`、`#cnblogs_post_body` | favicon 的扫描范围严格限定为最后这个容器 |
 | 互动与作者区 | `#blog_post_info_block`、`#green_channel`、`#author_profile`、`#div_digg` | 不参与正文 favicon 装饰 |
@@ -71,7 +71,7 @@ favicon 使用 `.blog-link-favicon-slot` 包住装饰性 `<img>`，插入链接�
 | `#blogTitle` 的 `--blog-title-size` | 主标题字号，同时控制签名向右缩进一个主标题汉字的位置 |
 | `.blog-profile-avatar-link`、`.blog-profile-avatar` | 指向作者主页的圆形头像 |
 | `.blog-profile-name` | 不带“昵称”标签的名字 |
-| `.blog-profile-stats`、`.blog-profile-stat` | 两列统计区；每个链接把标签与数字合为一个 22px 圆角描边框 |
+| `.blog-profile-stats`、`.blog-profile-stat` | 两列统计区，间距 4px；每个链接把标签与数字合为一个 22px 圆角描边框 |
 | `.blog-profile-stat-label`、`.blog-profile-stat-value` | 统计名称与下方数值 |
 | `#sidebar_news.blog-profile-ready` | 卡片建立后隐藏旧标题与资料；已移入卡片的公告不隐藏；计数初始为 `—` |
 | `#sidebar_news_content.blog-profile-announcement` | 公告原节点移入资料卡尾部，保留富文本及链接 |
