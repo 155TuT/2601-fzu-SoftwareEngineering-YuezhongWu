@@ -1,4 +1,10 @@
-# 随笔
+# 软件工程第一次作业
+
+| 这个作业属于哪个课程 | [https://edu.cnblogs.com/campus/fzu/202601SofwareEngineering](https://edu.cnblogs.com/campus/fzu/202601SofwareEngineering) |
+| ----------------- |--------------- |
+| 这个作业要求在哪里| [https://edu.cnblogs.com/campus/fzu/202601SofwareEngineering/homework/15712](https://edu.cnblogs.com/campus/fzu/202601SofwareEngineering/homework/15712) |
+| 这个作业的目标 | 初步掌握API调用的完整路径，熟悉markdown编写博客的流程，养成记录和梳理自身成长的习惯，为课程打下基础 |
+| 学号 | 052403137 |
 
 已按要求发表于[博客园](https://www.cnblogs.com/155TuT/p/22857676)
 
@@ -184,4 +190,4 @@ token 用量不能换算成代码量，也不能代替能力评价；代码量�
 
 按照要求使用Markdown编写作业，并在博文中附加后台博文编辑页面的截图。
 
-![后台博文编辑页面截图](assets/rambling/1.png)
+![后台博文编辑页面截图](assets/homework/1.png)

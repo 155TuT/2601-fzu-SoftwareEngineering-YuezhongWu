@@ -5,3 +5,6 @@
 *.xls
 *.pptx
 *.ppt
+
+# Ignore huge pdf books
+assets/*.pdf

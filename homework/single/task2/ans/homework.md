@@ -8,6 +8,8 @@
 | 学号 | 052403137 |
 | GitHub 仓库 | [https://github.com/155TuT/A.A.A-Y2K](https://github.com/155TuT/A.A.A-Y2K) |
 
+已按要求发表于[博客园](https://www.cnblogs.com/155TuT/p/23085808)
+
 ## 0x01 项目展示
 
 项目名为 **Arrow.After.Arrow-Y2K**，本次展示对应当前的 0.4.0 版本。内屏使用 Textual 管理界面与交互，外层是带像素风格 CRT 显示器外壳的 SDL 窗口。
