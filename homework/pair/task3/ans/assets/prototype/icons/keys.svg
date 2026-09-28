@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none" role="img" aria-labelledby="keys-title keys-description">
+  <title id="keys-title">暖橙钥匙串</title>
+  <desc id="keys-description">暖橙圆头钥匙、荧光绿口袋挂件与淡蓝金属环。</desc>
+  <g id="campus-keyring" stroke="#252B32" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+    <path id="lime-fob" d="M81 57L105 66Q110 68 108 74L96 103Q94 108 88 106L68 98Q63 96 65 90L76 61Q78 56 81 57Z" fill="#C7EE38"/>
+    <path id="fob-pocket" d="M77 77L93 83L88 94Q82 98 73 88Z" fill="#FFFFFF" stroke-width="3"/>
+    <circle id="fob-hole" cx="84" cy="66" r="3" fill="#FFFFFF" stroke-width="2.5"/>
+    <path id="key-shape" d="M38 42Q21 39 16 54Q10 71 26 80Q34 84 43 81L55 92L51 99L59 106L66 100L74 106L83 96L54 69Q60 59 53 49Q48 43 38 42Z" fill="#FFBD73"/>
+    <circle id="key-hole" cx="32" cy="59" r="6" fill="#FFFFFF" stroke-width="3"/>
+    <path id="key-groove" d="M47 74L69 94" stroke-width="3"/>
+    <path id="ring-outer" d="M35 52C26 48 22 38 25 29C30 13 51 12 64 16C81 21 88 32 84 45C82 52 77 58 70 62L63 53C73 47 76 39 70 32C63 23 42 23 37 31C33 36 34 40 39 42" fill="#D9ECFC"/>
+    <path id="ring-highlight" d="M39 20Q51 16 61 22" stroke="#FFFFFF" stroke-width="3"/>
+    <path id="key-sparkle" d="M102 26V36M97 31H107" stroke-width="3"/>
+  </g>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none" role="img" aria-labelledby="search-title search-description">
+  <title id="search-title">寻物放大镜</title>
+  <desc id="search-description">淡蓝圆镜片、荧光绿粗手柄与暖橙发现星星。</desc>
+  <g id="find-magnifier" stroke="#252B32" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+    <path id="handle-connector" d="M72 74L84 87L95 77L81 64" fill="#FFFFFF"/>
+    <path id="soft-handle" d="M79 84L91 74Q95 70 99 75L116 94Q121 101 114 108L109 113Q103 118 97 112L78 93Q75 89 79 84Z" fill="#C7EE38"/>
+    <circle id="lens-rim" cx="51" cy="49" r="34" fill="#FFFFFF"/>
+    <circle id="blue-lens" cx="51" cy="49" r="25.5" fill="#D9ECFC" stroke-width="3"/>
+    <path id="lens-glint" d="M35 45Q36 35 46 32" stroke="#FFFFFF" stroke-width="5"/>
+    <path id="discovery-star" d="M64 42L68 51L78 53L69 58L68 68L61 61L51 64L55 54L50 46L60 48Z" fill="#FFBD73" stroke-width="3"/>
+    <path id="grip-mark" d="M95 91L103 100" stroke-width="3"/>
+    <path id="search-sparkle" d="M101 21V33M95 27H107" stroke-width="3"/>
+    <circle id="blue-confetti" cx="22" cy="93" r="4" fill="#D9ECFC" stroke="none"/>
+  </g>
+</svg>

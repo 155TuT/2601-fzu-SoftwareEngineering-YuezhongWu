@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "recordDate": "2026-09-28",
+  "revision": "v2-free-compatible",
+  "status": "native-audit-and-listed-ui-paths-verified",
+  "evidenceProvenance": "Actual native Figma audit and prototype UI observations reported by the executing parent agent in this task. This documentation agent did not perform new browser operations. Local syntax checks were run while preparing this record.",
+  "figma": {
+    "fileKey": "JTLCFQJNsz3Ip4U7KElBEj",
+    "homeNodeId": "16:8524",
+    "mineNodeId": "16:8778",
+    "publishNodeId": "16:8931",
+    "anonymousAccessVerified": false
+  },
+  "nativeAudit": {
+    "basis": "actual current-page native-node inspection reported by executing agent",
+    "checkpoint": "final native re-audit after repair-flow-final.js execution",
+    "postFlowFinalFullAuditPending": false,
+    "mobileFrames390x844": 110,
+    "reactions": 560,
+    "autoLayouts": 1794,
+    "unsupportedReactionCount": 0,
+    "unsupportedDefinition": "A reaction has multiple actions or an action type outside NODE, BACK, CLOSE, URL.",
+    "allowedActionTypes": ["NODE", "BACK", "CLOSE", "URL"],
+    "missingDestinationCount": 0,
+    "mineHeaderGeometry": {
+      "coordinateSpace": "relative to the top navigation frame; tool button x positions relative to tools group",
+      "title": {"x": 16, "y": 18, "width": 194, "height": 28},
+      "toolsGroup": {"x": 226, "y": 10, "width": 148, "height": 44},
+      "buttons": [
+        {"label": "草稿箱", "x": 0, "width": 44, "height": 44},
+        {"label": "帮助记录", "x": 52, "width": 44, "height": 44},
+        {"label": "消息待办", "x": 104, "width": 44, "height": 44}
+      ],
+      "buttonGap": 8
+    },
+    "notClaimed": [
+      "New all-page horizontal overflow, minimum font-size or minimum click-target counts beyond the provided audit fields",
+      "Visual verification of every counted frame"
+    ]
+  },
+  "uiVerification": {
+    "allBranchesAndCombinationsClicked": false,
+    "paths": [
+      {
+        "id": "V2-UI-01",
+        "description": "我的三个顶部工具",
+        "observed": "草稿箱、帮助记录、消息待办均可打开，并通过 BACK 返回我的。帮助记录为默认空的协助列表。",
+        "status": "passed-in-live-prototype"
+      },
+      {
+        "id": "V2-UI-02",
+        "description": "我的发布入口与关闭",
+        "observed": "我的 → 发布 → X关闭 → 我的。",
+        "status": "passed-in-live-prototype"
+      },
+      {
+        "id": "V2-UI-03",
+        "description": "校区切换",
+        "observed": "旗山 → 铜盘未覆盖空态 → 旗山。",
+        "status": "passed-in-live-prototype"
+      },
+      {
+        "id": "V2-UI-04",
+        "description": "首页钥匙筛选取消与应用",
+        "observed": "选择钥匙后取消，首页无变化；应用后首页只显示钥匙。",
+        "status": "passed-in-live-prototype"
+      },
+      {
+        "id": "V2-UI-05",
+        "description": "钥匙线索回执与返回保留筛选",
+        "observed": "钥匙筛选首页 → 钥匙详情 → 独立钥匙线索 → 回执 → BACK钥匙详情 → BACK保留筛选的首页。",
+        "status": "passed-in-live-prototype"
+      },
+      {
+        "id": "V2-UI-06",
+        "description": "雨伞搜索自动查询与返回",
+        "observed": "初始选词 → 雨伞查询中自动过渡 → 两个结果 → BACK保留填写词；结果 → 详情 → BACK恢复结果。",
+        "status": "passed-in-live-prototype",
+        "timeoutParameter": 0.5,
+        "timeoutCaveat": "Automatic transition was observed. No exact duration or time unit is inferred from the parameter."
+      },
+      {
+        "id": "V2-UI-07",
+        "description": "耳机搜索空态",
+        "observed": "耳机搜索进入空结果。",
+        "status": "passed-in-live-prototype"
+      },
+      {
+        "id": "V2-UI-08",
+        "description": "水杯草稿候选比较",
+        "observed": "草稿箱 → 水杯编辑 → 两个相似候选 → 黑色旅行杯详情；修复文字后详情显示完整。",
+        "status": "passed-in-live-prototype"
+      },
+      {
+        "id": "V2-UI-09",
+        "description": "消息交接确认与连续返回",
+        "observed": "我的 → 消息 → 查看交接确认 → 确认已收到 → 完成状态 → header BACK消息 → header BACK我的。",
+        "status": "passed-in-live-prototype"
+      },
+      {
+        "id": "V2-UI-10",
+        "description": "四项草稿与转报保存、来源进度",
+        "observed": "草稿箱四项草稿完整显示且无溢出；第4项银色钥匙转报 → 来源表单 → 保存草稿 → 草稿列表；再次打开第4项 → 提交待核实 → 查看来源核实进度。",
+        "nativeNodes": {
+          "sourceForm": "16:9764",
+          "draftList": "35:17730",
+          "pendingVerification": "16:9809",
+          "studentSourceProgress": "35:12842"
+        },
+        "checks": [
+          "Four draft cards display without overflow.",
+          "Saving the transfer draft returns to the draft list.",
+          "Reopening and submitting the transfer draft reaches its verification progress.",
+          "Student-side progress is read-only with complete body text and does not enter the operator queue."
+        ],
+        "status": "passed-in-live-prototype"
+      }
+    ],
+    "notIndividuallyWalkedAfterFinalFlowPatch": ["The other three save-draft actions are not all marked UI-passed merely because the transfer-draft save path passed."]
+  },
+  "finalFlowPatchExecution": {
+    "script": "repair-flow-final.js",
+    "status": "success-reported-by-executing-agent",
+    "reportedOutput": {"draft": "45:17945", "saved": 4, "returned": 2, "edited": 4, "newSearchLabels": 4},
+    "draftOutputMeaning": "ID of the newly added transfer-draft card, not the parent draft-list frame.",
+    "changes": [
+      "Added a fourth transfer draft linked to its existing editor.",
+      "Four save-draft actions now target the draft list.",
+      "Two detail bottom-return actions now use BACK.",
+      "Updated four continue-editing labels and four new-lost-item labels."
+    ],
+    "uiVerificationForNewSavePaths": "Transfer-draft save, reopen, submit and student-side source-progress path passed in the live prototype; see V2-UI-10. No blanket UI pass for all four save actions."
+  },
+  "uiEvidence": [
+    {
+      "path": "mine-header-v2-verified.jpg",
+      "kind": "actual-prototype-header-crop",
+      "format": "JPEG",
+      "width": 390,
+      "height": 76,
+      "bytes": 3054,
+      "visualInspection": "view_image passed as reported by executing agent",
+      "localMetadataValidation": "Pillow confirmed JPEG format, dimensions and byte length",
+      "scope": "Mine header and tool appearance only; not a full-page export or exhaustive UI proof."
+    }
+  ],
+  "sourceVerification": {
+    "method": "node --check",
+    "status": "passed",
+    "scripts": [
+      "revise-layout-v2.js",
+      "revise-navigation-v2.js",
+      "revise-search-v2.js",
+      "repair-search-free.js",
+      "repair-business-free.js",
+      "repair-mine-header.js",
+      "polish-free-v2.js",
+      "repair-final-qa.js",
+      "repair-flow-final.js"
+    ],
+    "scope": "JavaScript parsing only; not native execution or UI proof."
+  },
+  "implementationBoundary": {
+    "interactionModel": "one action per trigger with prebuilt static page states",
+    "presetKeywords": ["雨伞", "钥匙", "保温杯", "耳机"],
+    "filters": "Limited preset combinations; not arbitrary independently combined conditions.",
+    "arbitraryFreeTextInput": false,
+    "dynamicDataQuery": false,
+    "variableConditionalInteractionClaimed": false,
+    "crossBranchAccumulatedAccountState": false,
+    "realStatePersistence": false,
+    "realBackendOrSchoolIntegration": false,
+    "realSubmissionIdentityVerificationOrRewardIssuance": false
+  },
+  "historicalEvidence": {
+    "v1Record": "validation-figma.json",
+    "v1SourceAudit": "validation-source.json",
+    "separation": "Preserved v1 counts and walkthroughs are historical evidence, not v2 retest results."
+  },
+  "evidenceLevels": {
+    "source": "The listed local scripts parse.",
+    "nativeNodes": "Reported current-page counts, allowed action types, existing destinations and listed header geometry.",
+    "ui": "Only the explicitly listed paths were observed in the live prototype.",
+    "nonSubstitution": "A source or native-node pass does not imply every UI branch or combination was clicked."
+  }
+}

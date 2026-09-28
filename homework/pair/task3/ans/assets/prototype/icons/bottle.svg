@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none" role="img" aria-labelledby="bottle-title bottle-description">
+  <title id="bottle-title">贴纸保温杯</title>
+  <desc id="bottle-description">炭黑保温杯、荧光绿杯盖和淡蓝山峰贴纸。</desc>
+  <g id="campus-flask" stroke="#252B32" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+    <path id="carrying-loop" d="M79 20Q99 13 102 30Q105 43 90 44" fill="none"/>
+    <path id="bottle-body" d="M41 31H82L88 43V99Q88 111 76 111H48Q36 111 36 99V43Z" fill="#252B32"/>
+    <path id="lime-cap" d="M41 21Q41 15 47 15H77Q83 15 83 21V33H41Z" fill="#C7EE38"/>
+    <path id="cap-ridges" d="M50 22V28M62 22V28M74 22V28" stroke-width="2.5"/>
+    <path id="bottle-neck" d="M39 37H85" stroke="#FFFFFF" stroke-width="2.5"/>
+    <path id="bottle-glint" d="M44 47V61" stroke="#FFFFFF" stroke-width="3"/>
+    <rect id="blue-sticker" x="43" y="64" width="38" height="33" rx="9" transform="rotate(-8 62 80.5)" fill="#D9ECFC" stroke="#FFFFFF" stroke-width="3"/>
+    <path id="sticker-mountain" d="M49 89L58 74L65 82L70 74L77 85Z" fill="#FFFFFF" stroke-width="2.5"/>
+    <circle id="sticker-sun" cx="71" cy="69" r="3" fill="#FFBD73" stroke="none"/>
+    <path id="left-sparkle" d="M20 63V73M15 68H25" stroke-width="3"/>
+    <circle id="orange-confetti" cx="102" cy="89" r="4" fill="#FFBD73" stroke="none"/>
+  </g>
+</svg>

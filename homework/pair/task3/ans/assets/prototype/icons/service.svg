@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none" role="img" aria-labelledby="service-title service-description">
+  <title id="service-title">校园服务小亭</title>
+  <desc id="service-description">荧光绿条纹顶棚、淡蓝柜台和暖橙服务牌组成的原创服务点图标。</desc>
+  <g id="campus-service-booth" stroke="#252B32" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+    <path id="booth-posts" d="M29 47V104M99 47V104"/>
+    <path id="roof-base" d="M25 25H103L114 48H14Z" fill="#FFFFFF"/>
+    <path id="roof-left-stripe" d="M25 25H44L39 48H14Z" fill="#C7EE38" stroke-width="3"/>
+    <path id="roof-center-stripe" d="M54 25H74L78 48H50Z" fill="#C7EE38" stroke-width="3"/>
+    <path id="roof-right-stripe" d="M85 25H103L114 48H90Z" fill="#C7EE38" stroke-width="3"/>
+    <path id="scalloped-awning" d="M14 48V53Q20 63 27 53Q34 63 41 53Q48 63 55 53Q64 63 72 53Q79 63 86 53Q93 63 100 53Q108 63 114 53V48Z" fill="#FFFFFF" stroke-width="3"/>
+    <path id="blue-counter" d="M22 83H106V105Q106 111 99 111H29Q22 111 22 105Z" fill="#D9ECFC"/>
+    <rect id="countertop" x="18" y="78" width="92" height="9" rx="4.5" fill="#FFFFFF" stroke-width="3"/>
+    <path id="sign-string" d="M64 7V16" stroke-width="3"/>
+    <rect id="orange-service-sign" x="50" y="11" width="28" height="23" rx="7" fill="#FFBD73" stroke-width="3"/>
+    <path id="service-check" d="M57 22L62 27L71 18" stroke-width="3"/>
+    <path id="counter-pocket" d="M54 94H74V100Q64 108 54 100Z" fill="#C7EE38" stroke-width="2.5"/>
+    <path id="ground-line" d="M15 113H113" stroke-width="3"/>
+  </g>
+</svg>

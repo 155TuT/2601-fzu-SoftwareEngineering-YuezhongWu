@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none" role="img" aria-labelledby="publish-title publish-description">
+  <title id="publish-title">贴纸铅笔</title>
+  <desc id="publish-description">暖橙铅笔配荧光绿闪电贴纸、淡蓝橡皮和纸片。</desc>
+  <g id="sticker-pencil" stroke="#252B32" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+    <path id="note-paper" d="M20 37Q20 30 27 30H65L85 49V102Q85 108 78 108H27Q20 108 20 101Z" fill="#FFFFFF"/>
+    <path id="folded-corner" d="M65 30V44Q65 49 70 49H85" fill="#D9ECFC" stroke-width="3"/>
+    <path id="note-lines" d="M31 82H48M31 94H58" stroke-width="3"/>
+    <g id="diagonal-pencil" transform="rotate(36 75 58)">
+      <path id="pencil-body" d="M64 28H88V83L76 107L64 83Z" fill="#FFBD73"/>
+      <path id="pencil-wood" d="M64 83L76 107L88 83Z" fill="#FFFFFF"/>
+      <path id="graphite" d="M71 97L76 107L81 97" fill="#252B32" stroke-width="3"/>
+      <path id="blue-eraser" d="M64 28V20Q64 11 73 11H79Q88 11 88 20V28Z" fill="#D9ECFC"/>
+      <path id="eraser-band" d="M64 28H88V35H64Z" fill="#FFFFFF" stroke-width="3"/>
+      <path id="pencil-facet" d="M79 39V77" stroke-width="2.5"/>
+      <path id="lightning-sticker" d="M66 48H81L76 59H86L69 76L72 63H63Z" fill="#C7EE38" stroke-width="3"/>
+    </g>
+    <path id="publish-sparkle" d="M31 13V23M26 18H36" stroke-width="3"/>
+  </g>
+</svg>

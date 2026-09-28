@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none" role="img" aria-labelledby="pocket-title pocket-description">
+  <title id="pocket-title">寻物口袋精灵</title>
+  <desc id="pocket-description">原创荧光绿小口袋，带淡蓝寻物贴纸、圆眼睛和暖橙小鞋。</desc>
+  <g id="pocket-mascot" stroke="#252B32" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+    <path id="left-hand" d="M31 65C19 59 15 63 18 71L24 80" fill="#FFBD73"/>
+    <path id="right-hand" d="M99 65C108 53 117 57 112 67L106 77" fill="#FFBD73"/>
+    <path id="left-shoe" d="M43 99L37 111Q36 115 42 115H57L58 103" fill="#FFBD73"/>
+    <path id="right-shoe" d="M77 103L80 115H95Q101 115 98 110L88 99" fill="#FFBD73"/>
+    <path id="pocket-body" d="M25 39Q25 32 33 32H95Q103 32 103 40L100 76Q99 101 76 106H53Q29 100 28 77Z" fill="#C7EE38"/>
+    <path id="pocket-cuff" d="M29 32L36 23Q39 20 45 20H84Q91 20 94 25L100 32" fill="#FFFFFF"/>
+    <path id="pocket-opening" d="M36 34H92"/>
+    <path id="pocket-seam" d="M38 72L39 83M45 95L51 98M61 101H70M82 98L88 94M93 83L94 75" stroke-width="2.5"/>
+    <path id="left-eye" d="M49 53V60" stroke-width="5.5"/>
+    <path id="right-eye" d="M75 53V60" stroke-width="5.5"/>
+    <path id="smile" d="M56 69Q63 76 70 69" stroke-width="3.5"/>
+    <rect id="search-sticker" x="80" y="74" width="21" height="21" rx="5" transform="rotate(12 90.5 84.5)" fill="#D9ECFC" stroke-width="3"/>
+    <circle id="sticker-lens" cx="89" cy="82" r="4" stroke-width="2.5"/>
+    <path id="sticker-handle" d="M92 85L95 88" stroke-width="2.5"/>
+    <path id="welcome-sparkle" d="M108 19V28M103.5 23.5H112.5" stroke-width="3"/>
+    <circle id="orange-confetti" cx="18" cy="34" r="3.5" fill="#FFBD73" stroke="none"/>
+  </g>
+</svg>

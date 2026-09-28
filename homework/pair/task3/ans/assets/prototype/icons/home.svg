@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none" role="img" aria-labelledby="home-title home-description">
+  <title id="home-title">口袋小屋</title>
+  <desc id="home-description">荧光绿屋顶、淡蓝烟囱与口袋形暖橙门组成的原创首页图标。</desc>
+  <g id="pocket-house" stroke="#252B32" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+    <path id="chimney" d="M82 38V23H98V52" fill="#D9ECFC"/>
+    <path id="house-body" d="M29 54V96Q29 106 39 106H89Q99 106 99 96V54L64 25Z" fill="#FFFFFF"/>
+    <path id="soft-roof" d="M16 55L55 20Q64 12 73 20L112 55Q116 60 111 64L108 67Q105 70 100 66L64 35L28 66Q23 70 20 66L17 63Q12 59 16 55Z" fill="#C7EE38"/>
+    <path id="pocket-door" d="M49 74Q49 68 55 68H73Q79 68 79 74V89Q79 98 64 104Q49 98 49 89Z" fill="#FFBD73"/>
+    <path id="door-cuff" d="M51 77H77" stroke-width="3"/>
+    <circle id="door-handle" cx="70" cy="86" r="2.5" fill="#252B32" stroke="none"/>
+    <path id="ground" d="M20 108H108" stroke-width="3"/>
+    <path id="little-sparkle" d="M17 25V35M12 30H22" stroke-width="3"/>
+  </g>
+</svg>

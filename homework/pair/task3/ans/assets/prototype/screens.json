@@ -1,0 +1,2077 @@
+[
+  {
+    "id": "search",
+    "name": "P03-搜索-相似雨伞",
+    "section": "01-查找与详情",
+    "title": "找找你的蓝色雨伞",
+    "subtitle": "按名称、区域和时间找找",
+    "icon": "search",
+    "blocks": [
+      {
+        "kind": "field",
+        "title": "搜索条件",
+        "body": "蓝色雨伞",
+        "rows": [
+          "雨伞 · 图书馆 · 9月26日",
+          "时间不确定也可以查找"
+        ]
+      },
+      {
+        "kind": "card",
+        "title": "候选 A · 浅蓝折叠伞",
+        "body": "图书馆东侧拾得，现由服务点保管。",
+        "rows": [
+          "招领 · 来源已确认",
+          "时间、区域相近；仍需核对私密特征"
+        ]
+      },
+      {
+        "kind": "card",
+        "title": "候选 B · 蓝色长柄伞",
+        "body": "教学区连廊拾得，当前由拾物者保管。",
+        "rows": [
+          "招领 · 持有人已确认",
+          "颜色相似，伞型与地点不同"
+        ]
+      }
+    ],
+    "actions": [
+      {
+        "label": "查看候选 A",
+        "target": "detail",
+        "primary": true
+      },
+      {
+        "label": "比较候选 B",
+        "target": "detail_other",
+        "primary": false
+      },
+      {
+        "label": "没有合适的，继续找",
+        "target": "search_empty",
+        "primary": false
+      }
+    ],
+    "back": "home"
+  },
+  {
+    "id": "search_empty",
+    "name": "P03-搜索-无结果",
+    "section": "01-查找与详情",
+    "title": "暂时还没找到",
+    "subtitle": "原来的查找条件已保留",
+    "icon": "search",
+    "blocks": [
+      {
+        "kind": "card",
+        "title": "暂未找到匹配记录",
+        "body": "这不代表物品无人拾得。可以放宽地点或时间，再试一次。"
+      },
+      {
+        "kind": "field",
+        "title": "当前条件",
+        "body": "蓝色雨伞 · 图书馆 · 9月26日"
+      },
+      {
+        "kind": "notice",
+        "title": "订阅与发布",
+        "body": "订阅仅关注这组条件；发布时只带入你确认的信息。"
+      }
+    ],
+    "actions": [
+      {
+        "label": "放宽条件再找",
+        "target": "search",
+        "primary": true
+      },
+      {
+        "label": "订阅后查看消息",
+        "target": "messages",
+        "primary": false
+      },
+      {
+        "label": "按这些条件发布寻物",
+        "target": "lost_form",
+        "primary": false
+      }
+    ],
+    "back": "search"
+  },
+  {
+    "id": "detail",
+    "name": "P04-招领详情-蓝伞",
+    "section": "01-查找与详情",
+    "title": "有把伞在等主人",
+    "subtitle": "XB-001 · 招领中",
+    "icon": "umbrella",
+    "blocks": [
+      {
+        "kind": "card",
+        "title": "浅蓝色折叠伞",
+        "body": "9月26日 16:00 左右，在图书馆东侧发现。",
+        "rows": [
+          "图书馆区域 · 招领中",
+          "公开特征：浅蓝、折叠、素色"
+        ]
+      },
+      {
+        "kind": "card",
+        "title": "现在由谁保管",
+        "body": "图书馆服务点已确认接收。",
+        "rows": [
+          "来源：拾物者登记，接收已确认",
+          "最近核验：9月28日 10:00"
+        ]
+      },
+      {
+        "kind": "notice",
+        "title": "认领前的小提醒",
+        "body": "请补充只有失主知道的特征；不需先付款，也不要求公开号码。"
+      }
+    ],
+    "actions": [
+      {
+        "label": "这是我的，去核验",
+        "target": "claim",
+        "primary": true
+      },
+      {
+        "label": "提供一条线索",
+        "target": "clue",
+        "primary": false
+      },
+      {
+        "label": "访客申请认领",
+        "target": "login",
+        "primary": false
+      }
+    ],
+    "back": "search"
+  },
+  {
+    "id": "detail_other",
+    "name": "P04-招领详情-另一候选",
+    "section": "01-查找与详情",
+    "title": "先比对，再认领",
+    "subtitle": "XB-002 · 外观相似，仍需核对",
+    "icon": "umbrella",
+    "blocks": [
+      {
+        "kind": "card",
+        "title": "蓝色长柄伞",
+        "body": "9月26日，教学区连廊拾得。",
+        "rows": [
+          "长柄 · 深蓝 · 非折叠",
+          "由原拾物者暂时保管"
+        ]
+      },
+      {
+        "kind": "notice",
+        "title": "相似不等于同一件",
+        "body": "这条只有颜色相近。若与你的伞型不同，可以返回继续找。"
+      },
+      {
+        "kind": "card",
+        "title": "核验结果",
+        "body": "本次描述与所持物品不匹配，不展示预留的正确答案。"
+      }
+    ],
+    "actions": [
+      {
+        "label": "返回原搜索",
+        "target": "search",
+        "primary": true
+      },
+      {
+        "label": "申请复核",
+        "target": "appeal",
+        "primary": false
+      }
+    ],
+    "back": "search"
+  },
+  {
+    "id": "detail_done",
+    "name": "P04-详情-已核实完成",
+    "section": "01-查找与详情",
+    "title": "它已经回家啦",
+    "subtitle": "XB-001 · 已核实完成",
+    "icon": "check",
+    "blocks": [
+      {
+        "kind": "card",
+        "title": "已核实归还",
+        "body": "双方确认已完成交接，这条招领停止接受申请。"
+      },
+      {
+        "kind": "steps",
+        "title": "最后进展",
+        "rows": [
+          "服务点交付已记录",
+          "领取人确认已收到",
+          "记录关闭，联系入口收起"
+        ]
+      },
+      {
+        "kind": "notice",
+        "title": "你打开的是旧链接",
+        "body": "页面已更新为最新状态。如果还在找另一件物品，可以继续搜索。"
+      }
+    ],
+    "actions": [
+      {
+        "label": "继续查找",
+        "target": "search",
+        "primary": true
+      },
+      {
+        "label": "查看我的事项",
+        "target": "mine",
+        "primary": false
+      }
+    ],
+    "back": "home"
+  },
+  {
+    "id": "claim",
+    "name": "P06-认领-私密证据",
+    "section": "03-核验与交接",
+    "title": "补一点只有你知道的",
+    "subtitle": "XB-001 · 材料仅用于当前核验",
+    "icon": "lock",
+    "blocks": [
+      {
+        "kind": "card",
+        "title": "你正在认领",
+        "body": "浅蓝色折叠伞 · 图书馆服务点"
+      },
+      {
+        "kind": "field",
+        "title": "非公开特征",
+        "body": "伞带内侧有我缝的小标记。",
+        "rows": [
+          "不向其他申请人公开",
+          "不要填写密码、验证码或完整证件"
+        ]
+      },
+      {
+        "kind": "field",
+        "title": "补充材料",
+        "body": "可选：局部照片或购买记录；也可到服务点补证。"
+      },
+      {
+        "kind": "notice",
+        "title": "提交前确认",
+        "body": "请确认材料仅用于当前物品核验，正确答案不会返回给其他申请人。"
+      }
+    ],
+    "actions": [
+      {
+        "label": "提交认领材料",
+        "target": "verify_wait",
+        "primary": true
+      },
+      {
+        "label": "到服务点补证",
+        "target": "services",
+        "primary": false
+      }
+    ],
+    "back": "detail"
+  },
+  {
+    "id": "verify_wait",
+    "name": "P07-核验-待补证",
+    "section": "03-核验与交接",
+    "title": "再核对一个小细节",
+    "subtitle": "XB-001 · 等待补充材料",
+    "icon": "clock",
+    "blocks": [
+      {
+        "kind": "steps",
+        "title": "核验进度",
+        "rows": [
+          "申请已收到",
+          "服务点正在核对归属",
+          "当前：请补充标记的位置"
+        ]
+      },
+      {
+        "kind": "card",
+        "title": "现在轮到你",
+        "body": "补充一句说明即可继续；如果不方便线上提交，可到服务点核对。",
+        "rows": [
+          "责任方：服务点",
+          "未完成核验前，不安排领取"
+        ]
+      },
+      {
+        "kind": "notice",
+        "title": "不匹配时怎么办",
+        "body": "可以补证、退出或申诉；不匹配不会直接被认定为冒领。"
+      }
+    ],
+    "actions": [
+      {
+        "label": "补充特征",
+        "target": "claim",
+        "primary": true
+      },
+      {
+        "label": "查看最新核验结果",
+        "target": "verify_pass",
+        "primary": false
+      },
+      {
+        "label": "退出并继续找",
+        "target": "search",
+        "primary": false
+      }
+    ],
+    "back": "mine"
+  },
+  {
+    "id": "verify_pass",
+    "name": "P07-核验-通过",
+    "section": "03-核验与交接",
+    "title": "核对上啦，安排交接吧",
+    "subtitle": "XB-001 · 双向核验通过",
+    "icon": "check",
+    "blocks": [
+      {
+        "kind": "card",
+        "title": "归属与持有情况已核对",
+        "body": "服务点确认实物在库，认领材料已通过核对。"
+      },
+      {
+        "kind": "steps",
+        "title": "下一步",
+        "rows": [
+          "选择站内沟通或服务点中转",
+          "约定交接时间",
+          "领取后完成双方确认"
+        ]
+      },
+      {
+        "kind": "notice",
+        "title": "不必交换私人号码",
+        "body": "拒绝直接联系仍能完成交接；任何预付费用要求都可举报。"
+      }
+    ],
+    "actions": [
+      {
+        "label": "选择交接方式",
+        "target": "contact",
+        "primary": true
+      },
+      {
+        "label": "查看服务点",
+        "target": "services",
+        "primary": false
+      },
+      {
+        "label": "举报可疑索款",
+        "target": "report",
+        "primary": false
+      }
+    ],
+    "back": "verify_wait"
+  },
+  {
+    "id": "appointment",
+    "name": "P07-交接-预约",
+    "section": "03-核验与交接",
+    "title": "约个方便的时间",
+    "subtitle": "XB-001 · 约好再出发",
+    "icon": "calendar",
+    "blocks": [
+      {
+        "kind": "card",
+        "title": "图书馆服务点",
+        "body": "图书馆东侧服务台",
+        "rows": [
+          "接收类别：雨伞、钥匙、水杯",
+          "到场前请再次查看开放状态"
+        ]
+      },
+      {
+        "kind": "field",
+        "title": "预约时段",
+        "body": "9月29日 16:00–16:30",
+        "rows": [
+          "站内事项沟通，不公开私人号码"
+        ]
+      },
+      {
+        "kind": "notice",
+        "title": "确认说明",
+        "body": "同一物品仅保留一个有效交接预约。领取后仍需完成交接确认。"
+      }
+    ],
+    "actions": [
+      {
+        "label": "确认预约",
+        "target": "appointment_booked",
+        "primary": true
+      },
+      {
+        "label": "查看点位最新状态",
+        "target": "service_info",
+        "primary": false
+      },
+      {
+        "label": "取消本次预约",
+        "target": "verify_pass",
+        "primary": false
+      }
+    ],
+    "back": "contact"
+  },
+  {
+    "id": "handoff_wait",
+    "name": "P07-交接-待确认",
+    "section": "03-核验与交接",
+    "title": "还差一声“收到了”",
+    "subtitle": "XB-001 · 等待领取人确认",
+    "icon": "clock",
+    "blocks": [
+      {
+        "kind": "steps",
+        "title": "交接记录",
+        "rows": [
+          "服务点已登记交付",
+          "领取人尚未确认",
+          "当前状态：待确认"
+        ]
+      },
+      {
+        "kind": "card",
+        "title": "暂时不会结案",
+        "body": "请领取人确认收到；如有疑问，可请服务点协助。"
+      },
+      {
+        "kind": "notice",
+        "title": "贡献尚未认定",
+        "body": "单方操作不等于核实归还，也不会自动发放奖励。"
+      }
+    ],
+    "actions": [
+      {
+        "label": "确认已收到",
+        "target": "complete",
+        "primary": true
+      },
+      {
+        "label": "查看站内待办",
+        "target": "messages",
+        "primary": false
+      },
+      {
+        "label": "请求服务点协助",
+        "target": "services",
+        "primary": false
+      }
+    ],
+    "back": "mine"
+  },
+  {
+    "id": "complete",
+    "name": "P07-交接-已核实完成",
+    "section": "03-核验与交接",
+    "title": "这次相遇，圆满结束",
+    "subtitle": "XB-001 · 交接完成",
+    "icon": "check",
+    "blocks": [
+      {
+        "kind": "card",
+        "title": "已核实完成",
+        "body": "服务点交付凭据与领取人确认均已齐全。"
+      },
+      {
+        "kind": "steps",
+        "title": "已完成",
+        "rows": [
+          "更新主记录为已归还",
+          "关闭本事项联系入口",
+          "贡献进入独立复核"
+        ]
+      },
+      {
+        "kind": "notice",
+        "title": "感谢每一份顺手的帮助",
+        "body": "贡献认定与奖品领取是后续步骤，不影响本次完成。"
+      }
+    ],
+    "actions": [
+      {
+        "label": "查看贡献复核",
+        "target": "rewards",
+        "primary": true
+      },
+      {
+        "label": "查看感谢与帮助记录",
+        "target": "thanks",
+        "primary": false
+      },
+      {
+        "label": "查看关闭后的详情",
+        "target": "detail_done",
+        "primary": false
+      }
+    ],
+    "back": "mine"
+  },
+  {
+    "id": "publish_form",
+    "name": "P02-发布-钥匙基础信息",
+    "section": "02-发布与来源核实",
+    "title": "捡到钥匙，顺手登记",
+    "subtitle": "本人拾得 · 图片不是必填",
+    "icon": "key",
+    "blocks": [
+      {
+        "kind": "field",
+        "title": "物品与关系",
+        "body": "一串银色钥匙 · 本人拾得并持有",
+        "rows": [
+          "类别：钥匙",
+          "公开描述：两把银色钥匙，带素色挂绳"
+        ]
+      },
+      {
+        "kind": "field",
+        "title": "发现时间与区域",
+        "body": "9月28日 09:00 · 教学区连廊",
+        "rows": [
+          "也可选择时间或区域不确定"
+        ]
+      },
+      {
+        "kind": "field",
+        "title": "图片与保管",
+        "body": "未添加照片 · 当前由我保管",
+        "rows": [
+          "最多3张 JPG / PNG，每张≤5MB",
+          "准备移交，接收前仍由我保管"
+        ]
+      },
+      {
+        "kind": "notice",
+        "title": "保留一个小秘密",
+        "body": "不要把所有识别特征公开，便于后续核验失主。"
+      }
+    ],
+    "actions": [
+      {
+        "label": "查看公开预览",
+        "target": "publish_preview",
+        "primary": true
+      },
+      {
+        "label": "保存草稿回我的",
+        "target": "mine",
+        "primary": false
+      },
+      {
+        "label": "切换到水杯草稿",
+        "target": "cup_form",
+        "primary": false
+      }
+    ],
+    "back": "publish"
+  },
+  {
+    "id": "cup_form",
+    "name": "P02-发布-水杯分类建议",
+    "section": "02-发布与来源核实",
+    "title": "黑色保温杯怎么分类",
+    "subtitle": "分类可以改，草稿会保留",
+    "icon": "cup",
+    "blocks": [
+      {
+        "kind": "field",
+        "title": "物品名称",
+        "body": "黑色保温杯"
+      },
+      {
+        "kind": "field",
+        "title": "分类建议",
+        "body": "原建议：其他日用品",
+        "rows": [
+          "当前已手动调整为：水杯",
+          "用户判断优先，可以选择不确定"
+        ]
+      },
+      {
+        "kind": "field",
+        "title": "事件信息",
+        "body": "9月27日 · 食堂附近 · 本人持有"
+      },
+      {
+        "kind": "notice",
+        "title": "公开范围已预览",
+        "body": "公开上述名称、类别、时间与区域；不公开私密特征或联络方式。查看候选后草稿仍在。"
+      }
+    ],
+    "actions": [
+      {
+        "label": "查看相似候选",
+        "target": "publish_candidates",
+        "primary": true
+      },
+      {
+        "label": "跳过推荐，查看公开预览",
+        "target": "cup_preview",
+        "primary": false
+      },
+      {
+        "label": "保存草稿",
+        "target": "mine",
+        "primary": false
+      }
+    ],
+    "back": "publish"
+  },
+  {
+    "id": "publish_candidates",
+    "name": "P02-发布-水杯候选比较",
+    "section": "02-发布与来源核实",
+    "title": "先看看，是同一只吗",
+    "subtitle": "黑色保温杯 · 2 条相似候选",
+    "icon": "cup",
+    "blocks": [
+      {
+        "kind": "card",
+        "title": "候选 1 · 黑色水杯寻物",
+        "body": "食堂附近，9月27日遗失。",
+        "rows": [
+          "类别、时间、区域相近",
+          "只有相似，不能自动判定同一件"
+        ]
+      },
+      {
+        "kind": "card",
+        "title": "候选 2 · 黑色旅行杯",
+        "body": "教学区，9月24日遗失。",
+        "rows": [
+          "颜色相似，时间和地点不同"
+        ]
+      },
+      {
+        "kind": "notice",
+        "title": "推荐失败也可继续",
+        "body": "匹配只是提示；查看、修改类别或否定候选都不会丢失草稿。"
+      },
+      {
+        "kind": "card",
+        "title": "继续发布前的公开预览",
+        "body": "黑色保温杯 · 水杯 · 9月27日 · 食堂附近 · 本人持有；不公开私密特征和联系方式。"
+      }
+    ],
+    "actions": [
+      {
+        "label": "作为线索关联候选1",
+        "target": "cup_link",
+        "primary": true
+      },
+      {
+        "label": "不是同一件，继续发布",
+        "target": "cup_preview",
+        "primary": false
+      },
+      {
+        "label": "返回修改原草稿",
+        "target": "cup_form",
+        "primary": false
+      }
+    ],
+    "back": "cup_form"
+  },
+  {
+    "id": "publish_preview",
+    "name": "P02-发布-钥匙公开预览",
+    "section": "02-发布与来源核实",
+    "title": "公开前，再看一眼",
+    "subtitle": "公开预览 · 一串银色钥匙",
+    "icon": "eye",
+    "blocks": [
+      {
+        "kind": "card",
+        "title": "大家会看到",
+        "body": "一串银色钥匙 · 教学区连廊 · 9月28日",
+        "rows": [
+          "招领 · 拾物者登记",
+          "当前由拾物者保管，尚未移交",
+          "无照片也可发布"
+        ]
+      },
+      {
+        "kind": "card",
+        "title": "不会公开",
+        "body": "私密核验特征、私人联系方式、具体存放地址。"
+      },
+      {
+        "kind": "notice",
+        "title": "请确认",
+        "body": "来源与保管声明应准确；选择服务点不等于对方已接收。"
+      }
+    ],
+    "actions": [
+      {
+        "label": "确认提交",
+        "target": "publish_success",
+        "primary": true
+      },
+      {
+        "label": "查看提交进度",
+        "target": "submit_unknown",
+        "primary": false
+      },
+      {
+        "label": "返回修改",
+        "target": "publish_form",
+        "primary": false
+      }
+    ],
+    "back": "publish_form"
+  },
+  {
+    "id": "publish_success",
+    "name": "P02-发布-钥匙已公开",
+    "section": "02-发布与来源核实",
+    "title": "钥匙信息已经公开",
+    "subtitle": "XB-026 · 招领已公开",
+    "icon": "check",
+    "blocks": [
+      {
+        "kind": "card",
+        "title": "一串银色钥匙",
+        "body": "9月28日 · 教学区连廊 · 原持有人保管",
+        "rows": [
+          "来源与公开内容已检查",
+          "服务点尚未接收，保管责任没有改变"
+        ]
+      },
+      {
+        "kind": "steps",
+        "title": "这次提交",
+        "rows": [
+          "平台已收到",
+          "来源与内容检查通过",
+          "公开成功，可在我的事项查看"
+        ]
+      },
+      {
+        "kind": "notice",
+        "title": "不方便继续保管",
+        "body": "可选已确认服务点。接收人确认前，责任不会自动转移。"
+      }
+    ],
+    "actions": [
+      {
+        "label": "安排服务点移交",
+        "target": "service_detail",
+        "primary": true
+      },
+      {
+        "label": "查看我的事项",
+        "target": "mine",
+        "primary": false
+      }
+    ],
+    "back": "mine"
+  },
+  {
+    "id": "transfer_form",
+    "name": "P02-转报-来源信息",
+    "section": "02-发布与来源核实",
+    "title": "转来一条有用的线索",
+    "subtitle": "转报线索 · 无需持有实物",
+    "icon": "link",
+    "blocks": [
+      {
+        "kind": "field",
+        "title": "最小摘要",
+        "body": "群里有人说在教学区捡到一串银色钥匙。"
+      },
+      {
+        "kind": "field",
+        "title": "来源情况",
+        "body": "渠道：班级群 · 消息时间：9月28日",
+        "rows": [
+          "原持有人：尚未确认",
+          "转报许可：尚未取得"
+        ]
+      },
+      {
+        "kind": "notice",
+        "title": "先核实，再公开",
+        "body": "不上传原群聊截图或其中的联系方式；转报不会给你交付物品的权限。"
+      }
+    ],
+    "actions": [
+      {
+        "label": "提交到待核实区",
+        "target": "transfer_pending",
+        "primary": true
+      },
+      {
+        "label": "保存草稿",
+        "target": "mine",
+        "primary": false
+      }
+    ],
+    "back": "publish"
+  },
+  {
+    "id": "transfer_pending",
+    "name": "P02-转报-待核实",
+    "section": "02-发布与来源核实",
+    "title": "线索收到了，正在核实",
+    "subtitle": "XB-026 · 仅相关人员可见",
+    "icon": "clock",
+    "blocks": [
+      {
+        "kind": "steps",
+        "title": "当前进度",
+        "rows": [
+          "转报摘要已收到",
+          "待原持有人确认来源与许可",
+          "暂不进入公开首页"
+        ]
+      },
+      {
+        "kind": "card",
+        "title": "你可以做的事",
+        "body": "补充原来源信息，或邀请原持有人确认。不要替对方声明物品已交付。"
+      },
+      {
+        "kind": "notice",
+        "title": "谁来处理",
+        "body": "值班队列将核实来源；未确认前不能从这条记录直接认领。"
+      }
+    ],
+    "actions": [
+      {
+        "label": "查看来源核实进度",
+        "target": "operations",
+        "primary": true
+      },
+      {
+        "label": "补充来源",
+        "target": "transfer_form",
+        "primary": false
+      },
+      {
+        "label": "回我的查看进度",
+        "target": "mine",
+        "primary": false
+      }
+    ],
+    "back": "mine"
+  },
+  {
+    "id": "operations",
+    "name": "O01-值班-任务队列",
+    "section": "05-值班与复核",
+    "title": "本班有 3 项待处理",
+    "subtitle": "值班工作台 · 按权限处理",
+    "icon": "clipboard",
+    "blocks": [
+      {
+        "kind": "card",
+        "title": "来源核实 · 银色钥匙",
+        "body": "原持有人已补充确认与转报许可，待值班复核。",
+        "rows": [
+          "持有人与来源仍需最终核对"
+        ]
+      },
+      {
+        "kind": "card",
+        "title": "举报处理 · 疑似索款",
+        "body": "先暂停可疑接触，核对材料并记录理由。",
+        "rows": [
+          "举报不等于违规成立",
+          "当事人可申请独立复核"
+        ]
+      },
+      {
+        "kind": "card",
+        "title": "外部回告 · 尚未完成",
+        "body": "主记录更新后，联络人仍需回告原渠道。",
+        "rows": [
+          "未完成原因：等待联络人确认"
+        ]
+      }
+    ],
+    "actions": [
+      {
+        "label": "确认来源并公开",
+        "target": "publish_success",
+        "primary": true
+      },
+      {
+        "label": "进入争议独立复核",
+        "target": "appeal",
+        "primary": false
+      },
+      {
+        "label": "查看学生端待办",
+        "target": "messages",
+        "primary": false
+      }
+    ],
+    "back": "mine"
+  },
+  {
+    "id": "rewards",
+    "name": "P05-贡献-复核与奖励",
+    "section": "05-值班与复核",
+    "title": "善意，值得被认真记下",
+    "subtitle": "贡献记录与活动进度",
+    "icon": "star",
+    "blocks": [
+      {
+        "kind": "card",
+        "title": "平台贡献已确认",
+        "body": "本次归还证据齐全，按同一事件去重认定。",
+        "rows": [
+          "审核人与贡献人不同",
+          "感谢参与，不按发帖量计贡献"
+        ]
+      },
+      {
+        "kind": "card",
+        "title": "本期奖励：暂无可领取名额",
+        "body": "名额不足不抹去真实贡献，可查看说明或申请复核。"
+      },
+      {
+        "kind": "card",
+        "title": "学校认定：未申请",
+        "body": "需要本校启用项目且本人自愿申请，不能直接显示已加分。"
+      }
+    ],
+    "actions": [
+      {
+        "label": "查看感谢与帮助记录",
+        "target": "thanks",
+        "primary": true
+      },
+      {
+        "label": "申请独立复核",
+        "target": "appeal",
+        "primary": false
+      },
+      {
+        "label": "回我的",
+        "target": "mine",
+        "primary": false
+      }
+    ],
+    "back": "complete"
+  },
+  {
+    "id": "thanks",
+    "name": "P05-贡献-仅感谢版本",
+    "section": "04-我的与消息",
+    "title": "谢谢你，把小物送回家",
+    "subtitle": "帮助已被记录",
+    "icon": "heart",
+    "blocks": [
+      {
+        "kind": "card",
+        "title": "一份帮助已经留下",
+        "body": "你的线索或归还记录已有反馈，帮助者可以知道这次贡献用在了哪一步。"
+      },
+      {
+        "kind": "card",
+        "title": "本次：已核实归还",
+        "body": "事项完成，不需要领取奖励来确认这份善意。"
+      },
+      {
+        "kind": "notice",
+        "title": "当前没有奖励活动",
+        "body": "当前仅保留感谢与贡献反馈，每一份有效帮助都会被认真记录。"
+      }
+    ],
+    "actions": [
+      {
+        "label": "回我的查看记录",
+        "target": "mine",
+        "primary": true
+      },
+      {
+        "label": "继续看看校园信息",
+        "target": "home",
+        "primary": false
+      }
+    ],
+    "back": "complete"
+  },
+  {
+    "id": "services",
+    "name": "P09-服务点-列表",
+    "section": "03-核验与交接",
+    "title": "交给方便的服务点",
+    "subtitle": "确认接收能力，再出发",
+    "icon": "pin",
+    "blocks": [
+      {
+        "kind": "card",
+        "title": "图书馆服务点",
+        "body": "东侧服务台 · 今日开放",
+        "rows": [
+          "可接收：雨伞、钥匙、水杯",
+          "当前有空位；接收仍需当面确认"
+        ]
+      },
+      {
+        "kind": "card",
+        "title": "教学区服务点",
+        "body": "连廊服务台 · 暂时关闭",
+        "rows": [
+          "恢复时间待确认",
+          "可换点，不要直接将物品放在门口"
+        ]
+      },
+      {
+        "kind": "notice",
+        "title": "先确认能不能接收",
+        "body": "点位关闭、满额或不收该类别时，可以换点或改约。"
+      }
+    ],
+    "actions": [
+      {
+        "label": "查看图书馆服务点",
+        "target": "service_info",
+        "primary": true
+      },
+      {
+        "label": "查看关闭的点位",
+        "target": "service_closed",
+        "primary": false
+      }
+    ],
+    "back": "mine"
+  },
+  {
+    "id": "service_detail",
+    "name": "P09-服务点-接收确认",
+    "section": "03-核验与交接",
+    "title": "图书馆服务点",
+    "subtitle": "接收需要工作人员当面确认",
+    "icon": "pin",
+    "blocks": [
+      {
+        "kind": "card",
+        "title": "位置与接收范围",
+        "body": "图书馆东侧服务台",
+        "rows": [
+          "开放时段：09:00–18:00",
+          "雨伞、钥匙、水杯；不接收危险物品"
+        ]
+      },
+      {
+        "kind": "card",
+        "title": "钥匙移交记录 · XB-026",
+        "body": "接收人尚未确认，当前保管人仍是原持有人。",
+        "rows": [
+          "确认后才生成保管编号与责任变更"
+        ]
+      },
+      {
+        "kind": "notice",
+        "title": "以接收进度为准",
+        "body": "工作人员确认接收后，保管编号和责任变更会显示在我的事项中。"
+      }
+    ],
+    "actions": [
+      {
+        "label": "查看接收进度",
+        "target": "service_received",
+        "primary": true
+      },
+      {
+        "label": "改选服务点",
+        "target": "services",
+        "primary": false
+      }
+    ],
+    "back": "services"
+  },
+  {
+    "id": "service_closed",
+    "name": "P09-服务点-临时关闭",
+    "section": "03-核验与交接",
+    "title": "这个时间先别白跑",
+    "subtitle": "请换点或改约，事项仍然保留",
+    "icon": "clock",
+    "blocks": [
+      {
+        "kind": "card",
+        "title": "临时关闭 / 暂不接收",
+        "body": "当前点位暂不能办理接收或领取，请换点或稍后再来；物品保管状态没有变化。"
+      },
+      {
+        "kind": "notice",
+        "title": "原事项仍然保留",
+        "body": "可以换点、改时间或取消本次预约；不会因为关闭就自动结案。"
+      }
+    ],
+    "actions": [
+      {
+        "label": "换一个服务点",
+        "target": "services",
+        "primary": true
+      },
+      {
+        "label": "回我的查看事项",
+        "target": "mine",
+        "primary": false
+      }
+    ],
+    "back": "services"
+  },
+  {
+    "id": "submit_unknown",
+    "name": "P02-提交-结果确认中",
+    "section": "06-异常与走查",
+    "title": "正在确认这次提交",
+    "subtitle": "输入已保留，请勿重复提交",
+    "icon": "clock",
+    "blocks": [
+      {
+        "kind": "steps",
+        "title": "当前情况",
+        "rows": [
+          "你已点击提交",
+          "暂时没有收到明确回执",
+          "先查询同一次提交结果"
+        ]
+      },
+      {
+        "kind": "notice",
+        "title": "请不要反复提交",
+        "body": "网络超时不代表发布失败。查询后再决定是否重试，避免重复帖子。"
+      },
+      {
+        "kind": "card",
+        "title": "输入仍在",
+        "body": "银色钥匙的名称、时间、地点与保管声明均已保留。"
+      }
+    ],
+    "actions": [
+      {
+        "label": "查询本次提交结果",
+        "target": "publish_success",
+        "primary": true
+      },
+      {
+        "label": "已确认未收到，返回预览",
+        "target": "publish_preview",
+        "primary": false
+      }
+    ],
+    "back": "publish_preview"
+  },
+  {
+    "id": "self_report",
+    "name": "P05-事项-本人自报找回",
+    "section": "04-我的与消息",
+    "title": "在线下找回了，真好",
+    "subtitle": "本人自报找回 · 与核实归还分开记录",
+    "icon": "bag",
+    "blocks": [
+      {
+        "kind": "card",
+        "title": "状态：本人自报找回",
+        "body": "此结果只更新你自己的寻物记录，并从公开寻物列表退出。"
+      },
+      {
+        "kind": "notice",
+        "title": "与核实归还不同",
+        "body": "没有双方交接证据，不自动给任何人发放归还奖励，也不替关联招领记录结案。"
+      },
+      {
+        "kind": "card",
+        "title": "下一步",
+        "body": "如仍有关联申请或其他来源，由各事项负责人分别处理。"
+      }
+    ],
+    "actions": [
+      {
+        "label": "回我的查看自报记录",
+        "target": "mine",
+        "primary": true
+      },
+      {
+        "label": "查看关联待办",
+        "target": "messages",
+        "primary": false
+      }
+    ],
+    "back": "mine"
+  },
+  {
+    "id": "report",
+    "name": "P07-争议-举报索款",
+    "section": "03-核验与交接",
+    "title": "先暂停，交给值班人员",
+    "subtitle": "疑似索款 · 先保护自己",
+    "icon": "shield",
+    "blocks": [
+      {
+        "kind": "field",
+        "title": "举报原因",
+        "body": "对方自称持有物品，要求先支付费用。"
+      },
+      {
+        "kind": "field",
+        "title": "补充说明",
+        "body": "核验尚未完成，对方要求预付邮费。",
+        "rows": [
+          "仅提交当前处理所需材料",
+          "不要附无关人的联系方式"
+        ]
+      },
+      {
+        "kind": "notice",
+        "title": "受理后的安排",
+        "body": "暂停可疑接触与争议交接，等待核对。举报本身不等于认定违规。"
+      }
+    ],
+    "actions": [
+      {
+        "label": "提交举报并查看处理",
+        "target": "operations",
+        "primary": true
+      },
+      {
+        "label": "改由服务点协助",
+        "target": "services",
+        "primary": false
+      }
+    ],
+    "back": "verify_pass"
+  },
+  {
+    "id": "appeal",
+    "name": "O02-复核-申诉与处理",
+    "section": "05-值班与复核",
+    "title": "让另一位负责人再看看",
+    "subtitle": "独立复核 · 原经办人回避",
+    "icon": "shield",
+    "blocks": [
+      {
+        "kind": "field",
+        "title": "复核诉求",
+        "body": "希望补充材料，重新核对本次处理结果。"
+      },
+      {
+        "kind": "steps",
+        "title": "复核流程",
+        "rows": [
+          "保存原处理理由",
+          "分派独立复核人",
+          "材料不足时通知补充",
+          "结果与理由返回原事项"
+        ]
+      },
+      {
+        "kind": "notice",
+        "title": "等待期间",
+        "body": "有争议的交接继续暂停；不公开其他人的证据，不承诺必然通过。"
+      }
+    ],
+    "actions": [
+      {
+        "label": "提交复核，查看待办",
+        "target": "messages",
+        "primary": true
+      },
+      {
+        "label": "返回我的事项",
+        "target": "mine",
+        "primary": false
+      }
+    ],
+    "back": "mine"
+  },
+  {
+    "id": "login",
+    "name": "E04-身份-访客认领",
+    "section": "06-异常与走查",
+    "title": "先确认本校参与身份",
+    "subtitle": "本校身份与操作权限",
+    "icon": "lock",
+    "blocks": [
+      {
+        "kind": "card",
+        "title": "公开内容可以继续浏览",
+        "body": "发布、认领和提交线索需要本程序允许的身份与权限。"
+      },
+      {
+        "kind": "notice",
+        "title": "原操作已经保留",
+        "body": "验证通过后返回这把蓝伞的认领表单，不会替你提交。"
+      },
+      {
+        "kind": "card",
+        "title": "未通过也有去向",
+        "body": "可取消后继续浏览，或查看本校服务点帮助。"
+      }
+    ],
+    "actions": [
+      {
+        "label": "验证并继续认领",
+        "target": "claim",
+        "primary": true
+      },
+      {
+        "label": "取消并继续浏览",
+        "target": "detail",
+        "primary": false
+      },
+      {
+        "label": "无权限，查看服务点帮助",
+        "target": "services",
+        "primary": false
+      }
+    ],
+    "back": "detail"
+  },
+  {
+    "id": "messages",
+    "name": "P08-消息与待办",
+    "section": "04-我的与消息",
+    "title": "进展都在这里",
+    "subtitle": "已读不等于已处理",
+    "icon": "bell",
+    "blocks": [
+      {
+        "kind": "notice",
+        "title": "站外推送未开启",
+        "body": "即使推送失败，这里的待办仍会保留。"
+      },
+      {
+        "kind": "card",
+        "title": "蓝伞核验 · 待补证",
+        "body": "请补充标记位置，完成后再进入交接。",
+        "rows": [
+          "未读 · 仍待你处理"
+        ]
+      },
+      {
+        "kind": "card",
+        "title": "交接确认 · 等领取人反馈",
+        "body": "已有一方确认，尚未核实完成。",
+        "rows": [
+          "已读 · 仍未处理"
+        ]
+      },
+      {
+        "kind": "card",
+        "title": "水杯关联线索 · 待核实",
+        "body": "关联已提交，是否为同一件仍需负责人核对；原草稿继续保留。"
+      }
+    ],
+    "actions": [
+      {
+        "label": "处理蓝伞补证",
+        "target": "verify_wait",
+        "primary": true
+      },
+      {
+        "label": "查看交接确认",
+        "target": "handoff_wait",
+        "primary": false
+      },
+      {
+        "label": "查看已完成事项",
+        "target": "detail_done",
+        "primary": false
+      }
+    ],
+    "back": "mine"
+  },
+  {
+    "id": "clue",
+    "name": "P06-协助-提供线索",
+    "section": "03-核验与交接",
+    "title": "顺手帮一个小忙",
+    "subtitle": "给当前事项补一条线索",
+    "icon": "link",
+    "blocks": [
+      {
+        "kind": "field",
+        "title": "你知道什么",
+        "body": "我见过类似物品，想补充大致位置与时间。"
+      },
+      {
+        "kind": "field",
+        "title": "时间、地点与确定程度",
+        "body": "请说明看到的时间、大致区域，以及你有多确定。",
+        "rows": [
+          "也可提供相关记录编号",
+          "不确定的内容请明确标注"
+        ]
+      },
+      {
+        "kind": "notice",
+        "title": "你不需要承担保管责任",
+        "body": "提交的是线索，不代表你持有物品。接收者核实后会反馈用途。"
+      }
+    ],
+    "actions": [
+      {
+        "label": "提交线索，查看反馈待办",
+        "target": "messages",
+        "primary": true
+      },
+      {
+        "label": "回我的协助记录",
+        "target": "mine",
+        "primary": false
+      }
+    ],
+    "back": "mine"
+  },
+  {
+    "id": "contact",
+    "name": "P07-联系-授权选择",
+    "section": "03-核验与交接",
+    "title": "按你舒服的方式联系",
+    "subtitle": "XB-001 · 选择本事项的联系偏好",
+    "icon": "lock",
+    "blocks": [
+      {
+        "kind": "card",
+        "title": "推荐：站内事项或服务点中转",
+        "body": "不需要公开手机号，也能安排交接。"
+      },
+      {
+        "kind": "card",
+        "title": "直接联系为可选授权",
+        "body": "仅向当前核验对象，为本事项开放你选择的联络方式。",
+        "rows": [
+          "有效期：至本次交接结束",
+          "可拒绝、随时撤回；完成后入口关闭"
+        ]
+      },
+      {
+        "kind": "notice",
+        "title": "拒绝不会中断找回",
+        "body": "撤回授权后，仍可通过站内事项或服务点继续交接。"
+      }
+    ],
+    "actions": [
+      {
+        "label": "使用站内中转，去预约",
+        "target": "appointment",
+        "primary": true
+      },
+      {
+        "label": "同意本事项联系授权",
+        "target": "contact_authorized",
+        "primary": false
+      },
+      {
+        "label": "拒绝或撤回直接联系",
+        "target": "contact_revoked",
+        "primary": false
+      }
+    ],
+    "back": "verify_pass"
+  },
+  {
+    "id": "lost_form",
+    "name": "P02-寻物-基础信息",
+    "section": "02-发布与来源核实",
+    "title": "让更多人帮你留意",
+    "subtitle": "本人寻物 · 先写下你记得的",
+    "icon": "umbrella",
+    "blocks": [
+      {
+        "kind": "field",
+        "title": "物品名称与类别",
+        "body": "蓝色折叠伞 · 雨伞"
+      },
+      {
+        "kind": "field",
+        "title": "遗失时间与区域",
+        "body": "9月26日 14:00–18:00 · 图书馆",
+        "rows": [
+          "记不清时可以选不确定"
+        ]
+      },
+      {
+        "kind": "field",
+        "title": "公开描述",
+        "body": "浅蓝色、素色折叠伞，没有外包装。",
+        "rows": [
+          "图片可选，最多3张"
+        ]
+      },
+      {
+        "kind": "notice",
+        "title": "留一个特征给核验",
+        "body": "不公开独特标记；找到相似物品后再私密补充。"
+      }
+    ],
+    "actions": [
+      {
+        "label": "查看公开预览",
+        "target": "lost_preview",
+        "primary": true
+      },
+      {
+        "label": "先找找相似招领",
+        "target": "search",
+        "primary": false
+      },
+      {
+        "label": "保存草稿",
+        "target": "mine",
+        "primary": false
+      }
+    ],
+    "back": "publish"
+  },
+  {
+    "id": "lost_preview",
+    "name": "P02-寻物-公开预览",
+    "section": "02-发布与来源核实",
+    "title": "这条寻物会这样展示",
+    "subtitle": "公开预览 · 蓝色折叠伞",
+    "icon": "eye",
+    "blocks": [
+      {
+        "kind": "card",
+        "title": "寻找蓝色折叠伞",
+        "body": "9月26日 14:00–18:00 · 图书馆",
+        "rows": [
+          "寻物 · 本人发布",
+          "浅蓝、素色、折叠"
+        ]
+      },
+      {
+        "kind": "card",
+        "title": "这些信息不会公开",
+        "body": "私密识别特征、私人联系方式、个人行程。"
+      },
+      {
+        "kind": "notice",
+        "title": "发布后仍可修改",
+        "body": "关键内容修改后需要重新检查，草稿中的非公开内容不会进入列表。"
+      }
+    ],
+    "actions": [
+      {
+        "label": "确认发布寻物",
+        "target": "lost_detail",
+        "primary": true
+      },
+      {
+        "label": "返回修改",
+        "target": "lost_form",
+        "primary": false
+      }
+    ],
+    "back": "lost_form"
+  },
+  {
+    "id": "lost_detail",
+    "name": "P04-寻物详情-本人管理",
+    "section": "01-查找与详情",
+    "title": "大家一起帮你留意",
+    "subtitle": "XB-015 · 寻物中 · 本人发布",
+    "icon": "umbrella",
+    "blocks": [
+      {
+        "kind": "card",
+        "title": "蓝色折叠伞",
+        "body": "9月26日 14:00–18:00，在图书馆附近遗失。",
+        "rows": [
+          "浅蓝 · 素色 · 无外包装",
+          "时间是大致范围，不确定具体楼层"
+        ]
+      },
+      {
+        "kind": "card",
+        "title": "已发现相似招领",
+        "body": "有两条外观相近的信息，查看并核对后再认领。"
+      },
+      {
+        "kind": "notice",
+        "title": "线下找回也请告诉大家",
+        "body": "自报找回会结束你的寻物记录，但不替其他招领结案。"
+      }
+    ],
+    "actions": [
+      {
+        "label": "查看相似招领",
+        "target": "search",
+        "primary": true
+      },
+      {
+        "label": "修改我的信息",
+        "target": "lost_form",
+        "primary": false
+      },
+      {
+        "label": "我在线下找回了",
+        "target": "self_report",
+        "primary": false
+      }
+    ],
+    "back": "mine"
+  },
+  {
+    "id": "cup_preview",
+    "name": "P02-发布-水杯公开预览",
+    "section": "02-发布与来源核实",
+    "title": "水杯信息，确认一下",
+    "subtitle": "公开预览 · 黑色保温杯",
+    "icon": "cup",
+    "blocks": [
+      {
+        "kind": "card",
+        "title": "黑色保温杯",
+        "body": "水杯 · 9月27日 · 食堂附近",
+        "rows": [
+          "招领 · 本人拾得并持有",
+          "公开描述：黑色杯身、纯色外观"
+        ]
+      },
+      {
+        "kind": "card",
+        "title": "当前保管方式",
+        "body": "本人暂时保管，尚未移交服务点。"
+      },
+      {
+        "kind": "notice",
+        "title": "只公开必要信息",
+        "body": "独特标记、私人联系方式与存放地址不会公开；确认不是已有关联记录再发布。"
+      }
+    ],
+    "actions": [
+      {
+        "label": "确认发布水杯招领",
+        "target": "cup_success",
+        "primary": true
+      },
+      {
+        "label": "返回修改草稿",
+        "target": "cup_form",
+        "primary": false
+      },
+      {
+        "label": "再看看候选",
+        "target": "publish_candidates",
+        "primary": false
+      }
+    ],
+    "back": "publish_candidates"
+  },
+  {
+    "id": "cup_success",
+    "name": "P02-发布-水杯已公开",
+    "section": "02-发布与来源核实",
+    "title": "水杯正在等主人",
+    "subtitle": "XB-031 · 招领已公开",
+    "icon": "cup",
+    "blocks": [
+      {
+        "kind": "card",
+        "title": "黑色保温杯",
+        "body": "9月27日 · 食堂附近 · 本人保管",
+        "rows": [
+          "来源与公开内容已检查",
+          "私密核验特征仍未公开"
+        ]
+      },
+      {
+        "kind": "card",
+        "title": "接下来",
+        "body": "认领申请会进入你的事项；先核验归属，再约定交接。"
+      },
+      {
+        "kind": "notice",
+        "title": "暂时不方便保管",
+        "body": "先确认服务点接收能力，工作人员确认接收前仍由你保管。"
+      }
+    ],
+    "actions": [
+      {
+        "label": "查看我的发布",
+        "target": "mine",
+        "primary": true
+      },
+      {
+        "label": "返回首页",
+        "target": "home",
+        "primary": false
+      }
+    ],
+    "back": "mine"
+  },
+  {
+    "id": "cup_link",
+    "name": "P06-水杯-关联候选线索",
+    "section": "03-核验与交接",
+    "title": "把两条线索接起来",
+    "subtitle": "黑色保温杯 · 关联待核实",
+    "icon": "link",
+    "blocks": [
+      {
+        "kind": "card",
+        "title": "拟关联：XB-021 寻物记录",
+        "body": "黑色水杯 · 9月27日 · 食堂附近"
+      },
+      {
+        "kind": "field",
+        "title": "关联说明",
+        "body": "我持有一只黑色保温杯，时间和区域相近，想补充给这条寻物记录。"
+      },
+      {
+        "kind": "notice",
+        "title": "先作为线索处理",
+        "body": "提交后请负责人核对，不自动合并、不判定所有权，也不再生成一条重复公开帖。"
+      }
+    ],
+    "actions": [
+      {
+        "label": "提交关联线索",
+        "target": "messages",
+        "primary": true
+      },
+      {
+        "label": "返回候选比较",
+        "target": "publish_candidates",
+        "primary": false
+      },
+      {
+        "label": "返回水杯草稿",
+        "target": "cup_form",
+        "primary": false
+      }
+    ],
+    "back": "publish_candidates"
+  },
+  {
+    "id": "cup_lost_detail",
+    "name": "P04-寻物详情-黑色保温杯",
+    "section": "01-查找与详情",
+    "title": "帮我留意这只小杯子",
+    "subtitle": "XB-021 · 寻物中",
+    "icon": "cup",
+    "blocks": [
+      {
+        "kind": "card",
+        "title": "黑色保温杯",
+        "body": "9月27日，在食堂附近遗失。杯身为黑色，外观素净。",
+        "rows": [
+          "类别：水杯",
+          "来源：失主本人发布"
+        ]
+      },
+      {
+        "kind": "card",
+        "title": "可以怎样帮忙",
+        "body": "如果你持有外观相近的水杯，可以提交关联线索；是否同一件还需要核验。"
+      },
+      {
+        "kind": "notice",
+        "title": "别把所有特征都写出来",
+        "body": "请保留独特标记给双方私密核对，不需要先付款或公开联系方式。"
+      }
+    ],
+    "actions": [
+      {
+        "label": "我捡到相似水杯",
+        "target": "cup_link",
+        "primary": true
+      },
+      {
+        "label": "返回首页继续浏览",
+        "target": "home",
+        "primary": false
+      }
+    ],
+    "back": "home"
+  },
+  {
+    "id": "keys_detail",
+    "name": "P04-招领详情-银色钥匙",
+    "section": "01-查找与详情",
+    "title": "这串钥匙，在等你",
+    "subtitle": "XB-026 · 招领中",
+    "icon": "key",
+    "blocks": [
+      {
+        "kind": "card",
+        "title": "一串银色钥匙",
+        "body": "9月28日 09:00，在教学区连廊拾得。两把银色钥匙，带素色挂绳。",
+        "rows": [
+          "类别：钥匙",
+          "无照片，仍可按特征核验"
+        ]
+      },
+      {
+        "kind": "card",
+        "title": "服务点已接收",
+        "body": "物品现在由图书馆服务点保管，接收已确认。",
+        "rows": [
+          "来源：原拾物者登记",
+          "保管编号：TS-026"
+        ]
+      },
+      {
+        "kind": "notice",
+        "title": "核验后再领取",
+        "body": "请携带只有失主知道的特征到服务点核对；不需要向拾物者支付费用。"
+      }
+    ],
+    "actions": [
+      {
+        "label": "查看接收与到点核验",
+        "target": "service_received",
+        "primary": true
+      },
+      {
+        "label": "我见过，提供线索",
+        "target": "clue",
+        "primary": false
+      },
+      {
+        "label": "返回首页",
+        "target": "home",
+        "primary": false
+      }
+    ],
+    "back": "home"
+  },
+  {
+    "id": "service_received",
+    "name": "P09-服务点-钥匙已接收",
+    "section": "03-核验与交接",
+    "title": "已经妥善收好啦",
+    "subtitle": "XB-026 · 服务点已确认接收",
+    "icon": "pin",
+    "blocks": [
+      {
+        "kind": "card",
+        "title": "银色钥匙串 · TS-026",
+        "body": "图书馆服务点已确认接收实物，保管责任已从原持有人转移。",
+        "rows": [
+          "位置：图书馆东侧服务台",
+          "开放时段：09:00–18:00"
+        ]
+      },
+      {
+        "kind": "steps",
+        "title": "接收记录",
+        "rows": [
+          "原持有人提交移交",
+          "工作人员核对实物与登记",
+          "确认接收，生成保管编号"
+        ]
+      },
+      {
+        "kind": "notice",
+        "title": "接收不等于归还",
+        "body": "失主仍需到点补充非公开特征并核验归属；领取后还要完成交付与领取确认。"
+      }
+    ],
+    "actions": [
+      {
+        "label": "查看钥匙公开详情",
+        "target": "keys_detail",
+        "primary": true
+      },
+      {
+        "label": "回我的查看事项",
+        "target": "mine",
+        "primary": false
+      }
+    ],
+    "back": "mine"
+  },
+  {
+    "id": "service_info",
+    "name": "P09-服务点-公开信息",
+    "section": "03-核验与交接",
+    "title": "图书馆服务点",
+    "subtitle": "先了解接收范围，再安排下一步",
+    "icon": "pin",
+    "blocks": [
+      {
+        "kind": "card",
+        "title": "位置与开放时间",
+        "body": "图书馆东侧服务台",
+        "rows": [
+          "开放时段：09:00–18:00",
+          "临时调整以服务点最新公告为准"
+        ]
+      },
+      {
+        "kind": "card",
+        "title": "可以接收哪些物品",
+        "body": "雨伞、钥匙、水杯等普通遗失物品。",
+        "rows": [
+          "当前有接收空位",
+          "危险物品请联系校内正式求助渠道"
+        ]
+      },
+      {
+        "kind": "notice",
+        "title": "到点后还需要确认",
+        "body": "拾物移交须由工作人员核对实物并确认接收；失主领取须先核验归属。查看点位不会自动改变任何事项状态。"
+      }
+    ],
+    "actions": [
+      {
+        "label": "返回服务点列表",
+        "target": "services",
+        "primary": true
+      },
+      {
+        "label": "回我的查看事项",
+        "target": "mine",
+        "primary": false
+      }
+    ],
+    "back": "services"
+  },
+  {
+    "id": "appointment_booked",
+    "name": "P07-交接-已预约待到点",
+    "section": "03-核验与交接",
+    "title": "约好了，记得准时来",
+    "subtitle": "XB-001 · 已预约，尚未交付",
+    "icon": "calendar",
+    "blocks": [
+      {
+        "kind": "card",
+        "title": "蓝伞领取预约",
+        "body": "9月29日 16:00–16:30 · 图书馆东侧服务台",
+        "rows": [
+          "预约已确认",
+          "实物仍由服务点保管"
+        ]
+      },
+      {
+        "kind": "steps",
+        "title": "接下来",
+        "rows": [
+          "按预约到场，完成现场核对",
+          "工作人员交付实物并登记凭据",
+          "领取人确认已经收到"
+        ]
+      },
+      {
+        "kind": "notice",
+        "title": "实际领取后再继续",
+        "body": "只有实际到点领取，且服务点已登记交付后，才能进入领取确认。预约成功不等于交接完成。"
+      }
+    ],
+    "actions": [
+      {
+        "label": "已到点领取，查看确认",
+        "target": "handoff_wait",
+        "primary": true
+      },
+      {
+        "label": "查看服务点公开信息",
+        "target": "service_info",
+        "primary": false
+      },
+      {
+        "label": "取消本次预约",
+        "target": "verify_pass",
+        "primary": false
+      }
+    ],
+    "back": "appointment"
+  },
+  {
+    "id": "contact_authorized",
+    "name": "P07-联系-限定授权已开启",
+    "section": "03-核验与交接",
+    "title": "只为这次交接开放",
+    "subtitle": "XB-001 · 联系授权已开启",
+    "icon": "lock",
+    "blocks": [
+      {
+        "kind": "card",
+        "title": "本次授权范围",
+        "body": "仅向本事项中已通过核验的对方，开放你选择的联络方式。",
+        "rows": [
+          "用途：安排这把蓝伞的交接",
+          "不向其他申请人或公开页面展示"
+        ]
+      },
+      {
+        "kind": "card",
+        "title": "有效期与撤回",
+        "body": "授权持续至本次交接结束；你可以随时撤回。完成、撤回或事项失效后，联系入口关闭。"
+      },
+      {
+        "kind": "notice",
+        "title": "授权不是领取凭据",
+        "body": "开放联系不替代归属核验、预约和交接确认；也不允许对方要求预付款。"
+      }
+    ],
+    "actions": [
+      {
+        "label": "继续安排交接",
+        "target": "appointment",
+        "primary": true
+      },
+      {
+        "label": "撤回本次联系授权",
+        "target": "contact_revoked",
+        "primary": false
+      }
+    ],
+    "back": "contact"
+  },
+  {
+    "id": "contact_revoked",
+    "name": "P07-联系-授权已关闭",
+    "section": "03-核验与交接",
+    "title": "联系入口已经关闭",
+    "subtitle": "XB-001 · 不开放私人联系方式",
+    "icon": "lock",
+    "blocks": [
+      {
+        "kind": "card",
+        "title": "已拒绝或撤回直接联系",
+        "body": "本事项不再向对方开放你的私人联络方式，公开内容中也不会展示。"
+      },
+      {
+        "kind": "card",
+        "title": "找回仍可继续",
+        "body": "继续通过站内事项沟通，或由服务点中转安排交接，不需要重新开放私人联系方式。"
+      },
+      {
+        "kind": "notice",
+        "title": "核验与交接不受影响",
+        "body": "已核验的结果保留；预约、实物交付与双方确认仍按原流程完成。"
+      }
+    ],
+    "actions": [
+      {
+        "label": "通过站内中转继续预约",
+        "target": "appointment",
+        "primary": true
+      },
+      {
+        "label": "查看服务点公开信息",
+        "target": "service_info",
+        "primary": false
+      }
+    ],
+    "back": "contact"
+  }
+]

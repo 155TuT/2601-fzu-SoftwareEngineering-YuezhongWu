@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none" role="img" aria-labelledby="umbrella-title umbrella-description">
+  <title id="umbrella-title">雨天蓝伞</title>
+  <desc id="umbrella-description">淡蓝圆伞、暖橙弯柄和荧光绿失物标签。</desc>
+  <g id="rainy-umbrella" stroke="#252B32" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+    <path id="umbrella-tip" d="M62 18V11"/>
+    <path id="umbrella-canopy" d="M14 61Q18 22 62 18Q106 22 110 61Q98 51 86 63Q74 52 62 63Q50 52 38 63Q26 52 14 61Z" fill="#D9ECFC"/>
+    <path id="canopy-ribs" d="M62 20Q43 32 38 61M62 20Q81 32 86 61" stroke-width="3"/>
+    <path id="center-rib" d="M62 20V61" stroke-width="2.5"/>
+    <path id="umbrella-shaft" d="M62 64V90"/>
+    <path id="orange-hook" d="M62 87V99Q62 111 75 111Q89 111 89 98V95H79V98Q79 101 75 101Q72 101 72 98V87Z" fill="#FFBD73" stroke-width="3.5"/>
+    <path id="tag-string" d="M66 72L82 78" stroke-width="2.5"/>
+    <path id="lime-tag" d="M87 69L98 72L104 93L88 97L81 77Z" fill="#C7EE38" stroke-width="3"/>
+    <circle id="tag-hole" cx="88.5" cy="76.5" r="2" fill="#252B32" stroke="none"/>
+    <path id="tag-mark" d="M89 86L95 84" stroke-width="2.5"/>
+    <path id="left-raindrop" d="M23 78Q13 90 23 93Q33 90 23 78Z" fill="#D9ECFC" stroke-width="3"/>
+    <path id="right-raindrop" d="M107 16Q100 25 107 27Q114 25 107 16Z" fill="#D9ECFC" stroke-width="2.5"/>
+  </g>
+</svg>

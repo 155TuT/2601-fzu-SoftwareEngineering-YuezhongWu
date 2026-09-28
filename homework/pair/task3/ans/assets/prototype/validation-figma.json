@@ -1,0 +1,293 @@
+{
+  "schemaVersion": 1,
+  "recordDate": "2026-09-28",
+  "status": "figma-prototype-first-draft-delivered",
+  "evidenceProvenance": "Actual Figma/browser observations and native node-audit results reported by the executing agent in this task; this documentation task did not perform new browser operations.",
+  "figma": {
+    "fileKey": "JTLCFQJNsz3Ip4U7KElBEj",
+    "designUrl": "https://www.figma.com/design/JTLCFQJNsz3Ip4U7KElBEj/",
+    "home": {
+      "nodeId": "16:8524",
+      "prototypeUrl": "https://www.figma.com/proto/JTLCFQJNsz3Ip4U7KElBEj/?node-id=16-8524&starting-point-node-id=16%3A8524"
+    },
+    "publish": {
+      "nodeId": "16:8931",
+      "prototypeUrl": "https://www.figma.com/proto/JTLCFQJNsz3Ip4U7KElBEj/?node-id=16-8931&starting-point-node-id=16%3A8931"
+    },
+    "anonymousAccessVerified": false,
+    "sourceToNativeNodes": [
+      {
+        "sourceScreenId": "home",
+        "nodeId": "16:8524"
+      },
+      {
+        "sourceScreenId": "publish",
+        "nodeId": "16:8931"
+      },
+      {
+        "sourceScreenId": "cup_form",
+        "nodeId": "16:9544"
+      },
+      {
+        "sourceScreenId": "publish_form",
+        "observedScenarioLabel": "keys_form",
+        "nodeId": "16:9489"
+      },
+      {
+        "sourceScreenId": "publish_preview",
+        "nodeId": "16:9650"
+      },
+      {
+        "sourceScreenId": "publish_success",
+        "nodeId": "16:9703"
+      },
+      {
+        "sourceScreenId": "service_detail",
+        "observedScenarioLabel": "service_pending",
+        "nodeId": "16:10444"
+      },
+      {
+        "sourceScreenId": "service_received",
+        "nodeId": "16:10714"
+      }
+    ]
+  },
+  "delivered": {
+    "mobileFrames": 49,
+    "mobileFrameSize": [
+      390,
+      844
+    ],
+    "dataScreens": 45,
+    "mainEntryFrames": 3,
+    "walkthroughDirectoryFrames": 1,
+    "sections": 9,
+    "validInteractions": 259,
+    "originalEditableVectorIcons": 8,
+    "iconComponents": 8,
+    "buttonComponents": 3,
+    "nativeAutoLayout": true,
+    "chineseFunctionalLayerNames": true,
+    "editableText": true,
+    "nativeAutoLayoutFrames": 805
+  },
+  "nativeAudit": {
+    "basis": "actual Figma native-node inspection, as reported in this task",
+    "horizontalOverflowCount": 0,
+    "textBelow14pxCount": 0,
+    "invalidInteractionTargetCount": 0,
+    "clickTargetsBelow44x44Count": 0,
+    "allBranchesManuallyClicked": false,
+    "autoLayoutFrames": 805
+  },
+  "interfaceVerification": {
+    "mainPagesVisuallyChecked": [
+      "home",
+      "mine",
+      "publish"
+    ],
+    "clickedPaths": [
+      {
+        "description": "蓝伞查找、核验、授权撤回与交接完成",
+        "screens": [
+          "home",
+          "search",
+          "detail",
+          "claim",
+          "verify_wait",
+          "verify_pass",
+          "contact",
+          "contact_authorized",
+          "contact_revoked",
+          "appointment",
+          "appointment_booked",
+          "handoff_wait",
+          "complete"
+        ],
+        "status": "observed-in-live-prototype",
+        "note": "handoff_wait displays the preset service-point delivery record; recipient confirmation then enters complete. No real-world transaction is asserted."
+      },
+      {
+        "description": "右侧独立发布入口",
+        "screens": [
+          "home",
+          "publish"
+        ],
+        "status": "observed-in-live-prototype"
+      },
+      {
+        "description": "发布页关闭按钮返回首页",
+        "screens": [
+          "publish",
+          "home"
+        ],
+        "nativeNodeIds": [
+          "16:8931",
+          "16:8524"
+        ],
+        "status": "observed-in-live-prototype"
+      },
+      {
+        "description": "发布页草稿箱进入保温杯草稿",
+        "screens": [
+          "publish",
+          "cup_form"
+        ],
+        "nativeNodeIds": [
+          "16:8931",
+          "16:9544"
+        ],
+        "status": "observed-in-live-prototype"
+      },
+      {
+        "description": "无图钥匙招领发布并确认服务点接收",
+        "screens": [
+          "publish",
+          "publish_form",
+          "publish_preview",
+          "publish_success",
+          "service_detail",
+          "service_received"
+        ],
+        "nativeNodeIds": [
+          "16:8931",
+          "16:9489",
+          "16:9650",
+          "16:9703",
+          "16:10444",
+          "16:10714"
+        ],
+        "status": "observed-in-live-prototype",
+        "checks": [
+          "接收前保管责任仍属原持有人",
+          "确认接收后出现保管编号 TS-026",
+          "接收状态不等同于归还完成"
+        ]
+      }
+    ],
+    "behaviorsChecked": [
+      "Long form content scrolls",
+      "Bottom action area remains fixed",
+      "Navigation to a new page resets scroll except the search target",
+      "Home opens the independent publish entry"
+    ],
+    "allD01ThroughD09BranchesManuallyClicked": false,
+    "unwalkedBranchesEvidence": "Source graph and native node audit only; not exhaustive UI walkthrough",
+    "finalCanvasState": "三个主入口已聚焦，图层目录已收起；保留设计与原型标签页。"
+  },
+  "navigationDesign": {
+    "capsule": {
+      "tabs": [
+        "首页",
+        "我的"
+      ],
+      "width": 278,
+      "height": 64,
+      "tabWidth": 127,
+      "innerHorizontalPadding": 8,
+      "tabGap": 8
+    },
+    "independentPublish": {
+      "diameter": 68,
+      "color": "#FFBD73",
+      "target": "publish"
+    },
+    "gap": 12,
+    "bottomArea": {
+      "width": 390,
+      "height": 94,
+      "paddingTop": 8,
+      "paddingBottom": 18
+    },
+    "publishFooter": {
+      "draftPill": [
+        152,
+        48
+      ],
+      "draftTarget": "cup_form",
+      "closeDiameter": 68,
+      "closeColor": "#C7EE38",
+      "closeTarget": "home"
+    },
+    "scrollPolicy": "resetScrollPosition = target === 'search' ? false : true"
+  },
+  "exports": {
+    "prototypePngBundle": {
+      "status": "not-delivered",
+      "downloadConfirmed": false,
+      "note": "Whole-prototype PNG export did not produce a confirmed download in the in-app browser."
+    },
+    "iconPreview": {
+      "path": "icons/icons-preview.png",
+      "status": "local-icon-preview-only"
+    }
+  },
+  "implementationBoundary": {
+    "presetInput": true,
+    "realBackend": false,
+    "realIdentityVerification": false,
+    "persistentSubmissions": false,
+    "realContactDisclosure": false,
+    "realSchoolIntegration": false,
+    "realRewardIssuance": false
+  },
+  "sourceAudit": {
+    "path": "validation-source.json",
+    "scope": "source-only; not UIQA",
+    "mockNodeCountsAreNotNativeFigmaCounts": true
+  },
+  "localArtifacts": [
+    "delivery.md",
+    "design-blueprint.md",
+    "screens.json",
+    "figma-builder.template.js",
+    "build-figma.js",
+    "validation-source.json",
+    "validation-figma.json",
+    "icons/source-notes.md",
+    "icons/icons-preview.png",
+    "publish-button-verified.jpg"
+  ],
+  "legacyHelper": {
+    "path": "figma-transfer.html",
+    "status": "early-transfer-helper-not-authoritative-for-final-source"
+  },
+  "linkValidation": {
+    "syntaxOnly": true,
+    "localTargets": "passed",
+    "checkedLocalMarkdownLinks": 13,
+    "missingLocalTargets": [],
+    "externalUrlsSyntaxChecked": [
+      "https://www.figma.com/design/JTLCFQJNsz3Ip4U7KElBEj/",
+      "https://www.figma.com/proto/JTLCFQJNsz3Ip4U7KElBEj/?node-id=16-8524&starting-point-node-id=16%3A8524",
+      "https://www.figma.com/proto/JTLCFQJNsz3Ip4U7KElBEj/?node-id=16-8931&starting-point-node-id=16%3A8931"
+    ],
+    "remoteUrls": "not-reopened-in-this-documentation-task",
+    "anonymousAccessVerified": false
+  },
+  "uiEvidence": [
+    {
+      "path": "publish-button-verified.jpg",
+      "kind": "local-browser-screenshot-crop",
+      "width": 95,
+      "height": 85,
+      "bytes": 1288,
+      "scope": "独立暖橙发布圆钮的局部截图；不是整页或整包导出。",
+      "browserByteLengthMatchReported": true
+    }
+  ],
+  "localDocumentationValidation": {
+    "jsonParse": "passed",
+    "jsonFiles": [
+      "screens.json",
+      "validation-source.json",
+      "validation-figma.json"
+    ],
+    "screenshotJpegHeader": {
+      "width": 95,
+      "height": 85,
+      "bytes": 1288
+    },
+    "noGitDiffCheckUsedAsUntrackedFileEvidence": true
+  }
+}

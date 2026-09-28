@@ -6,7 +6,7 @@
 | 这个作业要求在哪里 | [https://edu.cnblogs.com/campus/fzu/202601SofwareEngineering/homework/16743](https://edu.cnblogs.com/campus/fzu/202601SofwareEngineering/homework/16743) |
 | 这个作业的目标 | 通过需求分析和原型设计初步熟悉结对编程 |
 | 学号 | 052403137，182400320 |
-| figma链接 | [Figma 原型](https://www.figma.com/design/JTLCFQJNsz3Ip4U7KElBEj/Untitled?t=e6YANYPeAB3acbTS-0) |
+| figma链接 | [拾伴｜校园失物招领 · 交互原型初稿](https://www.figma.com/design/JTLCFQJNsz3Ip4U7KElBEj/%25E6%258B%25BE%25E4%25BC%25B4%25EF%25BD%259C%25E6%25A0%25A1%25E5%259B%25AD%25E5%25A4%25B1%25E7%2589%25A9%25E6%258B%259B%25E9%25A2%2586-%25C2%25B7-%25E4%25BA%25A4%25E4%25BA%2592%25E5%258E%259F%25E5%259E%258B%25E5%2588%259D%25E7%25A8%25BF?t=NSR7TZQaHp10b5bg-0) |
 
 ## 0x00 《构建之法》读后感
 

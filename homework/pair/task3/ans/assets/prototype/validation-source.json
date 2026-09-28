@@ -1,0 +1,924 @@
+{
+  "schemaVersion": 1,
+  "scope": "source-only; NOT browser, Figma API, visual, or presentation-mode QA",
+  "generatedAt": "2026-09-28T12:32:12.108Z",
+  "inputs": {
+    "template": "figma-builder.template.js",
+    "templateSha256": "d09271e9cdd959f565e2ddeb073125c2f360adac462681eba73cefea44bd2ec5",
+    "screens": "screens.json",
+    "screensSha256": "a2e4ec0481385d15ceac6ea2372f97b1e687391b83ca6f6aa95736017ae90b8c",
+    "svgCount": 8,
+    "generatedBuilder": "build-figma.js",
+    "builderSha256": "ae2b03658c6047b0b2199b6f9f920ad53180d494b84c8baec4c93240da054c46"
+  },
+  "syntax": {
+    "command": "node --check homework/pair/task3/ans/assets/prototype/build-figma.js",
+    "exitCode": 0,
+    "status": "passed"
+  },
+  "sourceGuards": {
+    "horizontalFixedWidthAutoHeight": true,
+    "textResizeBeforeAutoHeight": true,
+    "ancestorReactionSkipped": true,
+    "noUnexpandedTokens": true,
+    "singleGlyphMoreButton": true,
+    "chineseIconComponentAndInstanceNames": true,
+    "newPagesResetScrollExceptSearch": true,
+    "clickableChipsAtLeast44High": true,
+    "filterHotspot90By44": true
+  },
+  "sourceExecutionMock": {
+    "note": "Executes the generated builder against an in-memory node-tree stub. Counts and links are derived from source; the stub does not emulate Figma text measurement, rendering, plugin permissions, or layout reflow.",
+    "dataScreens": 45,
+    "prototypeFrames": 49,
+    "reactionsRecorded": 259,
+    "navigationsRecorded": 259,
+    "autoLayoutNodes": 807,
+    "textNodes": 995,
+    "missingTargets": [],
+    "invalidDataTargets": [],
+    "invalidReactionDestinations": [],
+    "unreachableFramesFromHome": [],
+    "selfAncestorNavigationsRecorded": 0
+  },
+  "geometryBudget": {
+    "note": "Explicit widths, heights, padding and spacing only; no rendered glyph bounds or auto-layout intrinsic text heights are verified.",
+    "mobileFrameSize": [
+      390,
+      844
+    ],
+    "bodyColumnWidth": 358,
+    "twoColumnWidths": [
+      173,
+      12,
+      173
+    ],
+    "rootHeightViolations": [],
+    "horizontalWidthViolations": [],
+    "horizontalRowsAudited": 491,
+    "minimumCommonViewportHeight": 542,
+    "maximumCommonFooterHeight": 196,
+    "commonFooterUnusedReserve": 8,
+    "frames": [
+      {
+        "frame": "P01-首页-推荐",
+        "width": 390,
+        "height": 844,
+        "explicitChildHeightBudget": 844,
+        "remainingHeight": 0,
+        "viewportHeight": 642,
+        "footerHeight": 94
+      },
+      {
+        "frame": "P05-我的-事项总览",
+        "width": 390,
+        "height": 844,
+        "explicitChildHeightBudget": 844,
+        "remainingHeight": 0,
+        "viewportHeight": 644,
+        "footerHeight": 94
+      },
+      {
+        "frame": "P02-发布-关系选择",
+        "width": 390,
+        "height": 844,
+        "explicitChildHeightBudget": 844,
+        "remainingHeight": 0,
+        "viewportHeight": 644,
+        "footerHeight": 94
+      },
+      {
+        "frame": "P03-搜索-相似雨伞",
+        "width": 390,
+        "height": 844,
+        "explicitChildHeightBudget": 844,
+        "remainingHeight": 0,
+        "viewportHeight": 542,
+        "footerHeight": 196
+      },
+      {
+        "frame": "P03-搜索-无结果",
+        "width": 390,
+        "height": 844,
+        "explicitChildHeightBudget": 844,
+        "remainingHeight": 0,
+        "viewportHeight": 542,
+        "footerHeight": 196
+      },
+      {
+        "frame": "P04-招领详情-蓝伞",
+        "width": 390,
+        "height": 844,
+        "explicitChildHeightBudget": 844,
+        "remainingHeight": 0,
+        "viewportHeight": 542,
+        "footerHeight": 196
+      },
+      {
+        "frame": "P04-招领详情-另一候选",
+        "width": 390,
+        "height": 844,
+        "explicitChildHeightBudget": 844,
+        "remainingHeight": 0,
+        "viewportHeight": 598,
+        "footerHeight": 140
+      },
+      {
+        "frame": "P04-详情-已核实完成",
+        "width": 390,
+        "height": 844,
+        "explicitChildHeightBudget": 844,
+        "remainingHeight": 0,
+        "viewportHeight": 598,
+        "footerHeight": 140
+      },
+      {
+        "frame": "P04-寻物详情-本人管理",
+        "width": 390,
+        "height": 844,
+        "explicitChildHeightBudget": 844,
+        "remainingHeight": 0,
+        "viewportHeight": 542,
+        "footerHeight": 196
+      },
+      {
+        "frame": "P04-寻物详情-黑色保温杯",
+        "width": 390,
+        "height": 844,
+        "explicitChildHeightBudget": 844,
+        "remainingHeight": 0,
+        "viewportHeight": 598,
+        "footerHeight": 140
+      },
+      {
+        "frame": "P04-招领详情-银色钥匙",
+        "width": 390,
+        "height": 844,
+        "explicitChildHeightBudget": 844,
+        "remainingHeight": 0,
+        "viewportHeight": 542,
+        "footerHeight": 196
+      },
+      {
+        "frame": "P02-发布-钥匙基础信息",
+        "width": 390,
+        "height": 844,
+        "explicitChildHeightBudget": 844,
+        "remainingHeight": 0,
+        "viewportHeight": 542,
+        "footerHeight": 196
+      },
+      {
+        "frame": "P02-发布-水杯分类建议",
+        "width": 390,
+        "height": 844,
+        "explicitChildHeightBudget": 844,
+        "remainingHeight": 0,
+        "viewportHeight": 542,
+        "footerHeight": 196
+      },
+      {
+        "frame": "P02-发布-水杯候选比较",
+        "width": 390,
+        "height": 844,
+        "explicitChildHeightBudget": 844,
+        "remainingHeight": 0,
+        "viewportHeight": 542,
+        "footerHeight": 196
+      },
+      {
+        "frame": "P02-发布-钥匙公开预览",
+        "width": 390,
+        "height": 844,
+        "explicitChildHeightBudget": 844,
+        "remainingHeight": 0,
+        "viewportHeight": 542,
+        "footerHeight": 196
+      },
+      {
+        "frame": "P02-发布-钥匙已公开",
+        "width": 390,
+        "height": 844,
+        "explicitChildHeightBudget": 844,
+        "remainingHeight": 0,
+        "viewportHeight": 598,
+        "footerHeight": 140
+      },
+      {
+        "frame": "P02-转报-来源信息",
+        "width": 390,
+        "height": 844,
+        "explicitChildHeightBudget": 844,
+        "remainingHeight": 0,
+        "viewportHeight": 598,
+        "footerHeight": 140
+      },
+      {
+        "frame": "P02-转报-待核实",
+        "width": 390,
+        "height": 844,
+        "explicitChildHeightBudget": 844,
+        "remainingHeight": 0,
+        "viewportHeight": 542,
+        "footerHeight": 196
+      },
+      {
+        "frame": "P02-寻物-基础信息",
+        "width": 390,
+        "height": 844,
+        "explicitChildHeightBudget": 844,
+        "remainingHeight": 0,
+        "viewportHeight": 542,
+        "footerHeight": 196
+      },
+      {
+        "frame": "P02-寻物-公开预览",
+        "width": 390,
+        "height": 844,
+        "explicitChildHeightBudget": 844,
+        "remainingHeight": 0,
+        "viewportHeight": 598,
+        "footerHeight": 140
+      },
+      {
+        "frame": "P02-发布-水杯公开预览",
+        "width": 390,
+        "height": 844,
+        "explicitChildHeightBudget": 844,
+        "remainingHeight": 0,
+        "viewportHeight": 542,
+        "footerHeight": 196
+      },
+      {
+        "frame": "P02-发布-水杯已公开",
+        "width": 390,
+        "height": 844,
+        "explicitChildHeightBudget": 844,
+        "remainingHeight": 0,
+        "viewportHeight": 598,
+        "footerHeight": 140
+      },
+      {
+        "frame": "P06-认领-私密证据",
+        "width": 390,
+        "height": 844,
+        "explicitChildHeightBudget": 844,
+        "remainingHeight": 0,
+        "viewportHeight": 598,
+        "footerHeight": 140
+      },
+      {
+        "frame": "P07-核验-待补证",
+        "width": 390,
+        "height": 844,
+        "explicitChildHeightBudget": 844,
+        "remainingHeight": 0,
+        "viewportHeight": 542,
+        "footerHeight": 196
+      },
+      {
+        "frame": "P07-核验-通过",
+        "width": 390,
+        "height": 844,
+        "explicitChildHeightBudget": 844,
+        "remainingHeight": 0,
+        "viewportHeight": 542,
+        "footerHeight": 196
+      },
+      {
+        "frame": "P07-交接-预约",
+        "width": 390,
+        "height": 844,
+        "explicitChildHeightBudget": 844,
+        "remainingHeight": 0,
+        "viewportHeight": 542,
+        "footerHeight": 196
+      },
+      {
+        "frame": "P07-交接-待确认",
+        "width": 390,
+        "height": 844,
+        "explicitChildHeightBudget": 844,
+        "remainingHeight": 0,
+        "viewportHeight": 542,
+        "footerHeight": 196
+      },
+      {
+        "frame": "P07-交接-已核实完成",
+        "width": 390,
+        "height": 844,
+        "explicitChildHeightBudget": 844,
+        "remainingHeight": 0,
+        "viewportHeight": 542,
+        "footerHeight": 196
+      },
+      {
+        "frame": "P09-服务点-列表",
+        "width": 390,
+        "height": 844,
+        "explicitChildHeightBudget": 844,
+        "remainingHeight": 0,
+        "viewportHeight": 598,
+        "footerHeight": 140
+      },
+      {
+        "frame": "P09-服务点-接收确认",
+        "width": 390,
+        "height": 844,
+        "explicitChildHeightBudget": 844,
+        "remainingHeight": 0,
+        "viewportHeight": 598,
+        "footerHeight": 140
+      },
+      {
+        "frame": "P09-服务点-临时关闭",
+        "width": 390,
+        "height": 844,
+        "explicitChildHeightBudget": 844,
+        "remainingHeight": 0,
+        "viewportHeight": 598,
+        "footerHeight": 140
+      },
+      {
+        "frame": "P07-争议-举报索款",
+        "width": 390,
+        "height": 844,
+        "explicitChildHeightBudget": 844,
+        "remainingHeight": 0,
+        "viewportHeight": 598,
+        "footerHeight": 140
+      },
+      {
+        "frame": "P06-协助-提供线索",
+        "width": 390,
+        "height": 844,
+        "explicitChildHeightBudget": 844,
+        "remainingHeight": 0,
+        "viewportHeight": 598,
+        "footerHeight": 140
+      },
+      {
+        "frame": "P07-联系-授权选择",
+        "width": 390,
+        "height": 844,
+        "explicitChildHeightBudget": 844,
+        "remainingHeight": 0,
+        "viewportHeight": 542,
+        "footerHeight": 196
+      },
+      {
+        "frame": "P06-水杯-关联候选线索",
+        "width": 390,
+        "height": 844,
+        "explicitChildHeightBudget": 844,
+        "remainingHeight": 0,
+        "viewportHeight": 542,
+        "footerHeight": 196
+      },
+      {
+        "frame": "P09-服务点-钥匙已接收",
+        "width": 390,
+        "height": 844,
+        "explicitChildHeightBudget": 844,
+        "remainingHeight": 0,
+        "viewportHeight": 598,
+        "footerHeight": 140
+      },
+      {
+        "frame": "P09-服务点-公开信息",
+        "width": 390,
+        "height": 844,
+        "explicitChildHeightBudget": 844,
+        "remainingHeight": 0,
+        "viewportHeight": 598,
+        "footerHeight": 140
+      },
+      {
+        "frame": "P07-交接-已预约待到点",
+        "width": 390,
+        "height": 844,
+        "explicitChildHeightBudget": 844,
+        "remainingHeight": 0,
+        "viewportHeight": 542,
+        "footerHeight": 196
+      },
+      {
+        "frame": "P07-联系-限定授权已开启",
+        "width": 390,
+        "height": 844,
+        "explicitChildHeightBudget": 844,
+        "remainingHeight": 0,
+        "viewportHeight": 598,
+        "footerHeight": 140
+      },
+      {
+        "frame": "P07-联系-授权已关闭",
+        "width": 390,
+        "height": 844,
+        "explicitChildHeightBudget": 844,
+        "remainingHeight": 0,
+        "viewportHeight": 598,
+        "footerHeight": 140
+      },
+      {
+        "frame": "P05-贡献-仅感谢版本",
+        "width": 390,
+        "height": 844,
+        "explicitChildHeightBudget": 844,
+        "remainingHeight": 0,
+        "viewportHeight": 598,
+        "footerHeight": 140
+      },
+      {
+        "frame": "P05-事项-本人自报找回",
+        "width": 390,
+        "height": 844,
+        "explicitChildHeightBudget": 844,
+        "remainingHeight": 0,
+        "viewportHeight": 598,
+        "footerHeight": 140
+      },
+      {
+        "frame": "P08-消息与待办",
+        "width": 390,
+        "height": 844,
+        "explicitChildHeightBudget": 844,
+        "remainingHeight": 0,
+        "viewportHeight": 542,
+        "footerHeight": 196
+      },
+      {
+        "frame": "O01-值班-任务队列",
+        "width": 390,
+        "height": 844,
+        "explicitChildHeightBudget": 844,
+        "remainingHeight": 0,
+        "viewportHeight": 542,
+        "footerHeight": 196
+      },
+      {
+        "frame": "P05-贡献-复核与奖励",
+        "width": 390,
+        "height": 844,
+        "explicitChildHeightBudget": 844,
+        "remainingHeight": 0,
+        "viewportHeight": 542,
+        "footerHeight": 196
+      },
+      {
+        "frame": "O02-复核-申诉与处理",
+        "width": 390,
+        "height": 844,
+        "explicitChildHeightBudget": 844,
+        "remainingHeight": 0,
+        "viewportHeight": 598,
+        "footerHeight": 140
+      },
+      {
+        "frame": "P02-提交-结果确认中",
+        "width": 390,
+        "height": 844,
+        "explicitChildHeightBudget": 844,
+        "remainingHeight": 0,
+        "viewportHeight": 598,
+        "footerHeight": 140
+      },
+      {
+        "frame": "E04-身份-访客认领",
+        "width": 390,
+        "height": 844,
+        "explicitChildHeightBudget": 844,
+        "remainingHeight": 0,
+        "viewportHeight": 542,
+        "footerHeight": 196
+      },
+      {
+        "frame": "00-原型走查目录",
+        "width": 390,
+        "height": 844,
+        "explicitChildHeightBudget": 844,
+        "remainingHeight": 0,
+        "viewportHeight": 644,
+        "footerHeight": 94
+      }
+    ],
+    "commonScreenFooters": [
+      {
+        "id": "search",
+        "allocatedHeight": 196,
+        "requiredHeight": 188,
+        "reserve": 8,
+        "viewportHeight": 542
+      },
+      {
+        "id": "search_empty",
+        "allocatedHeight": 196,
+        "requiredHeight": 188,
+        "reserve": 8,
+        "viewportHeight": 542
+      },
+      {
+        "id": "detail",
+        "allocatedHeight": 196,
+        "requiredHeight": 188,
+        "reserve": 8,
+        "viewportHeight": 542
+      },
+      {
+        "id": "detail_other",
+        "allocatedHeight": 140,
+        "requiredHeight": 132,
+        "reserve": 8,
+        "viewportHeight": 598
+      },
+      {
+        "id": "detail_done",
+        "allocatedHeight": 140,
+        "requiredHeight": 132,
+        "reserve": 8,
+        "viewportHeight": 598
+      },
+      {
+        "id": "claim",
+        "allocatedHeight": 140,
+        "requiredHeight": 132,
+        "reserve": 8,
+        "viewportHeight": 598
+      },
+      {
+        "id": "verify_wait",
+        "allocatedHeight": 196,
+        "requiredHeight": 188,
+        "reserve": 8,
+        "viewportHeight": 542
+      },
+      {
+        "id": "verify_pass",
+        "allocatedHeight": 196,
+        "requiredHeight": 188,
+        "reserve": 8,
+        "viewportHeight": 542
+      },
+      {
+        "id": "appointment",
+        "allocatedHeight": 196,
+        "requiredHeight": 188,
+        "reserve": 8,
+        "viewportHeight": 542
+      },
+      {
+        "id": "handoff_wait",
+        "allocatedHeight": 196,
+        "requiredHeight": 188,
+        "reserve": 8,
+        "viewportHeight": 542
+      },
+      {
+        "id": "complete",
+        "allocatedHeight": 196,
+        "requiredHeight": 188,
+        "reserve": 8,
+        "viewportHeight": 542
+      },
+      {
+        "id": "publish_form",
+        "allocatedHeight": 196,
+        "requiredHeight": 188,
+        "reserve": 8,
+        "viewportHeight": 542
+      },
+      {
+        "id": "cup_form",
+        "allocatedHeight": 196,
+        "requiredHeight": 188,
+        "reserve": 8,
+        "viewportHeight": 542
+      },
+      {
+        "id": "publish_candidates",
+        "allocatedHeight": 196,
+        "requiredHeight": 188,
+        "reserve": 8,
+        "viewportHeight": 542
+      },
+      {
+        "id": "publish_preview",
+        "allocatedHeight": 196,
+        "requiredHeight": 188,
+        "reserve": 8,
+        "viewportHeight": 542
+      },
+      {
+        "id": "publish_success",
+        "allocatedHeight": 140,
+        "requiredHeight": 132,
+        "reserve": 8,
+        "viewportHeight": 598
+      },
+      {
+        "id": "transfer_form",
+        "allocatedHeight": 140,
+        "requiredHeight": 132,
+        "reserve": 8,
+        "viewportHeight": 598
+      },
+      {
+        "id": "transfer_pending",
+        "allocatedHeight": 196,
+        "requiredHeight": 188,
+        "reserve": 8,
+        "viewportHeight": 542
+      },
+      {
+        "id": "operations",
+        "allocatedHeight": 196,
+        "requiredHeight": 188,
+        "reserve": 8,
+        "viewportHeight": 542
+      },
+      {
+        "id": "rewards",
+        "allocatedHeight": 196,
+        "requiredHeight": 188,
+        "reserve": 8,
+        "viewportHeight": 542
+      },
+      {
+        "id": "thanks",
+        "allocatedHeight": 140,
+        "requiredHeight": 132,
+        "reserve": 8,
+        "viewportHeight": 598
+      },
+      {
+        "id": "services",
+        "allocatedHeight": 140,
+        "requiredHeight": 132,
+        "reserve": 8,
+        "viewportHeight": 598
+      },
+      {
+        "id": "service_detail",
+        "allocatedHeight": 140,
+        "requiredHeight": 132,
+        "reserve": 8,
+        "viewportHeight": 598
+      },
+      {
+        "id": "service_closed",
+        "allocatedHeight": 140,
+        "requiredHeight": 132,
+        "reserve": 8,
+        "viewportHeight": 598
+      },
+      {
+        "id": "submit_unknown",
+        "allocatedHeight": 140,
+        "requiredHeight": 132,
+        "reserve": 8,
+        "viewportHeight": 598
+      },
+      {
+        "id": "self_report",
+        "allocatedHeight": 140,
+        "requiredHeight": 132,
+        "reserve": 8,
+        "viewportHeight": 598
+      },
+      {
+        "id": "report",
+        "allocatedHeight": 140,
+        "requiredHeight": 132,
+        "reserve": 8,
+        "viewportHeight": 598
+      },
+      {
+        "id": "appeal",
+        "allocatedHeight": 140,
+        "requiredHeight": 132,
+        "reserve": 8,
+        "viewportHeight": 598
+      },
+      {
+        "id": "login",
+        "allocatedHeight": 196,
+        "requiredHeight": 188,
+        "reserve": 8,
+        "viewportHeight": 542
+      },
+      {
+        "id": "messages",
+        "allocatedHeight": 196,
+        "requiredHeight": 188,
+        "reserve": 8,
+        "viewportHeight": 542
+      },
+      {
+        "id": "clue",
+        "allocatedHeight": 140,
+        "requiredHeight": 132,
+        "reserve": 8,
+        "viewportHeight": 598
+      },
+      {
+        "id": "contact",
+        "allocatedHeight": 196,
+        "requiredHeight": 188,
+        "reserve": 8,
+        "viewportHeight": 542
+      },
+      {
+        "id": "lost_form",
+        "allocatedHeight": 196,
+        "requiredHeight": 188,
+        "reserve": 8,
+        "viewportHeight": 542
+      },
+      {
+        "id": "lost_preview",
+        "allocatedHeight": 140,
+        "requiredHeight": 132,
+        "reserve": 8,
+        "viewportHeight": 598
+      },
+      {
+        "id": "lost_detail",
+        "allocatedHeight": 196,
+        "requiredHeight": 188,
+        "reserve": 8,
+        "viewportHeight": 542
+      },
+      {
+        "id": "cup_preview",
+        "allocatedHeight": 196,
+        "requiredHeight": 188,
+        "reserve": 8,
+        "viewportHeight": 542
+      },
+      {
+        "id": "cup_success",
+        "allocatedHeight": 140,
+        "requiredHeight": 132,
+        "reserve": 8,
+        "viewportHeight": 598
+      },
+      {
+        "id": "cup_link",
+        "allocatedHeight": 196,
+        "requiredHeight": 188,
+        "reserve": 8,
+        "viewportHeight": 542
+      },
+      {
+        "id": "cup_lost_detail",
+        "allocatedHeight": 140,
+        "requiredHeight": 132,
+        "reserve": 8,
+        "viewportHeight": 598
+      },
+      {
+        "id": "keys_detail",
+        "allocatedHeight": 196,
+        "requiredHeight": 188,
+        "reserve": 8,
+        "viewportHeight": 542
+      },
+      {
+        "id": "service_received",
+        "allocatedHeight": 140,
+        "requiredHeight": 132,
+        "reserve": 8,
+        "viewportHeight": 598
+      },
+      {
+        "id": "service_info",
+        "allocatedHeight": 140,
+        "requiredHeight": 132,
+        "reserve": 8,
+        "viewportHeight": 598
+      },
+      {
+        "id": "appointment_booked",
+        "allocatedHeight": 196,
+        "requiredHeight": 188,
+        "reserve": 8,
+        "viewportHeight": 542
+      },
+      {
+        "id": "contact_authorized",
+        "allocatedHeight": 140,
+        "requiredHeight": 132,
+        "reserve": 8,
+        "viewportHeight": 598
+      },
+      {
+        "id": "contact_revoked",
+        "allocatedHeight": 140,
+        "requiredHeight": 132,
+        "reserve": 8,
+        "viewportHeight": 598
+      }
+    ],
+    "bottomNavigation": {
+      "outerHeight": 94,
+      "topPadding": 8,
+      "bottomPadding": 18,
+      "rowWidth": 358,
+      "rowHeight": 68,
+      "capsuleCount": 3,
+      "capsuleDimensions": [
+        [
+          278,
+          64
+        ],
+        [
+          278,
+          64
+        ],
+        [
+          278,
+          64
+        ]
+      ],
+      "tabWidth": 127,
+      "capsuleInnerPadding": 8,
+      "capsuleGap": 8,
+      "independentPublishCount": 3,
+      "independentPublishDimensions": [
+        [
+          68,
+          68
+        ],
+        [
+          68,
+          68
+        ],
+        [
+          68,
+          68
+        ]
+      ],
+      "gapBetweenCapsuleAndPublish": 12,
+      "publishFooterExists": true,
+      "publishFooterChildren": [
+        {
+          "name": "草稿箱入口",
+          "width": 152,
+          "height": 48
+        },
+        {
+          "name": "关闭发布 / 独立圆形按钮",
+          "width": 68,
+          "height": 68
+        }
+      ]
+    }
+  },
+  "limitations": [
+    "Does not verify actual Figma font availability or Chinese glyph appearance.",
+    "Does not verify clipping, text wrapping, scrolling, touch targets, visual alignment, or actual click outcomes.",
+    "Does not reproduce prior UI-generated document or claim that source totals validate that document.",
+    "SVG internals are opaque mock nodes; vector visual quality and detailed internal geometry are outside this audit."
+  ],
+  "status": "source-audit-passed",
+  "prototypePolicies": {
+    "scrollReset": "all targets reset except search; source reactions inspected",
+    "scrollResetViolations": [],
+    "clickableChips": [
+      {
+        "name": "标签 / 本校 · 旗山校区⌄",
+        "width": 192,
+        "height": 44
+      },
+      {
+        "name": "标签 / 寻物",
+        "width": 76,
+        "height": 44
+      },
+      {
+        "name": "标签 / 招领",
+        "width": 76,
+        "height": 44
+      },
+      {
+        "name": "标签 / 我发布的",
+        "width": 115,
+        "height": 44
+      },
+      {
+        "name": "标签 / 我认领的",
+        "width": 115,
+        "height": 44
+      },
+      {
+        "name": "标签 / 我协助的",
+        "width": 115,
+        "height": 44
+      }
+    ],
+    "filterHotspot": {
+      "width": 90,
+      "height": 44
+    }
+  }
+}
