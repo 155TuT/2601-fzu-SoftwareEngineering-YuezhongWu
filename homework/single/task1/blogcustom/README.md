@@ -6,6 +6,8 @@
 
 ## 准备
 
+2026-09-30 新增文章下方区域的 outline 样式：互动栏、作者与投票、上一篇及评论编辑器共用现有主题变量；按钮为 40px 高、8px 圆角，手机主操作为 44px 高，图标统一为 24px 网格中的 16px 线性 SVG。源码在 `scripts/blog-post.js`，随页脚生成。
+
 1. 在博客后台申请并开通 JS 权限。本例已经开通；只有字体样式时不需要运行 JavaScript，favicon 和组件改造需要。
 2. 备份自己现有的「页面定制 CSS 代码」「页首 HTML 代码」「页脚 HTML 代码」、皮肤名称和控件设置。已有代码应先合并，避免覆盖自己的功能。
 3. 在 [博客设置](https://i.cnblogs.com/settings) 选择 **Custom**，保持「禁用模板默认 CSS」**未勾选**。这套增量样式依赖 Custom 的基础布局。
@@ -37,7 +39,7 @@
 node scripts/build-footer.mjs
 ```
 
-将 [page-header.html](page-header.html) 全文放到后台的**「页首 HTML 代码」**，它负责尽早整理顶栏原生节点、创建桌面/手机搜索和侧栏卡片、挂载径向设置并跟随浏览器配色；将 [page-footer.html](page-footer.html) 全文放到**「页脚 HTML 代码」**，它包含 [图片外框脚本](scripts/blog-outline.js) 和正文 favicon 脚本。两份文件均以 `<script>` 包住脚本，不包含 `<style>` 或行内布局样式。
+将 [page-header.html](page-header.html) 全文放到后台的**「页首 HTML 代码」**，它负责尽早整理顶栏原生节点、创建桌面/手机搜索和侧栏卡片、挂载径向设置并跟随浏览器配色；将 [page-footer.html](page-footer.html) 全文放到**「页脚 HTML 代码」**，它包含 [图片外框脚本](scripts/blog-outline.js)、正文 favicon 脚本与 [文章底部增强脚本](scripts/blog-post.js)。两份文件均以 `<script>` 包住脚本，不包含 `<style>` 或行内布局样式。
 
 独立 JS 是维护入口，每次修改后都重新运行生成命令；不需要在 HTML 中再手工修改同一份代码。未修改源码时，可直接使用已生成文件。不要继续在页脚保留旧版组件脚本。
 
@@ -96,6 +98,7 @@ node scripts/build-footer.mjs
 | 个人资料 | 圆形头像、昵称、两列粉丝/关注、原公告及链接；手机隐藏整个侧栏 | CSS、`blog-shell.js` |
 | 侧栏宽度与间距 | 侧栏/资料卡宽 220px，主栏预留 254px；粉丝/关注框间距 4px，公告避免拆开短数字和单词 | `page-custom.css` |
 | 正文 favicon | 仅正文 HTTP(S) 链接，1em 随字号变化；头像和 favicon 不受新图片轮廓影响 | CSS、`scripts/blog-custom.js` |
+| 文章底部 | 互动按钮、作者与投票、上一篇、评论编辑器统一细描边；16px SVG、键盘焦点、异步增强 | CSS、`scripts/blog-post.js` |
 | 页面宽度 | ≥1024px 且横屏约 70% 居中；手机左右页面外边距 12px | `page-custom.css` |
 
 卡片从上到下的结构为：
@@ -126,6 +129,7 @@ blogcustom/
 │  ├─ blog-shell.js            顶栏、搜索、资料卡片、浮动设置与配色
 │  ├─ blog-outline.js          正文和摘要图片外框，复用公共角饰
 │  ├─ blog-custom.js           页脚正文 favicon
+│  ├─ blog-post.js             文章互动、投票、评论图标及键盘操作
 │  └─ build-footer.mjs         同时生成页首与页脚 HTML
 ├─ icons/search.svg            默认搜索图标的独立参考文件
 ├─ fonts/                      已部署字体 CSS、原始 WOFF2、来源说明

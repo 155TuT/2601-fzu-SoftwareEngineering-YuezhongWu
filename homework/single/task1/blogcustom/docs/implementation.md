@@ -2,7 +2,19 @@
 
 这套改造属于 Custom 之上的增量定制。原生模板提供内容与个人资料，自定义 CSS 负责外观，自定义 JS 负责顶栏搜索、资料卡片和正文链接图标。部署位置分别是后台「页面定制 CSS 代码」「页首 HTML 代码」与「页脚 HTML 代码」。
 
-`scripts/blog-shell.js` 对应 `page-header.html`，负责整理顶栏原生节点并更早建立搜索和资料卡；`scripts/blog-outline.js` 与 `scripts/blog-custom.js` 合并到 `page-footer.html`，分别负责图片角饰外框和正文 favicon。`scripts/build-footer.mjs` 虽沿用原文件名，现在会同时生成两份 HTML。在本目录运行 `node scripts/build-footer.mjs` 可重新生成，不需要手工维护重复 JS。生成器也会检查源码中是否含可能提前结束 HTML 脚本标签的字符串。
+`scripts/blog-shell.js` 对应 `page-header.html`，负责整理顶栏原生节点并更早建立搜索和资料卡；`scripts/blog-outline.js`、`scripts/blog-custom.js` 与 `scripts/blog-post.js` 合并到 `page-footer.html`，分别负责图片角饰外框、正文 favicon 和文章下方控件。`scripts/build-footer.mjs` 虽沿用原文件名，现在会同时生成两份 HTML。在本目录运行 `node scripts/build-footer.mjs` 可重新生成，不需要手工维护重复 JS。生成器也会检查源码中是否含可能提前结束 HTML 脚本标签的字符串。
+
+## 文章下方的 outline 控件
+
+样式仅覆盖实际 Custom 页面中的 `#blog_post_info_block`、`#topics .postDesc` 和 `#comment_form`。互动区与评论编辑器沿用 22px 卡片圆角和公共角饰；按钮使用 8px 圆角、1px 描边、40px 高，600px 及以下主操作高 44px。去除原平台渐变、投票 GIF、阴影及评论标题装饰图，不更改配色变量或文章正文。
+
+互动区根据自身容器宽度（520px）切换布局，兼顾带侧栏的窄桌面主栏：四个互动按钮排成两列，作者和投票上下排列。桌面作者头像为 44px，推荐/反对保留原计数节点；反馈提示仍留在投票区域。评论框占满文章栏，工具栏可换行，文本框只允许纵向拉伸，手机输入字号为 16px。
+
+`blog-post.js` 沿用页首内嵌 SVG 的绘制方式：24×24 viewBox、16px 显示尺寸、1.75px 描边、圆端点和折角、无填充、currentColor。图标不引入远程依赖；装饰 SVG 标记 aria-hidden，不覆盖文字标签。评论工具栏仅替换内部旧 SVG，保留控件、ID、title、原点击处理器与文本输入。
+
+原生投票 div 和编辑工具 span 补充按钮语义、焦点和 Enter/Space 操作；链接的 Enter 使用浏览器原生行为，Space 补充触发一次 click。未重绑业务请求，未把关注或投票状态伪装成已成功。观察器限于主栏的子节点变化，异步载入、局部替换或按钮成功文案更新后补齐图标；重复扫描不重复插入。所有业务处理仍交由博客园。
+
+同步时需更新 `page-custom.css` 与重新生成的 `page-footer.html`。本轮页首内容没有变化。本地预览使用 Chrome 实际 DOM 快照，移除平台脚本和提交处理，仅用于视觉与模拟交互检查，不能证明线上点赞、关注、收藏、微信分享或评论提交成功。
 
 ## 字体
 

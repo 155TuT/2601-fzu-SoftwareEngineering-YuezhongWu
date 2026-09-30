@@ -531,4 +531,228 @@ html.blog-custom-boot #navigator:not(:has(#blog-header-search))::after { content
   #home #blog-tools { right: max(16px, env(safe-area-inset-right)); bottom: max(16px, env(safe-area-inset-bottom)); }
   #home #footer { padding-bottom: 80px; }
 }
+/* Post footer: native controls share the shell's outline palette and SVG grammar. */
+#home #blog_post_info_block {
+  container-type: inline-size;
+  margin-top: 24px;
+  color: var(--blog-ink);
+  font-size: 12px;
+  line-height: 1.7;
+}
+#home #blog_post_info_block :is(#BlogPostCategory, #EntryTag) { margin: 8px 0; }
+#home #blog_post_info_block .post-meta-disclaimer { margin: 8px 0 16px; color: var(--blog-muted); }
+#home #blog_post_info {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid var(--blog-line);
+  border-radius: var(--blog-outline-radius);
+  background: var(--blog-paper);
+}
+#home #green_channel {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  width: auto;
+  margin: 0;
+  padding: 0 0 16px;
+  border: 0;
+  border-bottom: 1px solid var(--blog-soft-line);
+  text-align: left;
+}
+/* Platform link-state rules use !important; reset just these native controls. */
+#home #green_channel a,
+#home #green_channel a:is(:link, :visited, :hover, :active),
+#home #div_digg :is(.diggit, .buryit),
+#home #btn_comment_submit {
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  float: none;
+  width: auto;
+  min-width: 0;
+  height: 40px;
+  margin: 0;
+  padding: 0 12px;
+  border: 1px solid var(--blog-line) !important;
+  border-radius: 8px;
+  background: var(--blog-paper);
+  color: var(--blog-ink) !important;
+  box-shadow: none;
+  text-shadow: none;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+}
+#home #green_channel a:is(:hover, :active),
+#home #div_digg :is(.diggit, .buryit):is(:hover, :active),
+#home #btn_comment_submit:is(:hover, :active) {
+  background: var(--blog-hover);
+  border-color: var(--blog-accent) !important;
+  color: var(--blog-accent) !important;
+}
+#home .blog-post-icon {
+  display: inline-block;
+  flex: 0 0 16px;
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  vertical-align: middle;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.75;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  pointer-events: none;
+}
+#home #author_profile {
+  float: none;
+  width: auto;
+  min-width: 0;
+  margin: 0;
+  color: var(--blog-ink);
+}
+#home #author_profile_info { display: flex; align-items: center; gap: 12px; float: none; }
+#home #author_profile_info > a { display: block; flex: 0 0 44px; line-height: 0; border-radius: 50%; }
+#home #author_profile .author_avatar {
+  display: block;
+  float: none;
+  width: 44px;
+  height: 44px;
+  margin: 0;
+  padding: 0;
+  border: 1px solid var(--blog-soft-line);
+  border-radius: 50%;
+  object-fit: cover;
+}
+#home #author_profile_detail { float: none; min-width: 0; line-height: 1.7; overflow-wrap: anywhere; }
+#home #author_profile_detail br { display: none; }
+#home #author_profile_detail > a:first-child { display: block; margin-bottom: 2px; font-size: 14px; text-decoration: none; }
+#home #author_profile_detail > a:not(:first-child) { display: inline-block; margin-right: 8px; color: var(--blog-muted); text-underline-offset: 3px; }
+#home #author_profile :is(#author_profile_honor, #author_profile_follow):empty { display: none; }
+#home #div_digg {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+  float: none;
+  width: auto;
+  max-width: 100%;
+  margin: 0;
+  text-align: left;
+}
+#home #div_digg :is(.diggnum, .burynum) { color: inherit; font-size: 14px; font-variant-numeric: tabular-nums; }
+#home #div_digg > .clear { display: none; }
+#home #digg_tips { flex-basis: 100%; width: auto; margin: 0; color: var(--blog-muted); }
+#home #digg_tips:empty { display: none; }
+#home #topics .postBody { border-bottom: 0; }
+#home #post_next_prev { display: block; margin: 20px 0 0; padding: 12px 0; border-bottom: 1px solid var(--blog-soft-line); line-height: 1.8; overflow-wrap: anywhere; }
+#home #post_next_prev .p_n_p_prefix { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; margin-right: 4px; border-radius: 6px; vertical-align: middle; }
+#home #topics .postDesc { float: none; margin: 12px 0 20px; padding: 0; border: 0; color: var(--blog-muted); line-height: 1.8; text-align: left; word-break: normal; overflow-wrap: anywhere; }
+
+/* The editor keeps its original tabs, toolbar, textarea and submit control. */
+#home #comment_form { width: auto; margin: 0; padding: 0; }
+#home #comment_nav { margin: 0 0 16px; }
+#home #comment_nav .comment-nav-right { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 4px 12px; float: none; }
+#home #comment_nav a { display: inline-flex; align-items: center; min-height: 32px; margin: 0; padding: 0; color: var(--blog-muted); text-underline-offset: 3px; }
+#home #commentform_title { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 16px; margin: 0 0 12px; padding: 0; background: none; font-size: 16px; line-height: 1.5; }
+#home #commentform_title label { display: inline-flex; align-items: center; gap: 8px; }
+#home #commentform_title > a { margin-left: 0 !important; color: var(--blog-muted); font-size: 12px; }
+#home #comment_form .commentbox_main {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 1px solid var(--blog-line);
+  border-radius: var(--blog-outline-radius);
+  background: var(--blog-paper);
+}
+#home #comment_form .commentbox_title {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  width: 100%;
+  margin: 0;
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--blog-soft-line);
+  border-radius: var(--blog-outline-radius) var(--blog-outline-radius) 0 0;
+  background: var(--blog-paper);
+}
+#home #comment_form :is(.commentbox_title_left, .commentbox_title_right) { display: flex; align-items: center; gap: 4px; width: auto; margin: 0; padding: 0; }
+#home #comment_form :is(.commentbox_tab, .comment_icon) {
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  min-width: 32px;
+  height: 32px;
+  margin: 0;
+  padding: 0 8px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--blog-muted);
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: normal;
+  cursor: pointer;
+}
+#home #comment_form .commentbox_tab.active { border-color: var(--blog-line); color: var(--blog-ink); }
+#home #comment_form :is(.commentbox_tab, .comment_icon):hover { background: var(--blog-hover); color: var(--blog-accent); }
+#home #comment_form #tbCommentBody {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-height: 160px;
+  height: 180px;
+  margin: 0;
+  padding: 16px;
+  border: 0;
+  border-radius: 0;
+  background: var(--blog-paper);
+  color: var(--blog-ink);
+  font-size: 14px;
+  line-height: 1.7;
+  resize: vertical;
+}
+#home #tbCommentBody::placeholder { color: var(--blog-muted); opacity: 1; }
+#home #tbCommentBodyPreview { box-sizing: border-box; min-height: 180px; margin: 0; padding: 16px; background: var(--blog-paper); overflow-wrap: anywhere; }
+#home #comment_form .commentbox_footer { box-sizing: border-box; width: 100%; padding: 8px 12px; border-top: 1px solid var(--blog-soft-line); border-radius: 0 0 var(--blog-outline-radius) var(--blog-outline-radius); background: var(--blog-paper); color: var(--blog-muted); }
+#home #ubb_auto_completion { display: inline-flex; align-items: center; gap: 6px; min-height: 28px; cursor: pointer; }
+#home #commentbox_opt { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin: 16px 0 8px; padding: 0; }
+#home #btn_comment_submit { min-width: 112px; }
+#home #btn_comment_submit:is(:disabled, [aria-disabled="true"]) { opacity: .55; cursor: not-allowed; }
+#home #comment_form_container > p:last-of-type { margin: 0; color: var(--blog-muted); font-size: 12px; }
+#home :is(#blog_post_info_block, #comment_form, #topics .postDesc) :is(a, button, input, [role="button"]):focus-visible { outline: 2px solid var(--blog-accent); outline-offset: 3px; }
+#home #comment_form #tbCommentBody:focus-visible { outline: 2px solid var(--blog-accent); outline-offset: -3px; }
+
+/* Use article width: the desktop sidebar also leaves a narrow content column. */
+@container (max-width: 520px) {
+  #home #blog_post_info { grid-template-columns: minmax(0, 1fr); gap: 16px; padding: 16px; }
+  #home #green_channel { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  #home #div_digg { justify-content: flex-start; }
+}
+@media (max-width: 600px) {
+  #home #green_channel a,
+  #home #green_channel a:is(:link, :visited, :hover, :active) { height: 44px; padding: 0 8px; }
+  #home #div_digg :is(.diggit, .buryit), #home #btn_comment_submit { height: 44px; }
+  #home #comment_nav .comment-nav-right { justify-content: flex-start; margin-left: 0; }
+  #home #comment_nav a { min-height: 44px; }
+  #home #comment_form :is(.commentbox_tab, .comment_icon) { min-width: 40px; height: 40px; }
+  #home #comment_form #tbCommentBody { font-size: 16px; }
+}
 @media print { #home #blog-tools { display: none; } }

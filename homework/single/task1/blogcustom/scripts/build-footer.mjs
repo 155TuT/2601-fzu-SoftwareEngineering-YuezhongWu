@@ -2,7 +2,7 @@ import { readFileSync, writeFileSync } from 'node:fs';
 
 const bundles = [
   [['blog-shell.js'], 'page-header.html'],
-  [['blog-outline.js', 'blog-custom.js'], 'page-footer.html']
+  [['blog-outline.js', 'blog-custom.js', 'blog-post.js'], 'page-footer.html']
 ];
 for (const [inputs, output] of bundles) {
   const source = inputs.map(input => {

@@ -51,6 +51,8 @@ LuxInteriorLight 的 `#container`、`#content`、`#sidebar-a` 不适用于当前
 
 ## 文章标题与内容图片
 
+文章下方新增入口：`#blog_post_info` 与 `#comment_form .commentbox_main` 复用 `.blog-outline-card`；`#green_channel` 为互动按钮行；`#div_digg .diggit/.buryit` 为保留计数的原生投票控件；`.blog-post-icon` 为统一 SVG；`.blog-vote-label` 为推荐/反对可见文字。评论输入、工具栏、提交控件保持原 ID。`#post_next_prev .p_n_p_prefix` 仅替换旧方向字形，保留导航链接。
+
 - `#home .postTitle`：首页和详情页文章标题，与 `#cnblogs_post_body h1` 共用 28px 字号变量。
 - `#cnblogs_post_body img:not(.blog-link-favicon-slot img)`、`#home .postCon img`：正文和摘要图片直接加圆角边框，像素四角随 22px 半径裁切；页脚脚本为每张原图包一层角饰外框。
 - `.blog-image-frame.blog-outline-card`：贴合图片尺寸的角饰外框；`.blog-image-frame--summary` 保留首页缩略图的右浮动与尺寸。
