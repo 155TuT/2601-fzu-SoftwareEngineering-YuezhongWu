@@ -21,8 +21,10 @@
   --blog-hover: #f3f5f7;
   --blog-outline-radius: 22px;
   --blog-corner-ink: #000;
-  --blog-article-title-size: 28px;
+  --blog-body-size: 13.6px;
+  --blog-article-title-size: 30px;
   --blog-sidebar-width: 220px;
+  --blog-sidebar-top-gap: 12px;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-blog-theme="light"]) {
@@ -65,7 +67,10 @@ html, body { background: var(--blog-paper); color: var(--blog-ink); }
 #home #cnblogs_post_body pre code { background: transparent; }
 #home #cnblogs_post_body .hljs { color: var(--blog-ink); background: var(--blog-hover); }
 
-/* Match the platform's Markdown H1: 28px, bold, 1.5 line height. */
+/* Body is 13.6px; article headings are 2px above the original theme sizes. */
+#home #cnblogs_post_body { font-size: var(--blog-body-size); }
+#home #cnblogs_post_body :is(p, li, th, td) { font-size: inherit; }
+#home #cnblogs_post_body :not(pre) > code { font-size: inherit; }
 #home .postTitle,
 #home #cnblogs_post_body h1 {
   font-size: var(--blog-article-title-size);
@@ -73,6 +78,11 @@ html, body { background: var(--blog-paper); color: var(--blog-ink); }
   line-height: 1.5;
 }
 #home .postTitle :is(a, span) { font-size: inherit; font-weight: inherit; line-height: inherit; }
+#home #cnblogs_post_body h2 { font-size: 23px; }
+#home #cnblogs_post_body h3 { font-size: 18px; }
+#home #cnblogs_post_body h4 { font-size: 16px; }
+#home #cnblogs_post_body h5 { font-size: 14px; }
+#home #cnblogs_post_body h6 { font-size: 13px; }
 
 /* Border-radius clips replaced image pixels at all four corners as well as the border. */
 #home #cnblogs_post_body img:not(.blog-link-favicon-slot img),
@@ -394,6 +404,19 @@ html.blog-custom-boot #navigator:not(:has(#blog-header-search))::after { content
 #home #sideBar,
 #home #blog-news { overflow: visible; }
 
+/* The profile sits 15px inside the sidebar. One gap controls its pinned position and available height. */
+@media (min-width: 768px) {
+  #home #sideBar {
+    position: sticky;
+    top: calc(var(--blog-sidebar-top-gap) - 15px);
+    max-height: calc(100vh + 15px - var(--blog-sidebar-top-gap));
+    max-height: calc(100dvh + 15px - var(--blog-sidebar-top-gap));
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    scrollbar-width: thin;
+  }
+}
+
 /* Native statistics live in the footer at every viewport width. */
 #home #footer > .blogStats {
   display: flex;
@@ -531,7 +554,7 @@ html.blog-custom-boot #navigator:not(:has(#blog-header-search))::after { content
   #home #blog-tools { right: max(16px, env(safe-area-inset-right)); bottom: max(16px, env(safe-area-inset-bottom)); }
   #home #footer { padding-bottom: 80px; }
 }
-/* Post footer: native controls share the shell's outline palette and SVG grammar. */
+/* Post footer: a 5px inset plus a 1px border joins 8px buttons to a 14px shell. */
 #home #blog_post_info_block {
   container-type: inline-size;
   margin-top: 24px;
@@ -542,26 +565,30 @@ html.blog-custom-boot #navigator:not(:has(#blog-header-search))::after { content
 #home #blog_post_info_block :is(#BlogPostCategory, #EntryTag) { margin: 8px 0; }
 #home #blog_post_info_block .post-meta-disclaimer { margin: 8px 0 16px; color: var(--blog-muted); }
 #home #blog_post_info {
+  --blog-outline-radius: 14px;
   box-sizing: border-box;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
+  position: relative;
+  display: flex;
   align-items: center;
-  gap: 20px;
-  padding: 20px;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 12px;
+  padding: 5px;
   border: 1px solid var(--blog-line);
   border-radius: var(--blog-outline-radius);
   background: var(--blog-paper);
 }
 #home #green_channel {
-  grid-column: 1 / -1;
   display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
+  flex: 0 1 auto;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 4px;
   width: auto;
+  min-width: 0;
   margin: 0;
-  padding: 0 0 16px;
+  padding: 0;
   border: 0;
-  border-bottom: 1px solid var(--blog-soft-line);
   text-align: left;
 }
 /* Platform link-state rules use !important; reset just these native controls. */
@@ -573,20 +600,21 @@ html.blog-custom-boot #navigator:not(:has(#blog-header-search))::after { content
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 6px;
+  flex-shrink: 0;
   float: none;
   width: auto;
   min-width: 0;
-  height: 40px;
+  height: 36px;
   margin: 0;
-  padding: 0 12px;
+  padding: 0 8px;
   border: 1px solid var(--blog-line) !important;
   border-radius: 8px;
   background: var(--blog-paper);
   color: var(--blog-ink) !important;
   box-shadow: none;
   text-shadow: none;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
   line-height: 1;
   text-decoration: none;
@@ -614,51 +642,51 @@ html.blog-custom-boot #navigator:not(:has(#blog-header-search))::after { content
   stroke-linejoin: round;
   pointer-events: none;
 }
-#home #author_profile {
-  float: none;
-  width: auto;
-  min-width: 0;
-  margin: 0;
-  color: var(--blog-ink);
-}
-#home #author_profile_info { display: flex; align-items: center; gap: 12px; float: none; }
-#home #author_profile_info > a { display: block; flex: 0 0 44px; line-height: 0; border-radius: 50%; }
-#home #author_profile .author_avatar {
-  display: block;
-  float: none;
-  width: 44px;
-  height: 44px;
-  margin: 0;
-  padding: 0;
-  border: 1px solid var(--blog-soft-line);
-  border-radius: 50%;
-  object-fit: cover;
-}
-#home #author_profile_detail { float: none; min-width: 0; line-height: 1.7; overflow-wrap: anywhere; }
-#home #author_profile_detail br { display: none; }
-#home #author_profile_detail > a:first-child { display: block; margin-bottom: 2px; font-size: 14px; text-decoration: none; }
-#home #author_profile_detail > a:not(:first-child) { display: inline-block; margin-right: 8px; color: var(--blog-muted); text-underline-offset: 3px; }
-#home #author_profile :is(#author_profile_honor, #author_profile_follow):empty { display: none; }
+#home #author_profile { display: none !important; }
+#home #blog_post_info > .clear { display: none; }
 #home #div_digg {
   display: flex;
-  flex-wrap: wrap;
+  flex: 0 0 auto;
+  flex-wrap: nowrap;
   justify-content: flex-end;
   align-items: center;
-  gap: 8px;
+  gap: 4px;
   float: none;
   width: auto;
   max-width: 100%;
   margin: 0;
   text-align: left;
 }
-#home #div_digg :is(.diggnum, .burynum) { color: inherit; font-size: 14px; font-variant-numeric: tabular-nums; }
+#home #div_digg :is(.diggnum, .burynum) { color: inherit; font-size: 12px; font-variant-numeric: tabular-nums; }
 #home #div_digg > .clear { display: none; }
-#home #digg_tips { flex-basis: 100%; width: auto; margin: 0; color: var(--blog-muted); }
-#home #digg_tips:empty { display: none; }
+#home #digg_tips { position: absolute; top: calc(100% + 6px); left: 5px; right: 5px; width: auto; margin: 0; color: var(--blog-muted); line-height: 1.5; }
+#home #digg_tips:empty, #home #digg_tips[hidden] { display: none; }
+#home #blog_post_info:has(#digg_tips:not(:empty):not([hidden])) { margin-bottom: 30px; }
 #home #topics .postBody { border-bottom: 0; }
-#home #post_next_prev { display: block; margin: 20px 0 0; padding: 12px 0; border-bottom: 1px solid var(--blog-soft-line); line-height: 1.8; overflow-wrap: anywhere; }
-#home #post_next_prev .p_n_p_prefix { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; margin-right: 4px; border-radius: 6px; vertical-align: middle; }
+#home #post_next_prev { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: center; gap: 12px; margin: 20px 0 0; padding: 12px 0; border-bottom: 1px solid var(--blog-soft-line); font-size: 12px; line-height: 1.8; }
+#home #post_next_prev :is(.blog-post-prev, .blog-post-next) { grid-row: 1; display: flex; align-items: center; gap: 4px; min-width: 0; }
+#home #post_next_prev .blog-post-prev { grid-column: 1; }
+#home #post_next_prev .blog-post-next { grid-column: 3; justify-content: flex-end; }
+#home #post_next_prev .p_n_p_prefix { display: inline-flex; flex: 0 0 auto; align-items: center; justify-content: center; gap: 4px; width: auto; height: 28px; margin: 0; border-radius: 6px; vertical-align: middle; text-decoration: none; }
+#home #post_next_prev .blog-post-nav-label { flex-shrink: 0; white-space: nowrap; }
+#home #post_next_prev .blog-post-nav-title { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; text-underline-offset: 3px; }
+#home #post_next_prev .blog-post-next .p_n_p_prefix { order: 3; }
+#home #post_next_prev .blog-post-next .p_n_p_prefix .blog-post-icon { order: 3; }
+#home #post_next_prev .blog-post-next .blog-post-nav-label { order: 2; }
+#home #post_next_prev .blog-post-next .blog-post-nav-title { order: 1; }
+#home #post_next_prev .blog-post-license { grid-column: 2; grid-row: 1; color: var(--blog-muted); text-align: center; white-space: nowrap; }
+#home #post_next_prev .blog-post-license a { color: var(--blog-ink); text-underline-offset: 3px; }
 #home #topics .postDesc { float: none; margin: 12px 0 20px; padding: 0; border: 0; color: var(--blog-muted); line-height: 1.8; text-align: left; word-break: normal; overflow-wrap: anywhere; }
+
+/* Empty and populated comments keep the same native title and sorting controls. */
+#home #blog-comments-placeholder { clear: both; }
+#home #blog-comments-placeholder .feedback_area_title { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; min-width: 0; margin: 0; padding: 0 0 6px; border-bottom: 1px solid var(--blog-line); color: var(--blog-ink); font-size: 14px; font-weight: 700; line-height: 1.7; }
+#home #comment_sort { display: inline-flex; align-items: center; gap: 4px; float: none; margin: 0; color: var(--blog-muted); font-size: 12px; font-weight: 400; white-space: nowrap; }
+#home #comment_sort .comment-order-tab { display: inline-flex; align-items: center; gap: 4px; }
+#home #comment_sort .comment-sort-item { color: inherit; }
+#home #comment_sort .comment-sort-label.active { color: var(--blog-ink); font-weight: 700; }
+#home #comment_sort svg { flex: 0 0 14px; width: 14px; height: 14px; fill: none; stroke: currentColor; }
+#home #blog-comments-placeholder .blog-comments-empty { margin: 0; padding: 28px 12px; color: var(--blog-muted); font-size: 14px; text-align: center; }
 
 /* The editor keeps its original tabs, toolbar, textarea and submit control. */
 #home #comment_form { width: auto; margin: 0; padding: 0; }
@@ -669,6 +697,7 @@ html.blog-custom-boot #navigator:not(:has(#blog-header-search))::after { content
 #home #commentform_title label { display: inline-flex; align-items: center; gap: 8px; }
 #home #commentform_title > a { margin-left: 0 !important; color: var(--blog-muted); font-size: 12px; }
 #home #comment_form .commentbox_main {
+  --blog-outline-radius: 14px;
   box-sizing: border-box;
   width: 100%;
   max-width: 100%;
@@ -681,26 +710,31 @@ html.blog-custom-boot #navigator:not(:has(#blog-header-search))::after { content
 #home #comment_form .commentbox_title {
   box-sizing: border-box;
   display: flex;
-  flex-wrap: wrap;
-  gap: 8px 16px;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
   width: 100%;
+  height: auto;
   margin: 0;
-  padding: 8px 12px;
+  padding: 6px 8px;
   border-bottom: 1px solid var(--blog-soft-line);
   border-radius: var(--blog-outline-radius) var(--blog-outline-radius) 0 0;
   background: var(--blog-paper);
 }
-#home #comment_form :is(.commentbox_title_left, .commentbox_title_right) { display: flex; align-items: center; gap: 4px; width: auto; margin: 0; padding: 0; }
+#home #comment_form :is(.commentbox_title_left, .commentbox_title_right) { display: flex; align-items: center; flex-wrap: nowrap; gap: 2px; width: auto; min-width: 0; margin: 0; padding: 0; }
+#home #comment_form .commentbox_title_left.blog-comment-tabs { flex: 0 0 auto; gap: 0; padding: 2px; border: 1px solid var(--blog-line); border-radius: 10px; background: var(--blog-hover); }
+#home #comment_form .commentbox_title_right { justify-content: flex-end; }
 #home #comment_form :is(.commentbox_tab, .comment_icon) {
   box-sizing: border-box;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   width: auto;
-  min-width: 32px;
+  min-width: 30px;
   height: 32px;
   margin: 0;
-  padding: 0 8px;
+  padding: 0 6px;
   border: 1px solid transparent;
   border-radius: 6px;
   background: transparent;
@@ -710,7 +744,8 @@ html.blog-custom-boot #navigator:not(:has(#blog-header-search))::after { content
   letter-spacing: normal;
   cursor: pointer;
 }
-#home #comment_form .commentbox_tab.active { border-color: var(--blog-line); color: var(--blog-ink); }
+#home #comment_form .commentbox_tab { gap: 5px; min-width: 0; padding: 0 8px; border-radius: 7px; white-space: nowrap; }
+#home #comment_form .commentbox_tab.active { border-color: var(--blog-line); background: var(--blog-paper); color: var(--blog-ink); }
 #home #comment_form :is(.commentbox_tab, .comment_icon):hover { background: var(--blog-hover); color: var(--blog-accent); }
 #home #comment_form #tbCommentBody {
   box-sizing: border-box;
@@ -731,28 +766,47 @@ html.blog-custom-boot #navigator:not(:has(#blog-header-search))::after { content
 }
 #home #tbCommentBody::placeholder { color: var(--blog-muted); opacity: 1; }
 #home #tbCommentBodyPreview { box-sizing: border-box; min-height: 180px; margin: 0; padding: 16px; background: var(--blog-paper); overflow-wrap: anywhere; }
-#home #comment_form .commentbox_footer { box-sizing: border-box; width: 100%; padding: 8px 12px; border-top: 1px solid var(--blog-soft-line); border-radius: 0 0 var(--blog-outline-radius) var(--blog-outline-radius); background: var(--blog-paper); color: var(--blog-muted); }
-#home #ubb_auto_completion { display: inline-flex; align-items: center; gap: 6px; min-height: 28px; cursor: pointer; }
-#home #commentbox_opt { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin: 16px 0 8px; padding: 0; }
-#home #btn_comment_submit { min-width: 112px; }
+/* Native preview hides this row inline; relocated submit actions must remain available. */
+#home #comment_form .commentbox_footer { box-sizing: border-box; display: flex !important; flex-wrap: nowrap; align-items: center; justify-content: space-between; gap: 8px; width: 100%; height: auto; padding: 6px 8px; border-top: 1px solid var(--blog-soft-line); border-radius: 0 0 var(--blog-outline-radius) var(--blog-outline-radius); background: var(--blog-paper); color: var(--blog-muted); }
+#home #ubb_auto_completion { display: inline-flex; flex: 0 0 auto; align-items: center; gap: 4px; float: none; min-height: 32px; margin: 0; font-size: 12px; white-space: nowrap; cursor: pointer; }
+#home #commentbox_opt { display: flex; flex: 0 0 auto; flex-wrap: nowrap; align-items: center; gap: 12px; width: auto; margin: 0; padding: 0; text-align: left; }
+#home #commentbox_opt a { display: inline-flex; align-items: center; min-height: 32px; margin: 0; font-size: 12px; text-underline-offset: 3px; white-space: nowrap; }
+#home #btn_comment_submit { min-width: 88px; height: 34px; padding: 0 10px; }
 #home #btn_comment_submit:is(:disabled, [aria-disabled="true"]) { opacity: .55; cursor: not-allowed; }
-#home #comment_form_container > p:last-of-type { margin: 0; color: var(--blog-muted); font-size: 12px; }
+#home .blog-comment-shortcut-hint[hidden] { display: none !important; }
 #home :is(#blog_post_info_block, #comment_form, #topics .postDesc) :is(a, button, input, [role="button"]):focus-visible { outline: 2px solid var(--blog-accent); outline-offset: 3px; }
 #home #comment_form #tbCommentBody:focus-visible { outline: 2px solid var(--blog-accent); outline-offset: -3px; }
 
-/* Use article width: the desktop sidebar also leaves a narrow content column. */
-@container (max-width: 520px) {
-  #home #blog_post_info { grid-template-columns: minmax(0, 1fr); gap: 16px; padding: 16px; }
-  #home #green_channel { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  #home #div_digg { justify-content: flex-start; }
+/* Six icon controls remain on one line in narrow article columns and portrait views. */
+@container (max-width: 620px) {
+  #home #green_channel a,
+  #home #green_channel a:is(:link, :visited, :hover, :active),
+  #home #div_digg :is(.diggit, .buryit) { position: relative; width: 36px; height: 36px; padding: 0; gap: 0; }
+  #home #green_channel .blog-action-label,
+  #home #div_digg :is(.blog-vote-label, .diggnum, .burynum) { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; border: 0; clip-path: inset(50%); overflow: hidden; white-space: nowrap; }
+}
+@media (max-width: 767px), (orientation: portrait) {
+  #home #green_channel a,
+  #home #green_channel a:is(:link, :visited, :hover, :active),
+  #home #div_digg :is(.diggit, .buryit) { position: relative; width: 36px; height: 36px; padding: 0; gap: 0; }
+  #home #green_channel .blog-action-label,
+  #home #div_digg :is(.blog-vote-label, .diggnum, .burynum) { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; border: 0; clip-path: inset(50%); overflow: hidden; white-space: nowrap; }
+  #home #post_next_prev { gap: 6px; }
+  #home #post_next_prev :is(.blog-post-nav-title, .blog-license-label) { display: none; }
+  #home #post_next_prev :is(.blog-post-prev, .blog-post-next) { gap: 2px; }
+  #home #post_next_prev .p_n_p_prefix { gap: 2px; }
 }
 @media (max-width: 600px) {
-  #home #green_channel a,
-  #home #green_channel a:is(:link, :visited, :hover, :active) { height: 44px; padding: 0 8px; }
-  #home #div_digg :is(.diggit, .buryit), #home #btn_comment_submit { height: 44px; }
   #home #comment_nav .comment-nav-right { justify-content: flex-start; margin-left: 0; }
   #home #comment_nav a { min-height: 44px; }
-  #home #comment_form :is(.commentbox_tab, .comment_icon) { min-width: 40px; height: 40px; }
+  #home #comment_form .commentbox_title { gap: 4px; }
+  #home #comment_form .commentbox_title_right { gap: 0; }
+  #home #comment_form .comment_icon { min-width: 26px; width: 26px; height: 32px; padding: 0; }
+  #home #comment_form .commentbox_tab { gap: 4px; height: 30px; padding: 0 6px; }
+  #home #comment_form .commentbox_tab .blog-post-icon { flex-basis: 14px; width: 14px; height: 14px; }
   #home #comment_form #tbCommentBody { font-size: 16px; }
+}
+@media (max-width: 360px) {
+  #home #comment_form .commentbox_tab { padding: 0 3px; }
 }
 @media print { #home #blog-tools { display: none; } }
