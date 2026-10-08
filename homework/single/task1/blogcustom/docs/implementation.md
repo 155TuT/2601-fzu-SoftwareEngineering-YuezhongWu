@@ -91,6 +91,23 @@ WOFF2 内嵌在单独的 CSS 文件中，避免将大段 Base64 混入每次编�
 
 圆角变量同时用于侧栏卡片和粉丝/关注框。头像仍为 50% 圆角；favicon 的专用规则及排除选择器保持它们 1em 尺寸、0 边框。图片点击放大、收起已在平台实际页面验证。
 
+## 正文 Mermaid 流程图配色
+
+样式限定在 `#home #cnblogs_post_body .mermaid` 内，适配博客园生成的内嵌 Mermaid 流程图 SVG。平台提供原始 SVG 与其内部样式，自定义 CSS 使用更具体的选择器及局部 `!important` 覆盖颜色和连线虚线规则，保留生成的字体、尺寸、viewBox、布局及事件。
+
+| 对象 | 当前样式 | 与页面的对应关系 |
+|---|---|---|
+| `.mermaid` 容器、直属 SVG 图面、cluster 子图分组框背景 | `--blog-paper` | 页面白色／黑色背景 |
+| 节点框内填充、边标签背景 | `--blog-hover` | 表格背景 |
+| 节点边框、cluster 边框、连线与 marker | `--blog-soft-line` | 表格边框 |
+| SVG `text/tspan` 的 `fill` 与 `color` | `--blog-ink` | 正文文字 |
+| `foreignObject` 内 HTML 的 `color` | `--blog-ink` | 正文文字 |
+| `.flowchart-link`、`.edgePath .path` 的 `stroke-dasharray` | `--blog-mermaid-line-dash:6 4` | 仅连线采用虚线 |
+
+边标签的 HTML 背景和 SVG rect 填充一并覆盖，避免标签区域保留原配色。虚线选择器只作用于连线，节点边框不套用该虚线；marker 子图形显式保留实线，箭头继续使用原来的几何形状。
+
+主题切换改变 CSS 变量后，已有流程图即时换色；平台异步插入的 SVG 也直接命中样式，无需重新渲染、观察器或新增 JavaScript。当前说明覆盖已核对的正文平台内嵌 Mermaid 流程图结构，外部 SVG 图片与其他 Mermaid 图种需另行核对，不据此承诺全部图种通用。
+
 ## 22px 卡片公共角饰
 
 `.blog-outline-card` 统一相对定位、22px 圆角及可见溢出，其 `::after` 是唯一角饰定义。页首脚本在资料卡和两枚统计链接创建时直接加该类；不逐帧扫描全页计算样式，也不把圆形按钮当作卡片。统计链接聚焦时保留 22px 圆角，不再被普通文字链接的 4px 聚焦规则覆盖。

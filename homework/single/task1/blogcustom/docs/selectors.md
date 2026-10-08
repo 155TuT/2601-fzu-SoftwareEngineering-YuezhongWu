@@ -39,6 +39,7 @@
 | 侧栏 | `#sideBar`、`#sideBarMain` | ≥768px 内容宽 220px，外层 sticky，`--blog-sidebar-top-gap:12px` 统一计算 `top` 和最大高度，资料卡距视口顶部 12px；短窗口内纵向滚动；767px 及以下整体隐藏 |
 | 首页列表 | `.day`、`.dayTitle`、`.postTitle`、`.postCon`、`.c_b_p_desc`、`.postDesc` | 不把首页摘要当作文章正文添加 favicon |
 | 详情正文 | `#post_detail`、`#topics`、`.postBody`、`#cnblogs_post_body` | favicon 的扫描范围严格限定为最后这个容器 |
+| Mermaid 流程图 | `#cnblogs_post_body .mermaid`、其内嵌 `svg.flowchart` | 平台生成的正文流程图；仅用 CSS 调整配色和连线虚线，保留原字体、尺寸、viewBox、布局及事件 |
 | 互动与作者区 | `#blog_post_info_block`、`#green_channel`、`#author_profile`、`#div_digg` | 不参与正文 favicon 装饰 |
 | 评论 | `#blog-comments-placeholder`、`#comment_form`、`#comment_form_container` | 不参与正文 favicon 装饰 |
 | 公告和个人资料 | `#blog-news`、`#sidebar_news`、`#sidebar_news_container`、`#profile_block` | 资料异步到达；保留原始数据供卡片读取 |
@@ -67,6 +68,22 @@ LuxInteriorLight 的 `#container`、`#content`、`#sidebar-a` 不适用于当前
 - `#cnblogs_post_body img:not(.blog-link-favicon-slot img)`、`#home .postCon img`：正文和摘要图片直接加圆角边框，像素四角随 22px 半径裁切；页脚脚本为每张原图包一层角饰外框。
 - `.blog-image-frame.blog-outline-card`：贴合图片尺寸的角饰外框；`.blog-image-frame--summary` 保留首页缩略图的右浮动与尺寸。
 - `--blog-outline-radius`：图片、侧栏卡片与两列关注统计框默认共用 22px；文章互动卡片与评论编辑器在自身作用域覆盖为 14px；头像与 favicon 独立。
+
+## 正文 Mermaid 流程图
+
+以下规则以 `#home #cnblogs_post_body .mermaid` 为作用域，当前适配平台生成的内嵌 Mermaid 流程图 SVG。
+
+| 选择器 | 样式用途 |
+|---|---|
+| `.mermaid`、`.mermaid > svg` | 整张图面与容器背景使用 `--blog-paper`，与页面白色／黑色背景一致 |
+| `svg .node > :is(rect, circle, ellipse, polygon, path)` | 节点框内填充使用 `--blog-hover`，边框使用 `--blog-soft-line`，与表格配色一致 |
+| `svg .cluster > rect` | 子图分组框属于图面，填充使用 `--blog-paper`，边框使用 `--blog-soft-line` |
+| `svg :is(text, tspan)`、`svg foreignObject *` | SVG 文字 `fill` 与 HTML 文字 `color` 使用 `--blog-ink` |
+| `svg :is(.edgeLabel, .labelBkg, .edgeLabel p)`、`svg .edgeLabel rect` | HTML 边标签背景与 SVG 标签填充使用 `--blog-hover` |
+| `svg :is(.flowchart-link, .edgePath .path)` | 连线使用 `--blog-soft-line`，通过 `--blog-mermaid-line-dash:6 4` 设置虚线 |
+| `svg marker`、其子图形、`svg .arrowheadPath` | 箭头使用 `--blog-soft-line`，marker 子图形保留实线；节点边框不套用连线虚线 |
+
+规则保留平台生成的字体、尺寸、viewBox、布局及事件。CSS 变量切换主题时即时变色，异步插入的 SVG 也直接生效，无需重新渲染或新增 JS；外部 SVG 图片与其他 Mermaid 图种需单独核对结构。
 
 ## 本教程新增的节点
 

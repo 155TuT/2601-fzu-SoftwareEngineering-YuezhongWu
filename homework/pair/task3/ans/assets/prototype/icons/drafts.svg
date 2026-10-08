@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" fill="none" role="img" aria-labelledby="drafts-title drafts-description">
+  <title id="drafts-title">文稿收纳箱</title>
+  <desc id="drafts-description">暖橙圆角收纳箱盛放白色折角文稿，荧光绿纸页从后方露出；炭黑圆端描边，无铅笔元素。</desc>
+  <g id="drafts-storage" stroke="#252B32" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path id="lime-back-page" d="M29 25H61Q65 25 65 29V65H25V29Q25 25 29 25Z" fill="#C7EE38"/>
+    <path id="white-document" d="M37 14H59L71 26V63H33V18Q33 14 37 14Z" fill="#FFFFFF"/>
+    <path id="folded-document-corner" d="M59 14V23Q59 26 62 26H71" fill="#FFBD73" stroke-width="3"/>
+    <path id="document-lines" d="M41 36H61M41 44H55" stroke-width="3"/>
+    <path id="storage-back-rim" d="M18 48H78Q82 48 82 52V60H14V52Q14 48 18 48Z" fill="#FFFFFF"/>
+    <path id="orange-storage-box" d="M14 54H34L39 63H57L62 54H82V75Q82 84 73 84H23Q14 84 14 75Z" fill="#FFBD73"/>
+    <path id="white-box-label" d="M41 71H55Q57 71 57 73V76Q57 78 55 78H41Q39 78 39 76V73Q39 71 41 71Z" fill="#FFFFFF" stroke-width="3"/>
+  </g>
+</svg>

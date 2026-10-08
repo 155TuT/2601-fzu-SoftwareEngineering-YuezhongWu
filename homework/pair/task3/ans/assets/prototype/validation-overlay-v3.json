@@ -1,0 +1,1039 @@
+{
+  "date": "2026-10-02",
+  "method": "Chrome UI / existing Code plugin",
+  "applied": {
+    "patch": "shiban.overlay.v3.20261002",
+    "draftComponent": "63:1615",
+    "mineIcons": 2,
+    "campus": [
+      {
+        "id": "16:8524",
+        "width": 104,
+        "paddingLeft": 12,
+        "paddingRight": 12
+      },
+      {
+        "id": "35:13988",
+        "width": 104,
+        "paddingLeft": 12,
+        "paddingRight": 12
+      },
+      {
+        "id": "35:14185",
+        "width": 104,
+        "paddingLeft": 12,
+        "paddingRight": 12
+      },
+      {
+        "id": "35:14382",
+        "width": 104,
+        "paddingLeft": 12,
+        "paddingRight": 12
+      },
+      {
+        "id": "35:14579",
+        "width": 104,
+        "paddingLeft": 12,
+        "paddingRight": 12
+      }
+    ],
+    "bottomSheets": [
+      {
+        "id": "35:12256",
+        "name": "覆盖层-搜索输入",
+        "y": 518,
+        "height": 326,
+        "bottom": 844
+      },
+      {
+        "id": "35:12258",
+        "name": "覆盖层-筛选草稿",
+        "y": 420,
+        "height": 424,
+        "bottom": 844
+      },
+      {
+        "id": "35:14806",
+        "name": "覆盖层免费-筛选-home-u",
+        "y": 420,
+        "height": 424,
+        "bottom": 844
+      },
+      {
+        "id": "35:14809",
+        "name": "覆盖层免费-筛选-home-k",
+        "y": 420,
+        "height": 424,
+        "bottom": 844
+      },
+      {
+        "id": "35:14812",
+        "name": "覆盖层免费-筛选-home-c",
+        "y": 420,
+        "height": 424,
+        "bottom": 844
+      },
+      {
+        "id": "35:14815",
+        "name": "覆盖层免费-筛选-u-all",
+        "y": 420,
+        "height": 424,
+        "bottom": 844
+      },
+      {
+        "id": "35:14818",
+        "name": "覆盖层免费-筛选-u-u",
+        "y": 420,
+        "height": 424,
+        "bottom": 844
+      },
+      {
+        "id": "35:14821",
+        "name": "覆盖层免费-筛选-u-k",
+        "y": 420,
+        "height": 424,
+        "bottom": 844
+      },
+      {
+        "id": "35:14824",
+        "name": "覆盖层免费-筛选-u-c",
+        "y": 420,
+        "height": 424,
+        "bottom": 844
+      },
+      {
+        "id": "35:14827",
+        "name": "覆盖层免费-筛选-k-all",
+        "y": 420,
+        "height": 424,
+        "bottom": 844
+      },
+      {
+        "id": "35:14830",
+        "name": "覆盖层免费-筛选-k-u",
+        "y": 420,
+        "height": 424,
+        "bottom": 844
+      },
+      {
+        "id": "35:14833",
+        "name": "覆盖层免费-筛选-k-k",
+        "y": 420,
+        "height": 424,
+        "bottom": 844
+      },
+      {
+        "id": "35:14836",
+        "name": "覆盖层免费-筛选-k-c",
+        "y": 420,
+        "height": 424,
+        "bottom": 844
+      },
+      {
+        "id": "35:14839",
+        "name": "覆盖层免费-筛选-c-all",
+        "y": 420,
+        "height": 424,
+        "bottom": 844
+      },
+      {
+        "id": "35:14842",
+        "name": "覆盖层免费-筛选-c-u",
+        "y": 420,
+        "height": 424,
+        "bottom": 844
+      },
+      {
+        "id": "35:14845",
+        "name": "覆盖层免费-筛选-c-k",
+        "y": 420,
+        "height": 424,
+        "bottom": 844
+      },
+      {
+        "id": "35:14848",
+        "name": "覆盖层免费-筛选-c-c",
+        "y": 420,
+        "height": 424,
+        "bottom": 844
+      },
+      {
+        "id": "35:14851",
+        "name": "覆盖层免费-筛选-e-all",
+        "y": 420,
+        "height": 424,
+        "bottom": 844
+      },
+      {
+        "id": "35:14854",
+        "name": "覆盖层免费-筛选-e-u",
+        "y": 420,
+        "height": 424,
+        "bottom": 844
+      },
+      {
+        "id": "35:14857",
+        "name": "覆盖层免费-筛选-e-k",
+        "y": 420,
+        "height": 424,
+        "bottom": 844
+      },
+      {
+        "id": "35:14860",
+        "name": "覆盖层免费-筛选-e-c",
+        "y": 420,
+        "height": 424,
+        "bottom": 844
+      }
+    ],
+    "publish": {
+      "id": "16:8931",
+      "stackY": 192,
+      "bottom": 844,
+      "hero": "16:8943",
+      "relations": [
+        {
+          "id": "16:8962",
+          "name": "关系选择 / 我丢东西了",
+          "y": 174,
+          "height": 112,
+          "target": "16:9863"
+        },
+        {
+          "id": "16:8979",
+          "name": "关系选择 / 我捡到了",
+          "y": 262,
+          "height": 112,
+          "target": "16:9489"
+        },
+        {
+          "id": "16:8997",
+          "name": "关系选择 / 已交服务点",
+          "y": 350,
+          "height": 112,
+          "target": "16:10444"
+        },
+        {
+          "id": "16:9019",
+          "name": "关系选择 / 转报一条线索",
+          "y": 438,
+          "height": 112,
+          "target": "16:9764"
+        }
+      ],
+      "draft": "16:11772",
+      "close": "16:9056",
+      "overlayEntries": 8
+    }
+  },
+  "verification": {
+    "browserClicks": [
+      {
+        "path": "首页 → 发布浮层 → X → 首页",
+        "passed": true
+      },
+      {
+        "path": "首页 → 筛选 → 钥匙条件 → 应用 → 钥匙首页",
+        "passed": true
+      },
+      {
+        "path": "我的 → 顶部草稿箱 → 四项草稿列表 → 返回我的",
+        "passed": true
+      },
+      {
+        "path": "我的 → 发布浮层 → X → 我的",
+        "passed": true
+      },
+      {
+        "path": "我的 → 发布浮层 → 底部草稿箱 → 四项草稿列表",
+        "passed": true
+      }
+    ],
+    "screenshots": [
+      "publish-overlay-v3-verified.png",
+      "filter-overlay-v3-verified.png",
+      "mine-drafts-v3-verified.png"
+    ],
+    "limits": "四条关系表单未重新完整走查；其原卡片ID与目的地保留并完成原生节点检查。"
+  },
+  "nativeVerification": {
+    "patch": "shiban.overlay.v3.20261002",
+    "links": 559,
+    "unsupported": 0,
+    "missing": [],
+    "publishEntries": [
+      {
+        "source": "16:8741",
+        "name": "发布 / 独立圆形入口",
+        "navigation": "OVERLAY",
+        "transition": {
+          "type": "MOVE_IN",
+          "direction": "TOP",
+          "matchLayers": false,
+          "easing": {
+            "type": "EASE_OUT"
+          },
+          "duration": 0.25
+        }
+      },
+      {
+        "source": "16:8894",
+        "name": "发布 / 独立圆形入口",
+        "navigation": "OVERLAY",
+        "transition": {
+          "type": "MOVE_IN",
+          "direction": "TOP",
+          "matchLayers": false,
+          "easing": {
+            "type": "EASE_OUT"
+          },
+          "duration": 0.25
+        }
+      },
+      {
+        "source": "16:11434",
+        "name": "发布 / 独立圆形入口",
+        "navigation": "OVERLAY",
+        "transition": {
+          "type": "MOVE_IN",
+          "direction": "TOP",
+          "matchLayers": false,
+          "easing": {
+            "type": "EASE_OUT"
+          },
+          "duration": 0.25
+        }
+      },
+      {
+        "source": "35:16881",
+        "name": "操作 / 新建寻物信息",
+        "navigation": "OVERLAY",
+        "transition": {
+          "type": "MOVE_IN",
+          "direction": "TOP",
+          "matchLayers": false,
+          "easing": {
+            "type": "EASE_OUT"
+          },
+          "duration": 0.25
+        }
+      },
+      {
+        "source": "35:13659",
+        "name": "操作 / 新建寻物信息",
+        "navigation": "OVERLAY",
+        "transition": {
+          "type": "MOVE_IN",
+          "direction": "TOP",
+          "matchLayers": false,
+          "easing": {
+            "type": "EASE_OUT"
+          },
+          "duration": 0.25
+        }
+      },
+      {
+        "source": "35:13750",
+        "name": "操作 / 新建寻物信息",
+        "navigation": "OVERLAY",
+        "transition": {
+          "type": "MOVE_IN",
+          "direction": "TOP",
+          "matchLayers": false,
+          "easing": {
+            "type": "EASE_OUT"
+          },
+          "duration": 0.25
+        }
+      },
+      {
+        "source": "35:13841",
+        "name": "操作 / 新建寻物信息",
+        "navigation": "OVERLAY",
+        "transition": {
+          "type": "MOVE_IN",
+          "direction": "TOP",
+          "matchLayers": false,
+          "easing": {
+            "type": "EASE_OUT"
+          },
+          "duration": 0.25
+        }
+      },
+      {
+        "source": "35:13299",
+        "name": "发布 / 独立圆形入口",
+        "navigation": "OVERLAY",
+        "transition": {
+          "type": "MOVE_IN",
+          "direction": "TOP",
+          "matchLayers": false,
+          "easing": {
+            "type": "EASE_OUT"
+          },
+          "duration": 0.25
+        }
+      }
+    ],
+    "sheets": [
+      {
+        "id": "35:12256",
+        "name": "覆盖层-搜索输入",
+        "x": 502,
+        "y": 988,
+        "width": 390,
+        "height": 844,
+        "sheet": {
+          "id": "35:16884",
+          "name": "浮层内容",
+          "x": 0,
+          "y": 518,
+          "width": 390,
+          "height": 326
+        },
+        "bottom": 844,
+        "shade": {
+          "id": "35:16883",
+          "name": "遮罩 / 关闭当前层",
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        },
+        "childrenFit": true
+      },
+      {
+        "id": "35:12258",
+        "name": "覆盖层-筛选草稿",
+        "x": 1442,
+        "y": 988,
+        "width": 390,
+        "height": 844,
+        "sheet": {
+          "id": "35:16912",
+          "name": "浮层内容",
+          "x": 0,
+          "y": 420,
+          "width": 390,
+          "height": 424
+        },
+        "bottom": 844,
+        "shade": {
+          "id": "35:16911",
+          "name": "遮罩 / 关闭当前层",
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        },
+        "childrenFit": true
+      },
+      {
+        "id": "35:14806",
+        "name": "覆盖层免费-筛选-home-u",
+        "x": 972,
+        "y": 4748,
+        "width": 390,
+        "height": 844,
+        "sheet": {
+          "id": "35:14808",
+          "name": "浮层内容",
+          "x": 0,
+          "y": 420,
+          "width": 390,
+          "height": 424
+        },
+        "bottom": 844,
+        "shade": {
+          "id": "35:14807",
+          "name": "遮罩 / 关闭当前层",
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        },
+        "childrenFit": true
+      },
+      {
+        "id": "35:14809",
+        "name": "覆盖层免费-筛选-home-k",
+        "x": 1442,
+        "y": 4748,
+        "width": 390,
+        "height": 844,
+        "sheet": {
+          "id": "35:14811",
+          "name": "浮层内容",
+          "x": 0,
+          "y": 420,
+          "width": 390,
+          "height": 424
+        },
+        "bottom": 844,
+        "shade": {
+          "id": "35:14810",
+          "name": "遮罩 / 关闭当前层",
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        },
+        "childrenFit": true
+      },
+      {
+        "id": "35:14812",
+        "name": "覆盖层免费-筛选-home-c",
+        "x": 1912,
+        "y": 4748,
+        "width": 390,
+        "height": 844,
+        "sheet": {
+          "id": "35:14814",
+          "name": "浮层内容",
+          "x": 0,
+          "y": 420,
+          "width": 390,
+          "height": 424
+        },
+        "bottom": 844,
+        "shade": {
+          "id": "35:14813",
+          "name": "遮罩 / 关闭当前层",
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        },
+        "childrenFit": true
+      },
+      {
+        "id": "35:14815",
+        "name": "覆盖层免费-筛选-u-all",
+        "x": 32,
+        "y": 5688,
+        "width": 390,
+        "height": 844,
+        "sheet": {
+          "id": "35:14817",
+          "name": "浮层内容",
+          "x": 0,
+          "y": 420,
+          "width": 390,
+          "height": 424
+        },
+        "bottom": 844,
+        "shade": {
+          "id": "35:14816",
+          "name": "遮罩 / 关闭当前层",
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        },
+        "childrenFit": true
+      },
+      {
+        "id": "35:14818",
+        "name": "覆盖层免费-筛选-u-u",
+        "x": 502,
+        "y": 5688,
+        "width": 390,
+        "height": 844,
+        "sheet": {
+          "id": "35:14820",
+          "name": "浮层内容",
+          "x": 0,
+          "y": 420,
+          "width": 390,
+          "height": 424
+        },
+        "bottom": 844,
+        "shade": {
+          "id": "35:14819",
+          "name": "遮罩 / 关闭当前层",
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        },
+        "childrenFit": true
+      },
+      {
+        "id": "35:14821",
+        "name": "覆盖层免费-筛选-u-k",
+        "x": 972,
+        "y": 5688,
+        "width": 390,
+        "height": 844,
+        "sheet": {
+          "id": "35:14823",
+          "name": "浮层内容",
+          "x": 0,
+          "y": 420,
+          "width": 390,
+          "height": 424
+        },
+        "bottom": 844,
+        "shade": {
+          "id": "35:14822",
+          "name": "遮罩 / 关闭当前层",
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        },
+        "childrenFit": true
+      },
+      {
+        "id": "35:14824",
+        "name": "覆盖层免费-筛选-u-c",
+        "x": 1442,
+        "y": 5688,
+        "width": 390,
+        "height": 844,
+        "sheet": {
+          "id": "35:14826",
+          "name": "浮层内容",
+          "x": 0,
+          "y": 420,
+          "width": 390,
+          "height": 424
+        },
+        "bottom": 844,
+        "shade": {
+          "id": "35:14825",
+          "name": "遮罩 / 关闭当前层",
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        },
+        "childrenFit": true
+      },
+      {
+        "id": "35:14827",
+        "name": "覆盖层免费-筛选-k-all",
+        "x": 1912,
+        "y": 5688,
+        "width": 390,
+        "height": 844,
+        "sheet": {
+          "id": "35:14829",
+          "name": "浮层内容",
+          "x": 0,
+          "y": 420,
+          "width": 390,
+          "height": 424
+        },
+        "bottom": 844,
+        "shade": {
+          "id": "35:14828",
+          "name": "遮罩 / 关闭当前层",
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        },
+        "childrenFit": true
+      },
+      {
+        "id": "35:14830",
+        "name": "覆盖层免费-筛选-k-u",
+        "x": 32,
+        "y": 6628,
+        "width": 390,
+        "height": 844,
+        "sheet": {
+          "id": "35:14832",
+          "name": "浮层内容",
+          "x": 0,
+          "y": 420,
+          "width": 390,
+          "height": 424
+        },
+        "bottom": 844,
+        "shade": {
+          "id": "35:14831",
+          "name": "遮罩 / 关闭当前层",
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        },
+        "childrenFit": true
+      },
+      {
+        "id": "35:14833",
+        "name": "覆盖层免费-筛选-k-k",
+        "x": 502,
+        "y": 6628,
+        "width": 390,
+        "height": 844,
+        "sheet": {
+          "id": "35:14835",
+          "name": "浮层内容",
+          "x": 0,
+          "y": 420,
+          "width": 390,
+          "height": 424
+        },
+        "bottom": 844,
+        "shade": {
+          "id": "35:14834",
+          "name": "遮罩 / 关闭当前层",
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        },
+        "childrenFit": true
+      },
+      {
+        "id": "35:14836",
+        "name": "覆盖层免费-筛选-k-c",
+        "x": 972,
+        "y": 6628,
+        "width": 390,
+        "height": 844,
+        "sheet": {
+          "id": "35:14838",
+          "name": "浮层内容",
+          "x": 0,
+          "y": 420,
+          "width": 390,
+          "height": 424
+        },
+        "bottom": 844,
+        "shade": {
+          "id": "35:14837",
+          "name": "遮罩 / 关闭当前层",
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        },
+        "childrenFit": true
+      },
+      {
+        "id": "35:14839",
+        "name": "覆盖层免费-筛选-c-all",
+        "x": 1442,
+        "y": 6628,
+        "width": 390,
+        "height": 844,
+        "sheet": {
+          "id": "35:14841",
+          "name": "浮层内容",
+          "x": 0,
+          "y": 420,
+          "width": 390,
+          "height": 424
+        },
+        "bottom": 844,
+        "shade": {
+          "id": "35:14840",
+          "name": "遮罩 / 关闭当前层",
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        },
+        "childrenFit": true
+      },
+      {
+        "id": "35:14842",
+        "name": "覆盖层免费-筛选-c-u",
+        "x": 1912,
+        "y": 6628,
+        "width": 390,
+        "height": 844,
+        "sheet": {
+          "id": "35:14844",
+          "name": "浮层内容",
+          "x": 0,
+          "y": 420,
+          "width": 390,
+          "height": 424
+        },
+        "bottom": 844,
+        "shade": {
+          "id": "35:14843",
+          "name": "遮罩 / 关闭当前层",
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        },
+        "childrenFit": true
+      },
+      {
+        "id": "35:14845",
+        "name": "覆盖层免费-筛选-c-k",
+        "x": 32,
+        "y": 7568,
+        "width": 390,
+        "height": 844,
+        "sheet": {
+          "id": "35:14847",
+          "name": "浮层内容",
+          "x": 0,
+          "y": 420,
+          "width": 390,
+          "height": 424
+        },
+        "bottom": 844,
+        "shade": {
+          "id": "35:14846",
+          "name": "遮罩 / 关闭当前层",
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        },
+        "childrenFit": true
+      },
+      {
+        "id": "35:14848",
+        "name": "覆盖层免费-筛选-c-c",
+        "x": 502,
+        "y": 7568,
+        "width": 390,
+        "height": 844,
+        "sheet": {
+          "id": "35:14850",
+          "name": "浮层内容",
+          "x": 0,
+          "y": 420,
+          "width": 390,
+          "height": 424
+        },
+        "bottom": 844,
+        "shade": {
+          "id": "35:14849",
+          "name": "遮罩 / 关闭当前层",
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        },
+        "childrenFit": true
+      },
+      {
+        "id": "35:14851",
+        "name": "覆盖层免费-筛选-e-all",
+        "x": 972,
+        "y": 7568,
+        "width": 390,
+        "height": 844,
+        "sheet": {
+          "id": "35:14853",
+          "name": "浮层内容",
+          "x": 0,
+          "y": 420,
+          "width": 390,
+          "height": 424
+        },
+        "bottom": 844,
+        "shade": {
+          "id": "35:14852",
+          "name": "遮罩 / 关闭当前层",
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        },
+        "childrenFit": true
+      },
+      {
+        "id": "35:14854",
+        "name": "覆盖层免费-筛选-e-u",
+        "x": 1442,
+        "y": 7568,
+        "width": 390,
+        "height": 844,
+        "sheet": {
+          "id": "35:14856",
+          "name": "浮层内容",
+          "x": 0,
+          "y": 420,
+          "width": 390,
+          "height": 424
+        },
+        "bottom": 844,
+        "shade": {
+          "id": "35:14855",
+          "name": "遮罩 / 关闭当前层",
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        },
+        "childrenFit": true
+      },
+      {
+        "id": "35:14857",
+        "name": "覆盖层免费-筛选-e-k",
+        "x": 1912,
+        "y": 7568,
+        "width": 390,
+        "height": 844,
+        "sheet": {
+          "id": "35:14859",
+          "name": "浮层内容",
+          "x": 0,
+          "y": 420,
+          "width": 390,
+          "height": 424
+        },
+        "bottom": 844,
+        "shade": {
+          "id": "35:14858",
+          "name": "遮罩 / 关闭当前层",
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        },
+        "childrenFit": true
+      },
+      {
+        "id": "35:14860",
+        "name": "覆盖层免费-筛选-e-c",
+        "x": 32,
+        "y": 8508,
+        "width": 390,
+        "height": 844,
+        "sheet": {
+          "id": "35:14862",
+          "name": "浮层内容",
+          "x": 0,
+          "y": 420,
+          "width": 390,
+          "height": 424
+        },
+        "bottom": 844,
+        "shade": {
+          "id": "35:14861",
+          "name": "遮罩 / 关闭当前层",
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        },
+        "childrenFit": true
+      }
+    ],
+    "component": {
+      "id": "63:1615",
+      "name": "插画 / 文稿收纳箱",
+      "x": 1260,
+      "y": 1070,
+      "width": 96,
+      "height": 96
+    },
+    "componentParent": {
+      "id": "16:8405",
+      "name": "00 · 拾伴设计规范",
+      "x": -1550,
+      "y": 0,
+      "width": 1480,
+      "height": 1730
+    },
+    "publish": {
+      "root": {
+        "id": "16:8931",
+        "name": "P02-发布-关系选择",
+        "x": 1028,
+        "y": 48,
+        "width": 390,
+        "height": 844
+      },
+      "stack": {
+        "id": "63:1647",
+        "name": "发布浮层 / 六层卡片堆栈",
+        "x": 0,
+        "y": 192,
+        "width": 390,
+        "height": 652
+      },
+      "hero": {
+        "id": "16:8943",
+        "name": "堆栈 01 / 发布关系说明 · 不可点击",
+        "x": 16,
+        "y": 0,
+        "width": 358,
+        "height": 198,
+        "children": [
+          {
+            "id": "63:1661",
+            "name": "发布一件小事",
+            "x": 16,
+            "y": 20,
+            "width": 326,
+            "height": 20
+          },
+          {
+            "id": "16:8944",
+            "name": "插画 / 贴纸铅笔",
+            "x": 149,
+            "y": 47,
+            "width": 60,
+            "height": 60
+          },
+          {
+            "id": "16:8959",
+            "name": "你和这件小物的关系是？",
+            "x": 16,
+            "y": 114,
+            "width": 326,
+            "height": 36
+          },
+          {
+            "id": "16:8960",
+            "name": "先选关系，再用一分钟把信息说清楚。",
+            "x": 16,
+            "y": 157,
+            "width": 326,
+            "height": 21
+          }
+        ],
+        "reactions": 0
+      },
+      "oldBack": 0,
+      "duplicateDraft": 0,
+      "close": [
+        {
+          "action": {
+            "type": "CLOSE"
+          },
+          "actions": [
+            {
+              "type": "CLOSE"
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "draft": [
+        {
+          "id": "63:1649",
+          "name": "图标 / 草稿箱",
+          "x": 16,
+          "y": 18,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "id": "16:11773",
+          "name": "草稿箱",
+          "x": 56,
+          "y": 22,
+          "width": 48,
+          "height": 24
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,2422 @@
+{
+  "ok": true,
+  "changes": [
+    {
+      "id": "16:9701",
+      "name": "操作 / 返回修改",
+      "before": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "16:9489",
+            "navigation": "NAVIGATE",
+            "transition": {
+              "type": "DISSOLVE",
+              "easing": {
+                "type": "EASE_OUT"
+              },
+              "duration": 0.18000000715255737
+            },
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "16:9489",
+              "navigation": "NAVIGATE",
+              "transition": {
+                "type": "DISSOLVE",
+                "easing": {
+                  "type": "EASE_OUT"
+                },
+                "duration": 0.18000000715255737
+              },
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "after": [
+        {
+          "action": {
+            "type": "BACK"
+          },
+          "actions": [
+            {
+              "type": "BACK"
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "reason": "返回已打开的表单或回执，不追加历史"
+    },
+    {
+      "id": "16:9966",
+      "name": "操作 / 返回修改",
+      "before": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "16:9863",
+            "navigation": "NAVIGATE",
+            "transition": {
+              "type": "DISSOLVE",
+              "easing": {
+                "type": "EASE_OUT"
+              },
+              "duration": 0.18000000715255737
+            },
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "16:9863",
+              "navigation": "NAVIGATE",
+              "transition": {
+                "type": "DISSOLVE",
+                "easing": {
+                  "type": "EASE_OUT"
+                },
+                "duration": 0.18000000715255737
+              },
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "after": [
+        {
+          "action": {
+            "type": "BACK"
+          },
+          "actions": [
+            {
+              "type": "BACK"
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "reason": "返回已打开的表单或回执，不追加历史"
+    },
+    {
+      "id": "35:12827",
+      "name": "操作 / 查看钥匙线索回执",
+      "before": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "35:12534",
+            "navigation": "NAVIGATE",
+            "transition": {
+              "type": "DISSOLVE",
+              "easing": {
+                "type": "EASE_OUT"
+              },
+              "duration": 0.18000000715255737
+            },
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "35:12534",
+              "navigation": "NAVIGATE",
+              "transition": {
+                "type": "DISSOLVE",
+                "easing": {
+                  "type": "EASE_OUT"
+                },
+                "duration": 0.18000000715255737
+              },
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "after": [
+        {
+          "action": {
+            "type": "BACK"
+          },
+          "actions": [
+            {
+              "type": "BACK"
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "reason": "返回已打开的表单或回执，不追加历史"
+    },
+    {
+      "id": "35:12833",
+      "name": "操作 / 查看蓝伞线索回执",
+      "before": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "35:12589",
+            "navigation": "NAVIGATE",
+            "transition": {
+              "type": "DISSOLVE",
+              "easing": {
+                "type": "EASE_OUT"
+              },
+              "duration": 0.18000000715255737
+            },
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "35:12589",
+              "navigation": "NAVIGATE",
+              "transition": {
+                "type": "DISSOLVE",
+                "easing": {
+                  "type": "EASE_OUT"
+                },
+                "duration": 0.18000000715255737
+              },
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "after": [
+        {
+          "action": {
+            "type": "BACK"
+          },
+          "actions": [
+            {
+              "type": "BACK"
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "reason": "返回已打开的表单或回执，不追加历史"
+    },
+    {
+      "id": "16:9540",
+      "name": "操作 / 保存草稿",
+      "before": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "35:17730",
+            "navigation": "NAVIGATE",
+            "transition": null,
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "35:17730",
+              "navigation": "NAVIGATE",
+              "transition": null,
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "after": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "35:17730",
+            "navigation": "SWAP",
+            "transition": null,
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "35:17730",
+              "navigation": "SWAP",
+              "transition": null,
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "reason": "保存后替换当前编辑页"
+    },
+    {
+      "id": "16:9596",
+      "name": "操作 / 保存草稿",
+      "before": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "35:17730",
+            "navigation": "NAVIGATE",
+            "transition": null,
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "35:17730",
+              "navigation": "NAVIGATE",
+              "transition": null,
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "after": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "35:17730",
+            "navigation": "SWAP",
+            "transition": null,
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "35:17730",
+              "navigation": "SWAP",
+              "transition": null,
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "reason": "保存后替换当前编辑页"
+    },
+    {
+      "id": "16:9807",
+      "name": "操作 / 保存草稿",
+      "before": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "35:17730",
+            "navigation": "NAVIGATE",
+            "transition": null,
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "35:17730",
+              "navigation": "NAVIGATE",
+              "transition": null,
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "after": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "35:17730",
+            "navigation": "SWAP",
+            "transition": null,
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "35:17730",
+              "navigation": "SWAP",
+              "transition": null,
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "reason": "保存后替换当前编辑页"
+    },
+    {
+      "id": "16:9916",
+      "name": "操作 / 保存草稿",
+      "before": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "35:17730",
+            "navigation": "NAVIGATE",
+            "transition": null,
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "35:17730",
+              "navigation": "NAVIGATE",
+              "transition": null,
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "after": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "35:17730",
+            "navigation": "SWAP",
+            "transition": null,
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "35:17730",
+              "navigation": "SWAP",
+              "transition": null,
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "reason": "保存后替换当前编辑页"
+    },
+    {
+      "id": "16:9697",
+      "name": "操作 / 确认提交",
+      "before": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "16:9703",
+            "navigation": "NAVIGATE",
+            "transition": {
+              "type": "DISSOLVE",
+              "easing": {
+                "type": "EASE_OUT"
+              },
+              "duration": 0.18000000715255737
+            },
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "16:9703",
+              "navigation": "NAVIGATE",
+              "transition": {
+                "type": "DISSOLVE",
+                "easing": {
+                  "type": "EASE_OUT"
+                },
+                "duration": 0.18000000715255737
+              },
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "after": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "16:9703",
+            "navigation": "SWAP",
+            "transition": null,
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "16:9703",
+              "navigation": "SWAP",
+              "transition": null,
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "reason": "提交或查询结果不保留可重复提交的上一层"
+    },
+    {
+      "id": "16:9964",
+      "name": "操作 / 确认发布寻物",
+      "before": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "16:9345",
+            "navigation": "NAVIGATE",
+            "transition": {
+              "type": "DISSOLVE",
+              "easing": {
+                "type": "EASE_OUT"
+              },
+              "duration": 0.18000000715255737
+            },
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "16:9345",
+              "navigation": "NAVIGATE",
+              "transition": {
+                "type": "DISSOLVE",
+                "easing": {
+                  "type": "EASE_OUT"
+                },
+                "duration": 0.18000000715255737
+              },
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "after": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "16:9345",
+            "navigation": "SWAP",
+            "transition": null,
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "16:9345",
+              "navigation": "SWAP",
+              "transition": null,
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "reason": "提交或查询结果不保留可重复提交的上一层"
+    },
+    {
+      "id": "16:9805",
+      "name": "操作 / 提交到待核实区",
+      "before": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "16:9809",
+            "navigation": "NAVIGATE",
+            "transition": {
+              "type": "DISSOLVE",
+              "easing": {
+                "type": "EASE_OUT"
+              },
+              "duration": 0.18000000715255737
+            },
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "16:9809",
+              "navigation": "NAVIGATE",
+              "transition": {
+                "type": "DISSOLVE",
+                "easing": {
+                  "type": "EASE_OUT"
+                },
+                "duration": 0.18000000715255737
+              },
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "after": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "16:9809",
+            "navigation": "SWAP",
+            "transition": null,
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "16:9809",
+              "navigation": "SWAP",
+              "transition": null,
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "reason": "提交或查询结果不保留可重复提交的上一层"
+    },
+    {
+      "id": "16:10106",
+      "name": "操作 / 提交认领材料",
+      "before": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "16:10110",
+            "navigation": "NAVIGATE",
+            "transition": {
+              "type": "DISSOLVE",
+              "easing": {
+                "type": "EASE_OUT"
+              },
+              "duration": 0.18000000715255737
+            },
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "16:10110",
+              "navigation": "NAVIGATE",
+              "transition": {
+                "type": "DISSOLVE",
+                "easing": {
+                  "type": "EASE_OUT"
+                },
+                "duration": 0.18000000715255737
+              },
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "after": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "16:10110",
+            "navigation": "SWAP",
+            "transition": null,
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "16:10110",
+              "navigation": "SWAP",
+              "transition": null,
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "reason": "提交或查询结果不保留可重复提交的上一层"
+    },
+    {
+      "id": "16:10708",
+      "name": "操作 / 提交关联线索",
+      "before": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "16:11056",
+            "navigation": "NAVIGATE",
+            "transition": {
+              "type": "DISSOLVE",
+              "easing": {
+                "type": "EASE_OUT"
+              },
+              "duration": 0.18000000715255737
+            },
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "16:11056",
+              "navigation": "NAVIGATE",
+              "transition": {
+                "type": "DISSOLVE",
+                "easing": {
+                  "type": "EASE_OUT"
+                },
+                "duration": 0.18000000715255737
+              },
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "after": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "16:11056",
+            "navigation": "SWAP",
+            "transition": null,
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "16:11056",
+              "navigation": "SWAP",
+              "transition": null,
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "reason": "提交或查询结果不保留可重复提交的上一层"
+    },
+    {
+      "id": "16:11265",
+      "name": "操作 / 提交复核，查看待办",
+      "before": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "16:11056",
+            "navigation": "NAVIGATE",
+            "transition": {
+              "type": "DISSOLVE",
+              "easing": {
+                "type": "EASE_OUT"
+              },
+              "duration": 0.18000000715255737
+            },
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "16:11056",
+              "navigation": "NAVIGATE",
+              "transition": {
+                "type": "DISSOLVE",
+                "easing": {
+                  "type": "EASE_OUT"
+                },
+                "duration": 0.18000000715255737
+              },
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "after": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "16:11056",
+            "navigation": "SWAP",
+            "transition": null,
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "16:11056",
+              "navigation": "SWAP",
+              "transition": null,
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "reason": "提交或查询结果不保留可重复提交的上一层"
+    },
+    {
+      "id": "16:11318",
+      "name": "操作 / 查询本次提交结果",
+      "before": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "16:9703",
+            "navigation": "NAVIGATE",
+            "transition": {
+              "type": "DISSOLVE",
+              "easing": {
+                "type": "EASE_OUT"
+              },
+              "duration": 0.18000000715255737
+            },
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "16:9703",
+              "navigation": "NAVIGATE",
+              "transition": {
+                "type": "DISSOLVE",
+                "easing": {
+                  "type": "EASE_OUT"
+                },
+                "duration": 0.18000000715255737
+              },
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "after": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "16:9703",
+            "navigation": "SWAP",
+            "transition": null,
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "16:9703",
+              "navigation": "SWAP",
+              "transition": null,
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "reason": "提交或查询结果不保留可重复提交的上一层"
+    },
+    {
+      "id": "16:11320",
+      "name": "操作 / 已确认未收到，返回预览",
+      "before": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "16:9650",
+            "navigation": "NAVIGATE",
+            "transition": {
+              "type": "DISSOLVE",
+              "easing": {
+                "type": "EASE_OUT"
+              },
+              "duration": 0.18000000715255737
+            },
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "16:9650",
+              "navigation": "NAVIGATE",
+              "transition": {
+                "type": "DISSOLVE",
+                "easing": {
+                  "type": "EASE_OUT"
+                },
+                "duration": 0.18000000715255737
+              },
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "after": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "16:9489",
+            "navigation": "SWAP",
+            "transition": null,
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "16:9489",
+              "navigation": "SWAP",
+              "transition": null,
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "reason": "提交或查询结果不保留可重复提交的上一层"
+    },
+    {
+      "id": "16:10160",
+      "name": "操作 / 补充特征",
+      "before": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "16:10063",
+            "navigation": "NAVIGATE",
+            "transition": {
+              "type": "DISSOLVE",
+              "easing": {
+                "type": "EASE_OUT"
+              },
+              "duration": 0.18000000715255737
+            },
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "16:10063",
+              "navigation": "NAVIGATE",
+              "transition": {
+                "type": "DISSOLVE",
+                "easing": {
+                  "type": "EASE_OUT"
+                },
+                "duration": 0.18000000715255737
+              },
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "after": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "16:10063",
+            "navigation": "SWAP",
+            "transition": null,
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "16:10063",
+              "navigation": "SWAP",
+              "transition": null,
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "reason": "补证替换当前核验状态，提交后仍是同一事项"
+    },
+    {
+      "id": "16:10277",
+      "name": "操作 / 取消本次预约",
+      "before": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "16:10166",
+            "navigation": "NAVIGATE",
+            "transition": {
+              "type": "DISSOLVE",
+              "easing": {
+                "type": "EASE_OUT"
+              },
+              "duration": 0.18000000715255737
+            },
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "16:10166",
+              "navigation": "NAVIGATE",
+              "transition": {
+                "type": "DISSOLVE",
+                "easing": {
+                  "type": "EASE_OUT"
+                },
+                "duration": 0.18000000715255737
+              },
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "after": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "16:10166",
+            "navigation": "SWAP",
+            "transition": null,
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "16:10166",
+              "navigation": "SWAP",
+              "transition": null,
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "reason": "取消后不允许返回已取消预约"
+    },
+    {
+      "id": "16:10880",
+      "name": "操作 / 取消预约",
+      "before": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "16:10166",
+            "navigation": "NAVIGATE",
+            "transition": {
+              "type": "DISSOLVE",
+              "easing": {
+                "type": "EASE_OUT"
+              },
+              "duration": 0.18000000715255737
+            },
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "16:10166",
+              "navigation": "NAVIGATE",
+              "transition": {
+                "type": "DISSOLVE",
+                "easing": {
+                  "type": "EASE_OUT"
+                },
+                "duration": 0.18000000715255737
+              },
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "after": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "16:10166",
+            "navigation": "SWAP",
+            "transition": null,
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "16:10166",
+              "navigation": "SWAP",
+              "transition": null,
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "reason": "取消后不允许返回已取消预约"
+    },
+    {
+      "id": "35:13383",
+      "name": "操作 / 消息已读，查看我的",
+      "before": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "35:13229",
+            "navigation": "NAVIGATE",
+            "transition": {
+              "type": "DISSOLVE",
+              "easing": {
+                "type": "EASE_OUT"
+              },
+              "duration": 0.18000000715255737
+            },
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "35:13229",
+              "navigation": "NAVIGATE",
+              "transition": {
+                "type": "DISSOLVE",
+                "easing": {
+                  "type": "EASE_OUT"
+                },
+                "duration": 0.18000000715255737
+              },
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "after": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "35:13229",
+            "navigation": "SWAP",
+            "transition": null,
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "35:13229",
+              "navigation": "SWAP",
+              "transition": null,
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "reason": "消息已读替换当前状态"
+    },
+    {
+      "id": "35:17735",
+      "name": "返回 / 上一页",
+      "before": [
+        {
+          "action": {
+            "type": "BACK"
+          },
+          "actions": [
+            {
+              "type": "BACK"
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "after": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "16:8778",
+            "navigation": "NAVIGATE",
+            "transition": null,
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "16:8778",
+              "navigation": "NAVIGATE",
+              "transition": null,
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "reason": "完成或保存后明确退出，不回到旧提交表单"
+    },
+    {
+      "id": "16:9708",
+      "name": "返回 / 上一页",
+      "before": [
+        {
+          "action": {
+            "type": "BACK"
+          },
+          "actions": [
+            {
+              "type": "BACK"
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "after": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "16:8778",
+            "navigation": "NAVIGATE",
+            "transition": null,
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "16:8778",
+              "navigation": "NAVIGATE",
+              "transition": null,
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "reason": "完成或保存后明确退出，不回到旧提交表单"
+    },
+    {
+      "id": "16:9350",
+      "name": "返回 / 上一页",
+      "before": [
+        {
+          "action": {
+            "type": "BACK"
+          },
+          "actions": [
+            {
+              "type": "BACK"
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "after": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "16:8778",
+            "navigation": "NAVIGATE",
+            "transition": null,
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "16:8778",
+              "navigation": "NAVIGATE",
+              "transition": null,
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "reason": "完成或保存后明确退出，不回到旧提交表单"
+    },
+    {
+      "id": "16:9814",
+      "name": "返回 / 上一页",
+      "before": [
+        {
+          "action": {
+            "type": "BACK"
+          },
+          "actions": [
+            {
+              "type": "BACK"
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "after": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "16:8778",
+            "navigation": "NAVIGATE",
+            "transition": null,
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "16:8778",
+              "navigation": "NAVIGATE",
+              "transition": null,
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "reason": "完成或保存后明确退出，不回到旧提交表单"
+    },
+    {
+      "id": "16:10171",
+      "name": "返回 / 上一页",
+      "before": [
+        {
+          "action": {
+            "type": "BACK"
+          },
+          "actions": [
+            {
+              "type": "BACK"
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "after": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "16:8778",
+            "navigation": "NAVIGATE",
+            "transition": null,
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "16:8778",
+              "navigation": "NAVIGATE",
+              "transition": null,
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "reason": "完成或保存后明确退出，不回到旧提交表单"
+    },
+    {
+      "id": "16:10826",
+      "name": "返回 / 上一页",
+      "before": [
+        {
+          "action": {
+            "type": "BACK"
+          },
+          "actions": [
+            {
+              "type": "BACK"
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "after": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "16:8778",
+            "navigation": "NAVIGATE",
+            "transition": null,
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "16:8778",
+              "navigation": "NAVIGATE",
+              "transition": null,
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "reason": "完成或保存后明确退出，不回到旧提交表单"
+    },
+    {
+      "id": "16:10338",
+      "name": "返回 / 上一页",
+      "before": [
+        {
+          "action": {
+            "type": "BACK"
+          },
+          "actions": [
+            {
+              "type": "BACK"
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "after": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "16:8778",
+            "navigation": "NAVIGATE",
+            "transition": null,
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "16:8778",
+              "navigation": "NAVIGATE",
+              "transition": null,
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "reason": "完成或保存后明确退出，不回到旧提交表单"
+    },
+    {
+      "id": "16:10719",
+      "name": "返回 / 上一页",
+      "before": [
+        {
+          "action": {
+            "type": "BACK"
+          },
+          "actions": [
+            {
+              "type": "BACK"
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "after": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "16:8778",
+            "navigation": "NAVIGATE",
+            "transition": null,
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "16:8778",
+              "navigation": "NAVIGATE",
+              "transition": null,
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "reason": "完成或保存后明确退出，不回到旧提交表单"
+    },
+    {
+      "id": "16:11061",
+      "name": "返回 / 上一页",
+      "before": [
+        {
+          "action": {
+            "type": "BACK"
+          },
+          "actions": [
+            {
+              "type": "BACK"
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "after": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "16:8778",
+            "navigation": "NAVIGATE",
+            "transition": null,
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "16:8778",
+              "navigation": "NAVIGATE",
+              "transition": null,
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "reason": "完成或保存后明确退出，不回到旧提交表单"
+    },
+    {
+      "id": "35:13162",
+      "name": "返回 / 上一页",
+      "before": [
+        {
+          "action": {
+            "type": "BACK"
+          },
+          "actions": [
+            {
+              "type": "BACK"
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "after": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "16:8778",
+            "navigation": "NAVIGATE",
+            "transition": null,
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "16:8778",
+              "navigation": "NAVIGATE",
+              "transition": null,
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "reason": "完成或保存后明确退出，不回到旧提交表单"
+    },
+    {
+      "id": "16:10021",
+      "name": "返回 / 上一页",
+      "before": [
+        {
+          "action": {
+            "type": "BACK"
+          },
+          "actions": [
+            {
+              "type": "BACK"
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "after": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "35:13157",
+            "navigation": "NAVIGATE",
+            "transition": null,
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "35:13157",
+              "navigation": "NAVIGATE",
+              "transition": null,
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "reason": "完成或保存后明确退出，不回到旧提交表单"
+    },
+    {
+      "id": "35:13218",
+      "name": "操作 / 返回上一页",
+      "before": [
+        {
+          "action": {
+            "type": "BACK"
+          },
+          "actions": [
+            {
+              "type": "BACK"
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "after": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "16:8778",
+            "navigation": "NAVIGATE",
+            "transition": null,
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "16:8778",
+              "navigation": "NAVIGATE",
+              "transition": null,
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "reason": "发布列表底部与顶部出口一致"
+    },
+    {
+      "id": "35:16785",
+      "name": "操作 / 搜索",
+      "before": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "35:12236",
+            "navigation": "NAVIGATE",
+            "transition": null,
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "35:12236",
+              "navigation": "NAVIGATE",
+              "transition": null,
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "after": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "35:12236",
+            "navigation": "SWAP",
+            "transition": null,
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "35:12236",
+              "navigation": "SWAP",
+              "transition": null,
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "reason": "同条件重搜不追加相同结果历史"
+    },
+    {
+      "id": "35:16814",
+      "name": "操作 / 搜索",
+      "before": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "35:13699",
+            "navigation": "NAVIGATE",
+            "transition": null,
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "35:13699",
+              "navigation": "NAVIGATE",
+              "transition": null,
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "after": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "35:13699",
+            "navigation": "SWAP",
+            "transition": null,
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "35:13699",
+              "navigation": "SWAP",
+              "transition": null,
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "reason": "同条件重搜不追加相同结果历史"
+    },
+    {
+      "id": "35:16840",
+      "name": "操作 / 搜索",
+      "before": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "35:13790",
+            "navigation": "NAVIGATE",
+            "transition": null,
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "35:13790",
+              "navigation": "NAVIGATE",
+              "transition": null,
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "after": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "35:13790",
+            "navigation": "SWAP",
+            "transition": null,
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "35:13790",
+              "navigation": "SWAP",
+              "transition": null,
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "reason": "同条件重搜不追加相同结果历史"
+    },
+    {
+      "id": "35:16866",
+      "name": "操作 / 搜索",
+      "before": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "35:13881",
+            "navigation": "NAVIGATE",
+            "transition": null,
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "35:13881",
+              "navigation": "NAVIGATE",
+              "transition": null,
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "after": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "35:13881",
+            "navigation": "SWAP",
+            "transition": null,
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "35:13881",
+              "navigation": "SWAP",
+              "transition": null,
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "reason": "同条件重搜不追加相同结果历史"
+    },
+    {
+      "id": "35:13917",
+      "name": "操作 / 搜索",
+      "before": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "35:12236",
+            "navigation": "NAVIGATE",
+            "transition": null,
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "35:12236",
+              "navigation": "NAVIGATE",
+              "transition": null,
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "after": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "69:1752",
+            "navigation": "SWAP",
+            "transition": null,
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "69:1752",
+              "navigation": "SWAP",
+              "transition": null,
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "reason": "重搜保留当前关键词和筛选条件"
+    },
+    {
+      "id": "35:13947",
+      "name": "操作 / 搜索",
+      "before": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "35:13699",
+            "navigation": "NAVIGATE",
+            "transition": null,
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "35:13699",
+              "navigation": "NAVIGATE",
+              "transition": null,
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "after": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "69:1779",
+            "navigation": "SWAP",
+            "transition": null,
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "69:1779",
+              "navigation": "SWAP",
+              "transition": null,
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "reason": "重搜保留当前关键词和筛选条件"
+    },
+    {
+      "id": "35:13974",
+      "name": "操作 / 搜索",
+      "before": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "35:13790",
+            "navigation": "NAVIGATE",
+            "transition": null,
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "35:13790",
+              "navigation": "NAVIGATE",
+              "transition": null,
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "after": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "69:1806",
+            "navigation": "SWAP",
+            "transition": null,
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "69:1806",
+              "navigation": "SWAP",
+              "transition": null,
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "reason": "重搜保留当前关键词和筛选条件"
+    },
+    {
+      "id": "35:13644",
+      "name": "操作 / 搜索",
+      "before": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "35:12236",
+            "navigation": "NAVIGATE",
+            "transition": null,
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "35:12236",
+              "navigation": "NAVIGATE",
+              "transition": null,
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "after": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "69:1833",
+            "navigation": "SWAP",
+            "transition": null,
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "69:1833",
+              "navigation": "SWAP",
+              "transition": null,
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "reason": "重搜保留当前关键词和筛选条件"
+    },
+    {
+      "id": "35:13735",
+      "name": "操作 / 搜索",
+      "before": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "35:13699",
+            "navigation": "NAVIGATE",
+            "transition": null,
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "35:13699",
+              "navigation": "NAVIGATE",
+              "transition": null,
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "after": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "69:1860",
+            "navigation": "SWAP",
+            "transition": null,
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "69:1860",
+              "navigation": "SWAP",
+              "transition": null,
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "reason": "重搜保留当前关键词和筛选条件"
+    },
+    {
+      "id": "35:13826",
+      "name": "操作 / 搜索",
+      "before": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "35:13790",
+            "navigation": "NAVIGATE",
+            "transition": null,
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "35:13790",
+              "navigation": "NAVIGATE",
+              "transition": null,
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "after": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "69:1887",
+            "navigation": "SWAP",
+            "transition": null,
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "69:1887",
+              "navigation": "SWAP",
+              "transition": null,
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "reason": "重搜保留当前关键词和筛选条件"
+    }
+  ],
+  "created": [
+    {
+      "id": "69:1752",
+      "name": "P03免费-查询中-保留条件-雨伞-图书馆筛选",
+      "result": "35:13904"
+    },
+    {
+      "id": "69:1779",
+      "name": "P03免费-查询中-保留条件-钥匙-教学区筛选",
+      "result": "35:13934"
+    },
+    {
+      "id": "69:1806",
+      "name": "P03免费-查询中-保留条件-水杯-食堂筛选",
+      "result": "35:13961"
+    },
+    {
+      "id": "69:1833",
+      "name": "P03免费-查询中-保留条件-雨伞-条件无匹配",
+      "result": "35:13631"
+    },
+    {
+      "id": "69:1860",
+      "name": "P03免费-查询中-保留条件-钥匙-条件无匹配",
+      "result": "35:13722"
+    },
+    {
+      "id": "69:1887",
+      "name": "P03免费-查询中-保留条件-保温杯-条件无匹配",
+      "result": "35:13813"
+    }
+  ],
+  "reviewCorrections": [
+    {
+      "id": "16:9648",
+      "reason": "候选可从表单或预览进入，继续编辑需明确到水杯表单",
+      "after": [
+        {
+          "action": {
+            "type": "NODE",
+            "destinationId": "16:9544",
+            "navigation": "NAVIGATE",
+            "transition": {
+              "type": "DISSOLVE",
+              "easing": {
+                "type": "EASE_OUT"
+              },
+              "duration": 0.18000000715255737
+            },
+            "resetVideoPosition": false,
+            "resetScrollPosition": true
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "16:9544",
+              "navigation": "NAVIGATE",
+              "transition": {
+                "type": "DISSOLVE",
+                "easing": {
+                  "type": "EASE_OUT"
+                },
+                "duration": 0.18000000715255737
+              },
+              "resetVideoPosition": false,
+              "resetScrollPosition": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -25,6 +25,7 @@
   --blog-article-title-size: 30px;
   --blog-sidebar-width: 220px;
   --blog-sidebar-top-gap: 12px;
+  --blog-mermaid-line-dash: 6 4;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-blog-theme="light"]) {
@@ -66,6 +67,53 @@ html, body { background: var(--blog-paper); color: var(--blog-ink); }
 #home #cnblogs_post_body a { color: var(--blog-accent); }
 #home #cnblogs_post_body pre code { background: transparent; }
 #home #cnblogs_post_body .hljs { color: var(--blog-ink); background: var(--blog-hover); }
+
+/* Style the platform's inline Mermaid SVGs without rerendering their geometry. */
+#home #cnblogs_post_body .mermaid,
+#home #cnblogs_post_body .mermaid > svg {
+  background-color: var(--blog-paper);
+  color: var(--blog-ink);
+}
+#home #cnblogs_post_body .mermaid svg .node > :is(rect, circle, ellipse, polygon, path) {
+  fill: var(--blog-hover) !important;
+  stroke: var(--blog-soft-line) !important;
+}
+#home #cnblogs_post_body .mermaid svg .cluster > rect {
+  fill: var(--blog-paper) !important;
+  stroke: var(--blog-soft-line) !important;
+}
+#home #cnblogs_post_body .mermaid svg :is(text, tspan) {
+  fill: var(--blog-ink) !important;
+  color: var(--blog-ink) !important;
+}
+#home #cnblogs_post_body .mermaid svg foreignObject * {
+  color: var(--blog-ink) !important;
+}
+#home #cnblogs_post_body .mermaid svg :is(.edgeLabel, .labelBkg, .edgeLabel p) {
+  background-color: var(--blog-hover) !important;
+}
+#home #cnblogs_post_body .mermaid svg .edgeLabel rect {
+  fill: var(--blog-hover) !important;
+  opacity: 1;
+}
+/* Dash only connectors; node outlines and arrowheads retain their original shapes. */
+#home #cnblogs_post_body .mermaid svg :is(.flowchart-link, .edgePath .path) {
+  fill: none !important;
+  stroke: var(--blog-soft-line) !important;
+  stroke-dasharray: var(--blog-mermaid-line-dash) !important;
+}
+#home #cnblogs_post_body .mermaid svg marker {
+  fill: var(--blog-soft-line) !important;
+  stroke: var(--blog-soft-line) !important;
+}
+#home #cnblogs_post_body .mermaid svg marker :is(path, polygon, circle, line) {
+  stroke: var(--blog-soft-line) !important;
+  stroke-dasharray: none !important;
+}
+#home #cnblogs_post_body .mermaid svg .arrowheadPath {
+  fill: var(--blog-soft-line) !important;
+  stroke: var(--blog-soft-line) !important;
+}
 
 /* Body is 13.6px; article headings are 2px above the original theme sizes. */
 #home #cnblogs_post_body { font-size: var(--blog-body-size); }

@@ -1,0 +1,54 @@
+{
+  "capturedAt": "2026-10-02T05:58:41.554Z",
+  "method": "Chrome CUA live prototype clicks",
+  "cases": [
+    {
+      "path": "草稿箱→钥匙草稿→保存→返回我的",
+      "expected": "16-8778",
+      "actual": "16-8778",
+      "pass": true
+    },
+    {
+      "path": "我的→发布浮层→钥匙表单→返回",
+      "expected": "16-8778",
+      "actual": "16-8778",
+      "pass": true
+    },
+    {
+      "path": "钥匙草稿→预览→返回修改→顶部返回",
+      "expected": "35-17730",
+      "actual": "35-17730",
+      "pass": true
+    },
+    {
+      "path": "钥匙草稿→预览→确认提交→返回我的",
+      "expected": "16-8778",
+      "actual": "16-8778",
+      "pass": true
+    },
+    {
+      "path": "雨伞输入→首次搜索→结果再次搜索→结果返回",
+      "expected": "35-13593",
+      "actual": "35-13593",
+      "pass": true
+    },
+    {
+      "path": "雨伞搜索→图书馆筛选→应用→相同条件重搜",
+      "expected": "35-13904",
+      "actual": "35-13904",
+      "pass": true
+    },
+    {
+      "path": "雨伞搜索→钥匙条件筛选→无匹配→相同条件重搜",
+      "expected": "35-13631",
+      "actual": "35-13631",
+      "pass": true
+    },
+    {
+      "path": "水杯草稿→公开预览→再看看候选→继续编辑",
+      "expected": "16-9544",
+      "actual": "16-9544",
+      "pass": true
+    }
+  ]
+}
