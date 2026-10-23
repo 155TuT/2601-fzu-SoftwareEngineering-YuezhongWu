@@ -1,8 +1,8 @@
 # 26软工实践 你所热爱的就是软件工程 团队展示与选题报告
 
-| **作业所属课程** | **班级的链接** |
+| 作业所属课程 | [https://edu.cnblogs.com/campus/fzu/202601SofwareEngineering](https://edu.cnblogs.com/campus/fzu/202601SofwareEngineering) |
 | --- | --- |
-| 作业要求 | 作业要求的链接 |
+| 作业要求 | [https://edu.cnblogs.com/campus/fzu/202601SofwareEngineering/homework/16758](https://edu.cnblogs.com/campus/fzu/202601SofwareEngineering/homework/16758) |
 | 作业的目标 | 你理解的作业目标具体内容 |
 | 团队名称 | 你所热爱的就是软件工程 |
 | 团队成员学号-名字 | 052403137-王智壹 052402132-郑嘉文 182400320-林叶鑫 07240813-张洋 102402118-陈飞扬 022403140-周恪玄 102401507-李宗欣 072408101-陈柏睿 102401504-马晨曦 102401505-林金晶 072308130-陈柯男 |
