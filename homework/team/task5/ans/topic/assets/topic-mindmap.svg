@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="862" height="338" viewBox="0 0 862 338" role="img" aria-labelledby="title desc"><title id="title">选题 Agent 功能思维导图</title><desc id="desc">围绕同一份立项记录，依次组织候选、先例、评审及修订，每个分支保留所需材料。</desc><rect x="1" y="1" width="860" height="336" rx="14" fill="#fff" stroke="#d3e2df"/><g font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" fill="#183c42">
+  <g stroke="#76a8a5" stroke-width="2" fill="none"><path d="M158 169H198M198 48V291"/></g>
+  <rect x="18" y="136" width="140" height="66" rx="12" fill="#195b60"/>
+  <g fill="#fff"><text x="50" y="162" font-size="19" font-weight="bold">立项记录</text><text x="46" y="185" font-size="14">团队共用一份</text></g>
+  <g>
+    <path d="M198 48H225M379 48H405" stroke="#76a8a5" stroke-width="2" fill="none"/>
+    <rect x="225" y="25" width="154" height="46" rx="10" fill="#e3f2ee" stroke="#93bcb5"/>
+    <text x="302" y="54" font-size="18" font-weight="bold" text-anchor="middle">提出候选</text>
+    <rect x="405" y="19" width="431" height="58" rx="8" fill="#f7f9f8"/>
+    <text x="422" y="44" font-size="15">目标用户、困难与可用资源</text><text x="422" y="65" font-size="15">已有简报或从一条经历展开</text>
+  </g>
+  <g>
+    <path d="M198 129H225M379 129H405" stroke="#76a8a5" stroke-width="2" fill="none"/>
+    <rect x="225" y="106" width="154" height="46" rx="10" fill="#e3f2ee" stroke="#93bcb5"/>
+    <text x="302" y="135" font-size="18" font-weight="bold" text-anchor="middle">核查先例</text>
+    <rect x="405" y="100" width="431" height="58" rx="8" fill="#f7f9f8"/>
+    <text x="422" y="125" font-size="15">同类产品、跨品类替代、人工办法</text><text x="422" y="146" font-size="15">按动作和执行条件对应原文</text>
+  </g>
+  <g>
+    <path d="M198 210H225M379 210H405" stroke="#76a8a5" stroke-width="2" fill="none"/>
+    <rect x="225" y="187" width="154" height="46" rx="10" fill="#e3f2ee" stroke="#93bcb5"/>
+    <text x="302" y="216" font-size="18" font-weight="bold" text-anchor="middle">评审补证</text>
+    <rect x="405" y="181" width="431" height="58" rx="8" fill="#f7f9f8"/>
+    <text x="422" y="206" font-size="15">针对一条判断提问，记录异议</text><text x="422" y="227" font-size="15">生成有负责人和判据的验证任务</text>
+  </g>
+  <g>
+    <path d="M198 291H225M379 291H405" stroke="#76a8a5" stroke-width="2" fill="none"/>
+    <rect x="225" y="268" width="154" height="46" rx="10" fill="#e3f2ee" stroke="#93bcb5"/>
+    <text x="302" y="297" font-size="18" font-weight="bold" text-anchor="middle">修订决定</text>
+    <rect x="405" y="262" width="431" height="58" rx="8" fill="#f7f9f8"/>
+    <text x="422" y="287" font-size="15">补材料只复核受影响的判断</text><text x="422" y="308" font-size="15">比较两版，负责人决定并导出</text>
+  </g>
+</g></svg>

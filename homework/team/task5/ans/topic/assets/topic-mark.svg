@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 84 84" role="img" aria-labelledby="title desc">
+  <title id="title">选题 Agent 项目标志</title>
+  <desc id="desc">两张相叠的材料卡片，前页的核对标记落在一条被选中的证据上。</desc>
+  <rect x="2" y="2" width="80" height="80" rx="18" fill="#eff7f5"/>
+  <g fill="none" stroke="#174d55" stroke-width="3.6" stroke-linejoin="round">
+    <path d="M17 22 47 16 55 55 25 61Z" fill="#d4e9e4"/>
+    <path d="M29 25H61V66H29Z" fill="#ffffff"/>
+  </g>
+  <g fill="none" stroke="#196b70" stroke-width="3" stroke-linecap="round">
+    <path d="M36 34H52M36 41H49"/>
+  </g>
+  <rect x="34" y="48" width="23" height="9" rx="2" fill="#f3c982"/>
+  <path d="m49 56 5 5 13-17" fill="none" stroke="#144a51" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="950" height="454" viewBox="0 0 950 454" role="img" aria-labelledby="title desc"><title id="title">选题 Agent 领域类图</title><desc id="desc">立项记录保存修订版本。每版收录候选和对照判断，记录人工决定。判断引用原文证据并接收批注，验证任务可回应批注。</desc><rect x="1" y="1" width="948" height="452" rx="14" fill="#fff" stroke="#d3e2df"/><g font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" fill="#183c42">
+<path d="M257 62H357" fill="none" stroke="#567a7a" stroke-width="1.6"/>
+<text x="307" y="53" text-anchor="middle" font-size="13" fill="#315c60">保存</text>
+<text x="264" y="80" text-anchor="start" font-size="13" fill="#315c60">1</text>
+<text x="350" y="80" text-anchor="end" font-size="13" fill="#315c60">1..*</text>
+<path d="M592 62H692" fill="none" stroke="#567a7a" stroke-width="1.6"/>
+<text x="642" y="53" text-anchor="middle" font-size="13" fill="#315c60">记入</text>
+<text x="600" y="80" text-anchor="start" font-size="13" fill="#315c60">1</text>
+<text x="686" y="80" text-anchor="end" font-size="13" fill="#315c60">0..1</text>
+<path d="M395 108V140H138V185" fill="none" stroke="#567a7a" stroke-width="1.6"/>
+<text x="262" y="134" text-anchor="middle" font-size="13" fill="#315c60">收录</text>
+<text x="406" y="124" text-anchor="middle" font-size="13" fill="#315c60">1</text>
+<text x="147" y="176" text-anchor="start" font-size="13" fill="#315c60">0..*</text>
+<path d="M478 108V185" fill="none" stroke="#567a7a" stroke-width="1.6"/>
+<text x="489" y="126" text-anchor="start" font-size="13" fill="#315c60">1</text>
+<text x="495" y="151" text-anchor="start" font-size="13" fill="#315c60">包含</text>
+<text x="489" y="177" text-anchor="start" font-size="13" fill="#315c60">0..*</text>
+<path d="M257 228H357" fill="none" stroke="#567a7a" stroke-width="1.6"/>
+<text x="307" y="219" text-anchor="middle" font-size="13" fill="#315c60">被比较</text>
+<text x="265" y="246" text-anchor="start" font-size="13" fill="#315c60">1</text>
+<text x="350" y="246" text-anchor="end" font-size="13" fill="#315c60">0..*</text>
+<path d="M592 228H692" fill="none" stroke="#567a7a" stroke-width="1.6"/>
+<text x="642" y="219" text-anchor="middle" font-size="13" fill="#315c60">引用</text>
+<text x="599" y="246" text-anchor="start" font-size="13" fill="#315c60">0..*</text>
+<text x="686" y="246" text-anchor="end" font-size="13" fill="#315c60">0..*</text>
+<path d="M478 271V348" fill="none" stroke="#567a7a" stroke-width="1.6"/>
+<text x="489" y="289" text-anchor="start" font-size="13" fill="#315c60">1</text>
+<text x="495" y="315" text-anchor="start" font-size="13" fill="#315c60">收到</text>
+<text x="489" y="340" text-anchor="start" font-size="13" fill="#315c60">0..*</text>
+<path d="M257 390H357" fill="none" stroke="#567a7a" stroke-width="1.6"/>
+<text x="307" y="381" text-anchor="middle" font-size="13" fill="#315c60">回应</text>
+<text x="265" y="410" text-anchor="start" font-size="13" fill="#315c60">0..*</text>
+<text x="350" y="410" text-anchor="end" font-size="13" fill="#315c60">0..1</text>
+<path d="M810 271V348" fill="none" stroke="#567a7a" stroke-width="1.6"/>
+<text x="821" y="291" text-anchor="start" font-size="13" fill="#315c60">0..*</text>
+<text x="825" y="315" text-anchor="start" font-size="13" fill="#315c60">摘自</text>
+<text x="821" y="341" text-anchor="start" font-size="13" fill="#315c60">1</text>
+<g>
+  <rect x="22" y="22" width="235" height="86" rx="7" fill="#fff" stroke="#438381" stroke-width="1.6"/>
+  <path d="M29 23H250Q256 23 256 29V53H23V29Q23 23 29 23Z" fill="#e5f1ef"/>
+  <path d="M23 53H256" fill="none" stroke="#9bb9b6"/>
+  <text x="35" y="44" font-weight="bold" font-size="17">立项记录</text>
+  <text x="35" y="74" font-size="14">标题、负责人、所属团队</text><text x="35" y="95" font-size="14">当前修订版本</text>
+</g>
+<g>
+  <rect x="357" y="22" width="235" height="86" rx="7" fill="#fff" stroke="#438381" stroke-width="1.6"/>
+  <path d="M364 23H585Q591 23 591 29V53H358V29Q358 23 364 23Z" fill="#e5f1ef"/>
+  <path d="M358 53H591" fill="none" stroke="#9bb9b6"/>
+  <text x="370" y="44" font-weight="bold" font-size="17">修订版本</text>
+  <text x="370" y="74" font-size="14">版号、父版本、提交时间</text><text x="370" y="95" font-size="14">约束快照、可见范围</text>
+</g>
+<g>
+  <rect x="692" y="22" width="235" height="86" rx="7" fill="#fff" stroke="#438381" stroke-width="1.6"/>
+  <path d="M699 23H920Q926 23 926 29V53H693V29Q693 23 699 23Z" fill="#e5f1ef"/>
+  <path d="M693 53H926" fill="none" stroke="#9bb9b6"/>
+  <text x="705" y="44" font-weight="bold" font-size="17">范围决定</text>
+  <text x="705" y="74" font-size="14">继续、收窄、先补证或暂缓</text><text x="705" y="95" font-size="14">确认人、理由、复核日期</text>
+</g>
+<g>
+  <rect x="22" y="185" width="235" height="86" rx="7" fill="#fff" stroke="#438381" stroke-width="1.6"/>
+  <path d="M29 186H250Q256 186 256 192V216H23V192Q23 186 29 186Z" fill="#e5f1ef"/>
+  <path d="M23 216H256" fill="none" stroke="#9bb9b6"/>
+  <text x="35" y="207" font-weight="bold" font-size="17">候选方向</text>
+  <text x="35" y="237" font-size="14">用户、问题、拟交付任务</text><text x="35" y="258" font-size="14">工期、资源约束</text>
+</g>
+<g>
+  <rect x="357" y="185" width="235" height="86" rx="7" fill="#fff" stroke="#438381" stroke-width="1.6"/>
+  <path d="M364 186H585Q591 186 591 192V216H358V192Q358 186 364 186Z" fill="#e5f1ef"/>
+  <path d="M358 216H591" fill="none" stroke="#9bb9b6"/>
+  <text x="370" y="207" font-weight="bold" font-size="17">对照判断</text>
+  <text x="370" y="237" font-size="14">先例标识、动作、条件</text><text x="370" y="258" font-size="14">重合关系、复核状态</text>
+</g>
+<g>
+  <rect x="692" y="185" width="235" height="86" rx="7" fill="#fff" stroke="#438381" stroke-width="1.6"/>
+  <path d="M699 186H920Q926 186 926 192V216H693V192Q693 186 699 186Z" fill="#e5f1ef"/>
+  <path d="M693 216H926" fill="none" stroke="#9bb9b6"/>
+  <text x="705" y="207" font-weight="bold" font-size="17">证据片段</text>
+  <text x="705" y="237" font-size="14">原文摘录、段落定位</text><text x="705" y="258" font-size="14">支持或质疑的关联随判断记录</text>
+</g>
+<g>
+  <rect x="22" y="348" width="235" height="86" rx="7" fill="#fff" stroke="#438381" stroke-width="1.6"/>
+  <path d="M29 349H250Q256 349 256 355V379H23V355Q23 349 29 349Z" fill="#e5f1ef"/>
+  <path d="M23 379H256" fill="none" stroke="#9bb9b6"/>
+  <text x="35" y="370" font-weight="bold" font-size="17">验证任务</text>
+  <text x="35" y="400" font-size="14">待验证假设、观察判据</text><text x="35" y="421" font-size="14">负责人、期限、结果依据</text>
+</g>
+<g>
+  <rect x="357" y="348" width="235" height="86" rx="7" fill="#fff" stroke="#438381" stroke-width="1.6"/>
+  <path d="M364 349H585Q591 349 591 355V379H358V355Q358 349 364 349Z" fill="#e5f1ef"/>
+  <path d="M358 379H591" fill="none" stroke="#9bb9b6"/>
+  <text x="370" y="370" font-weight="bold" font-size="17">评审批注</text>
+  <text x="370" y="400" font-size="14">提交者、问题、时间</text><text x="370" y="421" font-size="14">处理状态、回应理由</text>
+</g>
+<g>
+  <rect x="692" y="348" width="235" height="86" rx="7" fill="#fff" stroke="#438381" stroke-width="1.6"/>
+  <path d="M699 349H920Q926 349 926 355V379H693V355Q693 349 699 349Z" fill="#e5f1ef"/>
+  <path d="M693 379H926" fill="none" stroke="#9bb9b6"/>
+  <text x="705" y="370" font-weight="bold" font-size="17">来源版本</text>
+  <text x="705" y="400" font-size="14">标题、链接或材料编号</text><text x="705" y="421" font-size="14">获取时间、授权范围</text>
+</g>
+</g></svg>
