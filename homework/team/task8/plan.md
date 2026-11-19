@@ -47,47 +47,49 @@
 
 11 张模块 Issue 已归入 `v0.1.0`。各负责人现在可以认领自己的 Issue，王智壹在一次线上站会上确认范围和首测手机，把认领结果记入 #1。陈柏睿和陈柯男可以同时比较 Android 界面方案，约定详情页怎样按 `recordId` 打开。[模块总单 #1](https://github.com/155TuT/PebblePile/issues/1) · [v0.1.0 里程碑](https://github.com/155TuT/PebblePile/milestone/1)
 
-图中标有“现在”的两项可以并行。沿箭头看下一位接手人。上游在 Issue 贴出约定的产物，下游就可以开始对应步骤。多条箭头汇入同一步时，这一步需要各条线上的产物。
+标有“现在”的两项可以并行。箭头从交付人指向接手人。林金晶交出晚餐样例，林叶鑫就能定预期，竞品实测和访谈可以继续。多条箭头汇入同一步时，接手人等各项产物齐备后开始。
 
 ```mermaid
+%%{init: {"flowchart": {"nodeSpacing": 12, "rankSpacing": 32, "padding": 5, "wrappingWidth": 150}}}%%
 flowchart TD
-    claim["现在 · 王智壹 #1 与各负责人<br/>确认认领、Android 范围和首测手机"]:::ready
-    route["现在 · 陈柏睿 #4、陈柯男 #5<br/>比较界面方案，约定详情路由"]:::ready
+    accTitle: PebblePile Android v0.1.0 工作依赖
+    claim["现在 · 王智壹 #1<br/>登记各模块认领<br/>确认范围和首测机"]:::ready
+    route["现在 · 陈柏睿 #4<br/>与陈柯男 #5<br/>选界面方案，约定详情路由"]:::ready
 
-    claim -->|范围确认| sample["林金晶 #2 给晚餐样例<br/>林叶鑫 #10 补每步预期"]
-    claim -->|范围确认| research["林金晶 #2 实测竞品、访谈用户<br/>整理同一批用户的试用任务"]
-    claim -->|认领组件| design["马晨曦 #3 按原型<br/>列出输入框、标签和依据卡片的状态"]
-    claim -->|范围和首测手机确认| project["陈柏睿 #4 交工程骨架<br/>含导航和 Gradle Wrapper"]
-    route --> project
-    project --> install["李宗欣 #11 从该提交构建 APK<br/>在首测手机上安装并启动"]
+    claim -->|范围确认| research["林金晶 #2 备晚餐样例<br/>实测竞品<br/>招募并访谈用户"]
+    research -->|晚餐样例| sample["林叶鑫 #10 与林金晶<br/>定好每一步的预期"]
+    claim -->|认领组件| design["马晨曦 #3<br/>按原型整理组件状态"]
+    claim -->|首测机确认| project["陈柏睿 #4<br/>搭 Android 工程<br/>交导航和构建脚本"]
+    route -->|界面选型| project
+    project --> install["李宗欣 #11<br/>构建 APK<br/>在首测机安装启动"]
 
-    sample --> api["郑嘉文 #6 与张洋 #9 定接口<br/>林叶鑫 #10 验证样例回执"]
-    design --> components["马晨曦 #3 在工程里交付共用组件<br/>陈柏睿、陈柯男接入页面"]
+    sample --> api["郑嘉文 #6 交 CoreAPI<br/>和张洋定算法接口<br/>林叶鑫验证样例回执"]
+    design --> components["马晨曦交共用组件<br/>两位前端接入页面"]
     install --> components
-    install --> pages["陈柏睿 #4、陈柯男 #5<br/>用接口样例接首页、分享和详情"]
+    install --> pages["陈柏睿、陈柯男<br/>用接口样例联调<br/>首页、分享和详情"]
     api --> pages
-    api --> db["周恪玄 #7 交 SQLite 仓储和任务表<br/>郑嘉文 #6 接事务，林叶鑫 #10 验读写"]
-    api --> jobs["陈飞扬 #8 用固定返回值<br/>编排任务和检查点"]
-    api --> replay["张洋 #9 交饮食算法和依据<br/>林叶鑫 #10 回放固定样例"]
+    api -->|仓储契约| db["周恪玄 #7 交 SQLite 库<br/>郑嘉文接事务<br/>林叶鑫验真实读写"]
+    api -->|任务契约| jobs["陈飞扬 #8<br/>用固定返回值编排任务"]
+    api -->|算法输入输出| replay["张洋 #9 交饮食算法<br/>林叶鑫回放并核对依据"]
 
-    pages --> entries["陈柏睿 #4、陈柯男 #5<br/>验证首页与分享写入同一库，重开可查"]
+    pages --> entries["陈柏睿、陈柯男<br/>验证首页和分享<br/>可记可查"]
     db --> entries
-    entries --> alpha["李宗欣 #11 发 alpha.1<br/>林叶鑫 #10 开始真机回归"]
-    db --> recover["陈飞扬 #8、林叶鑫 #10<br/>用真实任务表验证中断恢复"]
+    entries --> alpha["李宗欣发 alpha.1<br/>林叶鑫开始真机回归"]
+    db -->|任务表和检查点| recover["陈飞扬、林叶鑫<br/>用真库验证中断恢复"]
     jobs --> recover
-    recover --> results["陈飞扬 #8 接入算法，郑嘉文 #6 核对提交<br/>交出真实建议、依据和任务进度"]
+    recover --> results["陈飞扬接入真实算法<br/>郑嘉文核对证据与修订"]
     replay --> results
 
-    components --> dinner["陈柯男 #5 接依据、反馈和纠正<br/>林叶鑫 #10 走通晚餐流程"]
+    components --> dinner["陈柯男接依据与反馈<br/>并接通条件纠正<br/>林叶鑫走通晚餐流程"]
     entries --> dinner
     results --> dinner
-    dinner --> rc["李宗欣 #11 发签名候选包 rc.1<br/>附提交号和 APK 校验值"]
-    rc --> trial["林金晶 #2 用候选包回访<br/>回传完成情况和可复现的问题"]
-    research --> trial
-    rc --> qa["林叶鑫 #10 验收同一候选包<br/>交真机报告和 SHA-256"]
-    trial --> signoff["王智壹 #1 核对两份结果<br/>确认主流程问题已在最终候选包复验"]
+    dinner --> rc["李宗欣发 rc.1 签名 APK<br/>附提交号和校验值"]
+    rc --> trial["林金晶用候选包回访<br/>交用户试用结果"]
+    research -->|访谈记录、试用任务| trial
+    rc --> qa["林叶鑫验收同一 APK<br/>交真机报告和 SHA-256"]
+    trial --> signoff["王智壹核对两份结果<br/>确认主流程问题已复验"]
     qa --> signoff
-    signoff --> release["李宗欣 #11 将同一 APK 发为 v0.1.0<br/>林叶鑫 #10 核对下载包，王智壹 #1 关闭里程碑"]
+    signoff --> release["李宗欣用同一 APK<br/>发布 v0.1.0<br/>林叶鑫复核，王智壹关闭里程碑"]
 
     classDef ready fill:#e1f2e4,stroke:#347149,color:#143a22,stroke-width:2px
 ```
