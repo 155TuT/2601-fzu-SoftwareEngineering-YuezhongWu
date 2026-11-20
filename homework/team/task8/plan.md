@@ -45,34 +45,36 @@
 
 ### 现在谁可以开工
 
-11 张模块 Issue 已归入 `v0.1.0`。各负责人现在可以认领自己的 Issue，王智壹在一次线上站会上确认范围和首测手机，把认领结果记入 #1。陈柏睿和陈柯男可以同时比较 Android 界面方案，约定详情页怎样按 `recordId` 打开。[模块总单 #1](https://github.com/155TuT/PebblePile/issues/1) · [v0.1.0 里程碑](https://github.com/155TuT/PebblePile/milestone/1)
+11 张模块 Issue 已归入 `v0.1.0`。陈柏睿和陈柯男已交出纵向 Compose 工程，首页、记录库和系统分享按 `recordId` 打开详情。李宗欣现在可以从该提交构建 APK，在首测手机上安装启动。安装通过、郑嘉文交出接口样例后，两位前端接着联调保存、查询和修订回执。[PR #14](https://github.com/155TuT/PebblePile/pull/14) · [已验提交 b31404d](https://github.com/155TuT/PebblePile/pull/14/commits/b31404dad1f27798994120bf3278f3138dd0375e) · [模块总单 #1](https://github.com/155TuT/PebblePile/issues/1) · [v0.1.0 里程碑](https://github.com/155TuT/PebblePile/milestone/1)
 
-标有“现在”的两项可以并行。箭头从交付人指向接手人。林金晶交出晚餐样例，林叶鑫就能定预期，竞品实测和访谈可以继续。多条箭头汇入同一步时，接手人等各项产物齐备后开始。
+“√”表示该节点的产物已经交付，箭头从交付人指向接手人。林金晶交出晚餐样例，林叶鑫就能定预期，竞品实测和访谈可以继续。多条箭头汇入同一步时，接手人等各项产物齐备后开始。
 
 ```mermaid
 %%{init: {"flowchart": {"nodeSpacing": 12, "rankSpacing": 32, "padding": 5, "wrappingWidth": 150}}}%%
 flowchart TD
     accTitle: PebblePile Android v0.1.0 工作依赖
-    claim["现在 · 王智壹 #1<br/>登记各模块认领<br/>确认范围和首测机"]:::ready
-    route["现在 · 陈柏睿 #4<br/>与陈柯男 #5<br/>选界面方案，约定详情路由"]:::ready
+    claim["王智壹 #1<br/>登记各模块认领<br/>确认范围和首测机 √"]:::ready
+    route["陈柏睿 #4、陈柯男 #5<br/>选用纵向 Compose<br/>详情按 recordId 打开 √"]:::ready
 
-    claim -->|范围确认| research["林金晶 #2 备晚餐样例<br/>实测竞品<br/>招募并访谈用户"]
+    claim -->|范围确认| research["林金晶 #2 备晚餐样例<br/>实测竞品<br/>招募并访谈用户 √"]
     research -->|晚餐样例| sample["林叶鑫 #10 与林金晶<br/>定好每一步的预期"]
-    claim -->|认领组件| design["马晨曦 #3<br/>按原型整理组件状态"]
-    claim -->|首测机确认| project["陈柏睿 #4<br/>搭 Android 工程<br/>交导航和构建脚本"]
+    claim -->|认领组件| design["马晨曦 #3<br/>按原型整理组件状态 √"]
+    claim -->|首测机确认| project["陈柏睿 #4<br/>交 Gradle 工程与导航<br/>Debug APK 构建通过 √"]
     route -->|界面选型| project
-    project --> install["李宗欣 #11<br/>构建 APK<br/>在首测机安装启动"]
+    project --> install["现在 · 李宗欣 #11<br/>从工程构建 APK<br/>在首测机安装启动"]
+    project --> demo["陈柏睿 #4、陈柯男 #5<br/>用演示库跑通首页和分享<br/>纵向模拟器验证通过 √"]
 
     sample --> api["郑嘉文 #6 交 CoreAPI<br/>和张洋定算法接口<br/>林叶鑫验证样例回执"]
     design --> components["马晨曦交共用组件<br/>两位前端接入页面"]
     install --> components
-    install --> pages["陈柏睿、陈柯男<br/>用接口样例联调<br/>首页、分享和详情"]
+    install --> pages["陈柏睿、陈柯男<br/>用 #6 接口样例联调<br/>首页、分享和详情"]
+    demo --> pages
     api --> pages
     api -->|仓储契约| db["周恪玄 #7 交 SQLite 库<br/>郑嘉文接事务<br/>林叶鑫验真实读写"]
     api -->|任务契约| jobs["陈飞扬 #8<br/>用固定返回值编排任务"]
     api -->|算法输入输出| replay["张洋 #9 交饮食算法<br/>林叶鑫回放并核对依据"]
 
-    pages --> entries["陈柏睿、陈柯男<br/>验证首页和分享<br/>可记可查"]
+    pages --> entries["陈柏睿、陈柯男<br/>换用 SQLite<br/>复验双入口可记可查"]
     db --> entries
     entries --> alpha["李宗欣发 alpha.1<br/>林叶鑫开始真机回归"]
     db -->|任务表和检查点| recover["陈飞扬、林叶鑫<br/>用真库验证中断恢复"]
