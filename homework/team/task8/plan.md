@@ -47,9 +47,11 @@
 
 11 张模块 Issue 已归入 `v0.1.0`。纵向 Android 工程、晚餐样例、业务接口和构建工作流都已合入 `main`。首页和分享共用一个保存接口，详情按 `recordId` 回查。调试构建、测试密钥签名和模拟器启动已在本地跑通。[工程与页面 #14](https://github.com/155TuT/PebblePile/pull/14) · [晚餐材料 #15](https://github.com/155TuT/PebblePile/pull/15) · [构建与签名 #16](https://github.com/155TuT/PebblePile/pull/16) · [业务接口 #17](https://github.com/155TuT/PebblePile/pull/17)
 
-图中绿色节点（`:::ready`）表示产物已交付。箭头从交付人指向接手人，多条箭头汇入时等各项产物齐备。马晨曦的四类组件已在 360 dp 纵向模拟器上通过常规和 200% 字号回归。#18 合入后，陈柏睿接首页与记录库，陈柯男接分享与详情，两人在 #4、#5 回写接入提交。[组件与截图 #18](https://github.com/155TuT/PebblePile/pull/18)
+图中绿色节点（`:::ready`）表示产物已交付。箭头从交付人指向接手人，多条箭头汇入时等各项产物齐备。马晨曦的四类组件已在 360 dp 纵向模拟器上通过常规和 200% 字号回归。#18 已合入 `main`。陈柏睿接首页与记录库，陈柯男接分享与详情，两人在 #4、#5 回写接入提交。[组件与截图 #18](https://github.com/155TuT/PebblePile/pull/18)
 
 林叶鑫已用固定晚餐材料跑通 20 项 JVM 契约测试，登记了成功、重发和修订冲突的回执。周恪玄交付 SQLite 后，林叶鑫用同一组请求复验事务和重开读写。陈飞扬可继续接调度，张洋和郑嘉文核对候选与证据字段，林金晶并行做竞品实测和访谈。[契约测试与结果 #20](https://github.com/155TuT/PebblePile/pull/20)
+
+郑嘉文已交删除预览、确认删除和移除来源引用的接口。8 项删除契约用例已通过，Android 模拟器上也已核对重开后读到的任务和原回执。#21 合入后，周恪玄接 SQLite 隔离事务，陈飞扬用落库的任务接清理检查点，林叶鑫复验中断恢复和旧结果回写。[删除契约 #21](https://github.com/155TuT/PebblePile/pull/21)
 
 ```mermaid
 %%{init: {"flowchart": {"nodeSpacing": 12, "rankSpacing": 32, "padding": 5, "wrappingWidth": 150}}}%%
@@ -72,10 +74,15 @@ flowchart TD
     kit --> components["陈柏睿接首页和记录库<br/>陈柯男接分享和详情<br/>马晨曦、林叶鑫在首测机复验"]
     prep --> research["林金晶 #2<br/>实测两款竞品并访谈用户<br/>整理回访任务"]
 
+    api --> deletion["郑嘉文 #6<br/>交删除预览、确认和移除引用接口<br/>8 项删除契约用例通过"]:::ready
     api --> db["周恪玄 #7 交 SQLite 仓储<br/>郑嘉文接事务，林叶鑫复验"]
+    deletion --> deletionDb["周恪玄 #7<br/>在同一 SQLite 事务保存<br/>删除标记、回执和清理任务"]
+    db --> deletionDb
     pages --> entries["陈柏睿、陈柯男<br/>用 SQLite 复验两个入口<br/>重开后按编号找回原话"]
     db --> entries
     api --> jobs["陈飞扬 #8<br/>接任务领取、检查点和重试"]
+    deletionDb --> cleanup["陈飞扬 #8 按检查点续跑清理<br/>林叶鑫 #10 复验重开回查<br/>和迟到结果处理"]
+    jobs --> cleanup
     db --> recover["陈飞扬、林叶鑫<br/>用真实任务表验证中断恢复"]
     jobs --> recover
     api --> algorithm["张洋 #9、郑嘉文 #6 对齐字段<br/>张洋交饮食算法与排序基线<br/>林叶鑫回放并核对原话"]
