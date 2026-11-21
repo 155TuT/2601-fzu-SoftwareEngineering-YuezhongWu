@@ -47,7 +47,9 @@
 
 11 张模块 Issue 已归入 `v0.1.0`。纵向 Android 工程、晚餐样例、业务接口和构建工作流都已合入 `main`。首页和分享共用一个保存接口，详情按 `recordId` 回查。调试构建、测试密钥签名和模拟器启动已在本地跑通。[工程与页面 #14](https://github.com/155TuT/PebblePile/pull/14) · [晚餐材料 #15](https://github.com/155TuT/PebblePile/pull/15) · [构建与签名 #16](https://github.com/155TuT/PebblePile/pull/16) · [业务接口 #17](https://github.com/155TuT/PebblePile/pull/17)
 
-图中绿色节点（`:::ready`）表示产物已交付。箭头从交付人指向接手人，多条箭头汇入时等各项产物齐备。马晨曦的四类组件已在 360 dp 纵向模拟器上通过常规和 200% 字号回归。#18 已合入 `main`。陈柏睿接首页与记录库，陈柯男接分享与详情，两人在 #4、#5 回写接入提交。[组件与截图 #18](https://github.com/155TuT/PebblePile/pull/18)
+图中绿色节点（`:::ready`）表示产物已交付。箭头从交付人指向接手人，多条箭头汇入时等各项产物齐备。陈柏睿已把马晨曦的组件接入首页和记录库，陈柯男已接入系统分享和详情。360 dp 纵向模拟器上，常规和 200% 字号各通过 32 项设备用例。从两个入口离线保存的原话，结束进程后都能从记录库找回。[组件与截图 #18](https://github.com/155TuT/PebblePile/pull/18) · [前端接入 #22](https://github.com/155TuT/PebblePile/pull/22) · [合并前复验记录](https://github.com/155TuT/PebblePile/blob/bc8b2d949b4c37a561eb232629a37053e204f287/android/ISSUE4_VERIFICATION.md)
+
+#22 合入后，李宗欣把 CI 调试包交给马晨曦和林叶鑫，在首测手机上核对大字号、键盘和 TalkBack。周恪玄交付 SQLite 后，两位前端再从首页和分享各保存一条原话，按各自的编号复验落库和重开。
 
 林叶鑫已用固定晚餐材料跑通 20 项 JVM 契约测试，登记了成功、重发和修订冲突的回执。周恪玄交付 SQLite 后，林叶鑫用同一组请求复验事务和重开读写。陈飞扬可继续接调度，张洋和郑嘉文核对候选与证据字段，林金晶并行做竞品实测和访谈。[契约测试与结果 #20](https://github.com/155TuT/PebblePile/pull/20)
 
@@ -71,14 +73,17 @@ flowchart TD
     api --> tests["林叶鑫 #10<br/>20 项内存仓储契约测试通过<br/>三种回执已登记"]:::ready
     spec --> kit["马晨曦 #3<br/>交四类 Compose 组件<br/>360 dp 两档字号回归通过"]:::ready
     project --> kit
-    kit --> components["陈柏睿接首页和记录库<br/>陈柯男接分享和详情<br/>马晨曦、林叶鑫在首测机复验"]
+    kit --> components["陈柏睿 #4 接入首页、记录库<br/>陈柯男 #5 接入分享、详情<br/>离线保存和重开找回通过"]:::ready
+    pages --> components
+    components --> componentDevice["马晨曦、林叶鑫<br/>在首测机核对字号、键盘和 TalkBack"]
+    device --> componentDevice
     prep --> research["林金晶 #2<br/>实测两款竞品并访谈用户<br/>整理回访任务"]
 
     api --> deletion["郑嘉文 #6<br/>交删除预览、确认和移除引用接口<br/>8 项删除契约用例通过"]:::ready
     api --> db["周恪玄 #7 交 SQLite 仓储<br/>郑嘉文接事务，林叶鑫复验"]
     deletion --> deletionDb["周恪玄 #7<br/>在同一 SQLite 事务保存<br/>删除标记、回执和清理任务"]
     db --> deletionDb
-    pages --> entries["陈柏睿、陈柯男<br/>用 SQLite 复验两个入口<br/>重开后按编号找回原话"]
+    components --> entries["陈柏睿、陈柯男<br/>用 SQLite 复验两个入口<br/>重开后按编号找回原话"]
     db --> entries
     api --> jobs["陈飞扬 #8<br/>接任务领取、检查点和重试"]
     deletionDb --> cleanup["陈飞扬 #8 按检查点续跑清理<br/>林叶鑫 #10 复验重开回查<br/>和迟到结果处理"]
@@ -94,7 +99,7 @@ flowchart TD
 
     dinner --> candidate["李宗欣 #11<br/>构建 0.1.0 签名候选包<br/>交运行编号、提交号和 SHA-256"]
     tests --> candidate
-    device --> candidate
+    componentDevice --> candidate
     candidate --> qa["林叶鑫用候选包做真机回归<br/>交测试报告和 SHA-256"]
     candidate --> trial["林金晶用同一候选包回访<br/>交试用记录和问题"]
     research --> trial
