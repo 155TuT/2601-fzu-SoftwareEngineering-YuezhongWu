@@ -4,6 +4,7 @@
 *.xlsx
 *.xls
 *.pptx
+!/homework/team/task8/ppt/叠石-Alpha冲刺答辩.pptx
 *.ppt
 
 *.mp3
