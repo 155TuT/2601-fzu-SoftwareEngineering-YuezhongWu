@@ -5,6 +5,8 @@
 *.xls
 *.pptx
 *.ppt
+
+*.mp3
 *.mp4
 
 # Ignore huge pdf books
